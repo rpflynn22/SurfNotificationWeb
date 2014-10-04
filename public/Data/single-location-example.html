@@ -1,0 +1,429 @@
+<html>
+    <head>
+        <title>SurfNotification</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#ChoiceContainer").hide();
+                var inpFilled = false;
+                var idNull = getID();
+                var carrierSelected = false;
+                var regionSelected = false;
+                var spotSelected = false;
+                $('#submit').hide();
+                $("#null").hide();
+                $(".spots").hide();
+                $("#SignUp").hover(
+                    function () {
+                        $(this).css("background-color", "rgba(255,255,255,0.80)");
+                    },
+                    function () {
+                        $(this).css("background-color", "rgba(255,255,255,0.60)")
+                    }
+                );
+                $("#PhoneNumber").change(function() {
+                    if($(this).val().length == 10) {
+                        inpFilled = true;
+                    }
+                    else {
+                        inpFilled = false;
+                    }
+                    if(spotSelected && regionSelected && carrierSelected && inpFilled) {
+                        $("#submit").slideDown(200);
+                    }
+                    else {
+                        $("#submit").fadeOut(100);
+                    }                   
+                });
+                $("#Carrier").change(function() {
+                    if($(this).val() != "null") {
+                        carrierSelected = true;
+                    }
+                    else {
+                        carrierSelected = false;
+                    }
+                    if(spotSelected && regionSelected && carrierSelected && inpFilled) {
+                        $("#submit").slideDown(200);
+                    }
+                    else {
+                        $("#submit").fadeOut(100);
+                    }                   
+                });
+                $("#SignUp").click(function() {
+                    $(this).fadeOut();
+                    $("#ChoiceContainer").slideDown(500);
+                });
+                $("#BigSelect").change(function() {                 
+                    if($(this).val()=="null") {
+                        $(".spots").fadeOut(100);
+                        regionSelected = false;
+                        spotSelected = false;
+                    }
+                    else {
+                        spotSelected = false;
+                        regionSelected = true;
+                        idNull = getID();
+                        hideAllShowOne($(this).val());
+                    }
+                    if(spotSelected && regionSelected && carrierSelected && inpFilled) {
+                        $("#submit").slideDown(200);
+                    }
+                    else {
+                        $("#submit").fadeOut(100);
+                    }
+                });
+                $(".spots").change(function() {                                
+                    /*if(idNull != "#null") {*/
+                        if($(this).val() != "null") {
+                            spotSelected = true;
+                            /*$('#submit').slideDown(100);*/
+                        }
+                        else {
+                            spotSelected = false;
+                            $('#submit').fadeOut(100);
+                        }
+                        if(spotSelected && regionSelected && carrierSelected && inpFilled) {
+                            $("#submit").slideDown(200);
+                        }
+                        else {
+                            $("#submit").hide();
+                        }
+                    /*}
+                    else {
+                        $('#submit').fadeOut(100);
+                    }*/
+                    
+                });
+            });
+            function getID() {
+                var val = $("#BigSelect").val();
+                if(val == "null") {
+                        return "null"
+                }
+                else {
+                    var name = "#" + val;
+                    return name;
+                }
+            }
+            function myfunc() {
+                alert("here");
+            }
+            function hideAllShowOne(showID) {
+                var onSpot = "#" + showID;
+                $(".spots").hide();
+                $(onSpot).show();
+            }
+        </script>
+        <style type="text/css">
+            html { 
+                background: url("http://s29.postimg.org/i75jntqdz/Mavericks.jpg") no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            body, html {
+                margin: 0;
+                padding: 0;
+            }
+
+            #BottomBar {
+                position: fixed;
+                width: 100%;
+                background-color: black;
+                height: 44px;
+                left:0;
+                bottom:0;
+            }
+
+            #ChoiceContainer {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 900px;
+                height: 100px;
+                margin-top: -50px;
+                margin-left: -450px;
+                background-color:rgba(255,255,255,0.70);
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+
+            #ChoiceContainer1 {
+                position: relative;
+                top: 50%;
+                height:20px;
+                margin-top: -10px;
+                width: 800px;
+                text-align: center;
+            }
+
+            #NameTag {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 500px;
+                height: 80px;
+                background-color: black;
+                color: #ffffff;
+                font-size: 50px;
+                text-align: center;
+                font-family: "Arial Black", Gadget, sans-serif;
+                padding-top: 0px;
+                border-bottom-right-radius: 5px;
+            }
+
+            #SignUp {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 90px;
+                height: 30px;
+                margin-top: -15px;
+                margin-left: -45px;
+                background-color:rgba(255,255,255,0.65);
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                text-align: center;
+                font-family: sans-serif;
+                font-size: 20px;
+                padding-top: 5px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            #SignUpHover {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 90px;
+                height: 30px;
+                margin-top: -15px;
+                margin-left: -45px;
+                background-color:rgba(255,255,255,0.50);
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                text-align: center;
+                font-family: sans-serif;
+                font-size: 20px;
+                padding-top: 5px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            #input-container {
+                float:left;
+            }
+            #carrier-container {
+                float: left;
+            }
+
+            #big-select-container {
+                float: left;
+            }
+
+
+
+            a {
+                text-decoration: none;
+                color: #eeeeee;
+            }
+
+            td {
+                font-size: 20px;
+                font-family: sans-serif;
+                padding-right: 30px;
+                color: #dedede;
+            }
+
+            table {
+                position: absolute;
+                height: 44px;
+                right: 10;
+                top: 50%;
+                margin-top: -22px;
+            }
+            .spots {
+                width: 165px;
+                float: left;
+            }
+
+        </style>
+    </head>
+<body>
+<div id="SignUp">Sign Up</div>
+<div id="ChoiceContainer">
+<div id="ChoiceContainer1">
+<div id="input-container">
+    <input id="PhoneNumber" onClick="this.select();" type="text" value="Phone Number">
+</div>
+<div id="carrier-container">
+<select id="Carrier">
+    <option value="null">Select Carrier</option>
+    <option value="ATT">AT&amp;T</option>
+    <option value="Verizon">Verizon</option>
+    <option value="T-Mobile">T-Mobile</option>
+    <option value="Sprint">Sprint</option>
+    <option value="MetroPCS">MetroPCS</option>
+</select>
+</div>
+<div id="big-select-container">
+<select id="BigSelect">
+    <option value="null">Select Region</option>
+    <optgroup label="North America">
+        <option value="Alaska">Alaska</option>
+        <option value="Atlantic-States">Atlantic States</option>
+        <option value="California-Central">California, Central</option>
+        <option value="California-North">California, North</option>
+        <option value="California-South">California, South</option>
+        <option value="Florida">Florida</option>
+        <option value="Great-Lakes">Great Lakes</option>
+        <option value="Gulf-Coast">Gulf Coast</option>
+        <option value="New-England">New England</option>
+        <option value="New-Jersey--New-York">New Jersey + New York</option>
+        <option value="North-Carolina">North Carolina</option>
+        <option value="Nova-Scotia">Nova Scotia</option>
+        <option value="Oregon">Oregon</option>
+        <option value="South-Carolina--Georgia">South Carolina + Georgia</option>
+        <option value="Vancouver-Island">Vancouver Island</option>
+        <option value="Washington">Washington</option>
+    </optgroup>
+    <optgroup label="Pacific Ocean">
+        <option value="Cook-Islands">Cook Islands</option>
+        <option value="Fiji-Samoa--Tonga">Fiji, Samoa + Tonga</option>
+        <option value="French-Polynesia">French Polynesia</option>
+        <option value="Hawaii">Hawaii</option>
+        <option value="Micronesia-Carolines">Micronesia (Carolines)</option>
+    </optgroup>
+    <optgroup label="Caribbean">
+        <option value="Bermuda">Bermuda</option>
+        <option value="Central-Caribbean">Central Caribbean</option>
+        <option value="Leeward-Islands">Leeward Islands</option>
+        <option value="Venezuela-Trindad--Tobago">Venezuela, Trindad + Tobago</option>
+        <option value="Windward-Islands">Windward Islands</option>
+    </optgroup>
+    <optgroup label="Indonesia">
+        <option value="Bali--Lombok">Bali + Lombok</option>
+        <option value="Java">Java</option>
+        <option value="Maluku-Islands">Maluku Islands</option>
+        <option value="Nusa-Tenggara">Nusa Tenggara</option>
+        <option value="Sumatra--Mentawais">Sumatra + Mentawais</option>
+    </optgroup>
+    <optgroup label="Asia">
+        <option value="China">China</option>
+        <option value="Japan">Japan</option>
+        <option value="Philippines">Philippines</option>
+        <option value="Russia">Russia</option>
+        <option value="South-East-Asia">South East Asia</option>
+        <option value="Taiwan">Taiwan</option>
+    </optgroup>
+    <optgroup label="Australasia">
+        <option value="New-South-Wales">New South Wales</option>
+        <option value="New-Zealand">New Zealand</option>
+        <option value="North-West-Australia">North West Australia</option>
+        <option value="Queensland">Queensland</option>
+        <option value="South-Australia">South Australia</option>
+        <option value="South-West-Australia">South West Australia</option>
+        <option value="Tasmania">Tasmania</option>
+        <option value="Victoria">Victoria</option>
+    </optgroup>
+    <optgroup label="Middle East">
+        <option value="Israel">Israel</option>
+        <option value="Lebanon">Lebanon</option>
+        <option value="Oman">Oman</option>
+        <option value="Persian-Gulf">Persian Gulf</option>
+    </optgroup>
+    <optgroup label="Europe">
+        <option value="Azores">Azores</option>
+        <option value="Black-Sea">Black Sea</option>
+        <option value="Canary-Islands">Canary Islands</option>
+        <option value="France">France</option>
+        <option value="Germany--Denmark">Germany + Denmark</option>
+        <option value="Greece">Greece</option>
+        <option value="Iceland">Iceland</option>
+        <option value="Italy">Italy</option>
+        <option value="Netherlands--Belgium">Netherlands + Belgium</option>
+        <option value="Norway">Norway</option>
+        <option value="Spain--Portugal">Spain + Portugal</option>
+        <option value="UK--Ireland">UK + Ireland</option>
+    </optgroup>
+    <optgroup label="Central America">
+        <option value="Central-America-North">Central America North</option>
+        <option value="Central-America-South">Central America South</option>
+        <option value="Mexico-Baja">Mexico, Baja</option>
+        <option value="Mexico-Pacific">Mexico, Pacific</option>
+    </optgroup>
+    <optgroup label="Africa">
+        <option value="Central-Africa">Central Africa</option>
+        <option value="Equatorial-Guinea">Equatorial Guinea</option>
+        <option value="Ghana--The-Ivory-Coast">Ghana + The Ivory Coast</option>
+        <option value="Morocco">Morocco</option>
+        <option value="Mozambique--Madagascar">Mozambique + Madagascar</option>
+        <option value="South-Africa">South Africa</option>
+        <option value="West-Africa">West Africa</option>
+        <option value="Western-Sahara-">Western Sahara </option>
+    </optgroup>
+    <optgroup label="Indian Ocean">
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="India">India</option>
+        <option value="Maldives">Maldives</option>
+        <option value="Seychelles">Seychelles</option>
+        <option value="Sri-Lanka">Sri Lanka</option>
+    </optgroup>
+    <optgroup label="South America">
+        <option value="Antarctic-Peninsula">Antarctic Peninsula</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Brazil--East">Brazil - East</option>
+        <option value="Brazil--Northeast">Brazil - Northeast</option>
+        <option value="Brazil--South">Brazil - South</option>
+        <option value="Chile--North">Chile - North</option>
+        <option value="Chile--South">Chile - South</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="Peru--North">Peru - North</option>
+        <option value="Peru--South">Peru - South</option>
+        <option value="Uruguay">Uruguay</option>
+    </optgroup>
+</select>
+</div>
+<div id="Cook-Islands" class="spots">
+<select>
+<option value="null">Select Spot</option>
+    <optgroup label="Cook Islands">
+        <option value="Avaavaroa Passage">Avaavaroa Passage</option>
+        <option value="Avana">Avana</option>
+        <option value="Club Raro">Club Raro</option>
+        <option value="Golf Course (Socials)">Golf Course (Socials)</option>
+        <option value="Matai Wreck">Matai Wreck</option>
+        <option value="Norrie Park">Norrie Park</option>
+        <option value="Rutaki Passage">Rutaki Passage</option>
+    </optgroup>
+</select>
+</div>
+
+<button id="submit" type="button" onclick="alert('Clicked!')">Submit</button>
+
+</div>
+</div>
+
+<div id="NameTag"><a href="file:///C:/Python27/msw_data.html">SurfNotification</a></div>
+<div id="BottomBar">
+    <table id="nav">
+        <tr>
+            <td id="Home"><a href="file:///C:/Python27/msw_data.html">Home</a></td>
+            <td id="About"><a href="#">About</a></td>
+            <td id="Contact"><a href="#">Contact</a></td>
+        </tr>
+    </table>    
+</div>
+
+</body>
+</html>

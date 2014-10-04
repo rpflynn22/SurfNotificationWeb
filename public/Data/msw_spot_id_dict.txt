@@ -1,0 +1,401 @@
+Birdrock:4209
+Carlsbad:292
+Del Mar:2579
+Horseshoe:4070
+Imperial Beach:3745
+Mission Beach (San Diego):297
+Ocean beach:4212
+Oceanside:664
+Pacific Beach:663
+Point Loma:4213
+Ponto:1149
+San Onofre:4192
+Scripps Pier/La Jolla:296
+Solana Beach:294
+Sunset Cliffs:4211
+Swamis:293
+Torrey Pines/Blacks Beach:295
+Trestles:291
+Windansea Beach:4214
+13th Street:2599
+204s:2591
+64th Place:2597
+72nd Place:2596
+7th Street:3954
+Agate/Pearl Street:4041
+Blackies:2575
+Bolsa Chica:3797
+Corona Del Mar Jetty:2579
+Doheny State Beach:2588
+Dolphin Street:2592
+Goldenwest:4039
+Huntington Pier:286
+Laguna Beach (Rockpile):988
+Morro Beach:288
+Newport Beach:1038
+Poche Beach:2590
+Rockpile/Heisler Park:2234
+Salt Creek:289
+San Clemente Pier:290
+Santa Ana River Jetties:2577
+Seal Beach Pier:285
+Strands Point:4040
+Surfside Jetty:2594
+T Street (Trafalgar Street):2570
+The Wedge:1148
+Trails:2600
+Beavers/Hazards:267
+Campus Point:269
+Hammonds Reef:271
+Haskels Beach:1252
+Jalama Beach County Park:265
+La Conchita Beach:2630
+Leadbetter Beach:270
+Miramar:4355
+Refugio State Beach:2625
+Rincon Point:272
+Sands Beach:268
+Skunk Point:1251
+Surf Beach:3702
+Tajiguas:2703
+Tarpits/Carpinteria State Beach:2701
+Wave Buoy 41025:3703
+Wave Buoy 46047:3704
+California Street (C Street):275
+County Line/Yerba Buena Beach:277
+Devereux:4251
+Emma Wood:2646
+Faria Beach:2645
+Hobson County Park:273
+Leo Carrillo:2642
+Little Rincon/Mussel Shoals:2672
+New Jetty/South Jetty:2632
+Ormond Beach:4203
+Pitas Point/Faria County Park:274
+Port Hueneme Beach Park:2647
+Silver Strand:276
+Solimar Reef and Beach:2644
+Staircase Beach:2641
+The Ranch - Cojo Reef:266
+Zero/Nicholas Canyon County Beach:2643
+ Manhattan Beach :281
+Bay Street:2613
+Cabrillo Point:284
+Chart House Rights:4205
+El Porto Beach:2677
+Haggertys:282
+Hermosa Beach:2607
+Latigo Canyon:4206
+Lower Haggertys:2605
+Lunada Bay:283
+Malibu - First Point:279
+Palos Verdes Cove:4207
+Point Dume:854
+Point Dume:854
+Redondo Beach Breakwater:4208
+Santa Monica Municipal Pier:280
+Secos:278
+Sunset Blvd:3673
+Topanga State Beach:4204
+Torrance Beach/Haggertys:2604
+Venice Beach:58
+Zuma Beach County Park:853
+Cape Flattery:710
+La Push:308
+Long Beach:311
+Ocean Shores:3813
+Westport:1425
+Bolinas:4221
+Bolinas Jetty:4215
+Eureka:302
+Klamath River:299
+Linda Mar / Pacifica:819
+Marin County:307
+Moonstone beach:301
+Ocean Beach:255
+Patricks Point:300
+Point Arena:304
+Salmon Creek:306
+Secrets:305
+Shelter Cove:4083
+South Beach:33
+Stinson Beach:4216
+Virgin Creek:303
+Abels Hill:978
+Cape Ann:370
+Cape Cod:373
+Long Point:2025
+Lucy Vincent:977
+Nahant:1091
+Nantasket Beach:371
+New England Hurricane:1095
+Plymouth Beach:864
+Salisbury:1130
+Scituate:372
+South Beach:33
+Squibnocket:974
+Costellos:2077
+Hampton Beach:2074
+Jenness Beach:881
+Linkys:2075
+Rye Rocks:368
+Seabrook Beach:2078
+The Wall:767
+Fortunes Rocks:363
+Higgins Beach:362
+Kennebunk Beach:364
+Long Sands:367
+Ogunquit River:365
+Old Orchard Beach:852
+Popham Beach:3785
+Scarborough Beach:3710
+Short Sands:366
+Wells Beach:4218
+1st Beach (Eastons Beach):907
+2nd Beach (Sachuest Beach):846
+Bailey's Beach:2096
+Block Island:4057
+Breachway:784
+East Beach:4059
+Elbow Ledge:574
+K38/39:785
+Lighthouse (Point Judith):376
+Matunuck:377
+Misquamicut:783
+Monahan's Dock:375
+Narragansett Beach:1103
+Ruggles:374
+South Shore Beach:2967
+Weekapaug:4058
+Amelia Pier:4194
+Bethune:3771
+Boynton Inlet:1167
+Canova Beach:4197
+Central Florida Hurricane:1092
+Cocoa Beach:350
+Coral Cove Park:4198
+Dania Beach Pier:4202
+Daytona Beach:670
+Deerfield Beach:357
+Delray Beach:4199
+Flagler Pier:347
+Fort Lauderdale:837
+Fort Pierce:692
+Fort Pierce North Jetty:3775
+Haulover:358
+Hobe Sound:3779
+Jacksonville Beach:345
+Jensen Beach:3770
+Jetty Park:1264
+Juno Beach:849
+Juno Pier:3777
+Jupiter Inlet:354
+Lake Worth Pier:835
+Lantana:4200
+Little Talbot Island:3774
+Main Beach:344
+Mayport Poles:4195
+Melbourne Beach:351
+North Jetty (Florida):3772
+Ormond Beach:4203
+Palm Beach:356
+Palm Beach Jetties:3778
+Playa Linda:2061
+Ponce Inlet (New Smyrna):348
+Ponte Vedra:3773
+Reef Road:355
+Satellite Beach:548
+Sebastian Inlet:352
+South Beach:33
+Spanish House:4201
+St. Augustine:346
+Stuart Beach:353
+Stuart Public Beach:3776
+Vero Beach:727
+Vilano:4196
+Walton Rocks:1243
+Good Rats:3143
+Kai's Place:3140
+Kodiak (Fossil Beach):973
+Low Island:3136
+Neva Bay:3141
+Port Mary:3139
+Red Tree Reef:3142
+Sandy Beach - Sitka, Alaska:3145
+Sealion Cove:3144
+Shoals Point:3137
+Shoals Reef/Wall:3138
+Sitka (The Wall):971
+Yakutat (Cannon Beach):972
+Brookings:322
+Cannon Beach:313
+Cape Kiwanda:560
+Cape Lookout:315
+Coos Bay:320
+Florence:696
+Gold Beach:321
+Lincoln City:316
+Newport:318
+Otter Rock:317
+Smugglers Cove:314
+Winchester Bay:319
+Ocean City, MD:395
+Fenwick:4117
+Indian River:394
+Chincoteague:4116
+Virginia Beach:396
+Atlantic Beach:706
+Bogue Pier:400
+Camp Lejeune:3664
+Cape Hatteras:399
+Carolina Beach:650
+Crystal Pier:402
+Frisco:1080
+Holden Beach:684
+Jennettes Pier:4286
+Kill Devil Hills:397
+Kitty Hawk:677
+Ocean Isle Beach:675
+Outer Banks Hurricane:1093
+Pelican Watch:403
+S Turns:398
+Topsail Island:401
+Tofino (Chesterman Beach):1123
+Tofino (Cox Bay):1122
+Vancouver Island North (Long Beach):324
+Vancouver Island South (Jordan River):323
+Andrew Molera State Park:260
+Cambria:261
+Carmel Beach:666
+Cayucos:866
+Davenport Landing:256
+Four Mile:257
+Ghost Trees:825
+Manresa Beach:258
+Mavericks (Half Moon Bay):162
+Monterey Bay Offshore:3734
+Morro Bay:262
+Moss Landing:259
+Oceano/Pismo:264
+Pleasure Point:644
+Princeton Jetty:3679
+Saint Annes:263
+Steamer Lane:163
+Waddell Creek:3742
+Asbury Park:857
+Avalon:821
+Avon:4050
+Belmar:3683
+Casino Pier:387
+Deal:822
+Holyoke:389
+Island Beach State Park:4052
+Jenkinsons:4053
+Longport, 32nd St.:1158
+Manasquan:386
+Margate Pier:4054
+Monmouth Beach:4055
+New Jersey Hurricane:1094
+Ocean City, NJ:391
+Poverty Beach:4056
+Sea Isle City :1281
+States Avenue:390
+Stockton:393
+Surf City:388
+The Cove:385
+Wildwood:392
+Atlantic Terrace:2160
+Cupsogue:4224
+Ditch Plains:2159
+Fire Island:380
+Flies:4225
+Fortress:379
+Georgia (East Hampton):4226
+Jones Beach State Park:2162
+Lido Beach:382
+Long Beach:311
+Mastic Beach:870
+North Bar:378
+Robert Moses State Park:381
+Rockaway:384
+Tobay Beach:1240
+Turtle Cove:2161
+Cow Bay:787
+Lawrencetown:342
+Martinique Beach:814
+Nova Scotia Hurricane:1096
+Point Michaud:759
+Summerville:788
+Western Head:343
+Alabama Point:956
+Clearwater:60
+Dauphin Island:1125
+Destin:851
+Indian Rocks :1212
+Maderia Beach :1187
+Naples:57
+Navarre Beach:651
+Okaloosa Pier:954
+Panama City Beach:1259
+Pass-A-Grille Jetty:1221
+Redington Rocks:1214
+St Pete Beach:1216
+Sunset Beach:1215
+The Cross:955
+Treasure Island:86
+Venice Beach:58
+37th Street:3954
+61st Street:3944
+Bob Hall Pier:361
+Boca Chica:3946
+Fish Pass Jetties:3948
+Flagship:3951
+Horace Caldwell Pier:3949
+Isla Blanca State Park:3945
+JP Luby Surf Park:3950
+Matagorda:3947
+Meacoms Pier:3667
+Octagon:360
+Port Mansfield Jetties:3943
+Quintana:3952
+South Padre Island:551
+Surfside:3953
+Cancun:790
+Cozumel:642
+Puerto Morelos:4045
+Chicago (North Avenue Beach):960
+Elbow (Sheboygan):1220
+Empire Public Beach:3753
+Milwaukee:962
+Muskegon:4249
+New Buffalo:964
+North Chicago:4062
+North Point - Lake Michigan :2557
+Racine:963
+South Pier - Grand Haven:1085
+Wind Point :2558
+Bay City:4060
+Forester/Sanilac:4061
+Lakeport:3802
+Lexington:3801
+Port Austin:3803
+Port Huron:3800
+The Zoo:1083
+Luna Pier:1084
+27th Ave/North Myrtle:2152
+Burkes Beach:3708
+Cherry Grove Pier:2087
+Dunes Cove:404
+Folly Beach Pier:672
+Fripp Island:736
+Garden City Pier:405
+Hunting Island:407
+Isle of Palms Pier:760
+Springmaid Beach:902
+The Pier (Pawleys Island):989
+The Washout:406
+17th Street Boardwalk:2153
+2nd Street (Tybee Island):643
+Comfort Inn/Jekyll Island:408
+North Jetty:2155
+Sea Island Jetty:3932

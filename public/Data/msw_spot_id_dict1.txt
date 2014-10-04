@@ -1,0 +1,43 @@
+Aluhi Bay:3668
+Honokohau:2782
+Honolua:697
+Hookipa:1244
+Lahaina Harbor / Breakwall:4287
+Little Makaha:2780
+Ma'alaea Bay:618
+Pauwela Maui Offshore (51205):4284
+Pavilions:2785
+Peahi - Jaws:617
+Windmills:2881
+Windmills - Maui:3086
+Ala Moana:2266
+Backyards:2232
+Barbers Point:3082
+Hale'iwa:660
+Kailua:671
+Laniakea:2267
+Log Cabins:2226
+Maili Point:3084
+Makaha Point:983
+Makapuu Point :984
+Off-The-Wall:2233
+Pipeline & Backdoor:616
+Queens/Canoes (Waikiki):662
+Rockpile/Heisler Park:2234
+Rocky Point:3257
+Sandy Beach:2530
+Sunset:1215
+Tracks:3085
+Velzyland:659
+Waimea Bay:549
+Waimea Offshore (51201):4283
+Hanalei Bay:3051
+Polihale:3080
+Banyans:2784
+Hapuna Pt:1246
+Honoli'i:3815
+Kahaluu:1247
+Kawaihae Breakwater:2783
+Magics :3957
+Pine Trees:3958
+Pohoiki:3814

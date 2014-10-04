@@ -1,0 +1,144 @@
+html { 
+    background: url("http://s29.postimg.org/i75jntqdz/Mavericks.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+#BottomBar {
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	height: 44px;
+	left:0;
+	bottom:0;
+}
+
+#ChoiceContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -450px;
+    background-color:rgba(255,255,255,0.70);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#ChoiceContainer1 {
+	position: relative;
+	top: 50%;
+	height:20px;
+	margin-top: -10px;
+	text-align: center;
+    width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#carrier-container, #big-select-container, #spot-select-container, #input-container, #submit {
+    float: left;
+}
+
+#big-select-container > select {
+    width: 190px;
+}
+
+#spot-select-container > select {
+    width: 210px;
+}
+
+#carrier-container > select {
+    width: 125px;
+}
+
+#NameTag {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 500px;
+	height: 80px;
+	background-color: black;
+	color: #dedede;
+	font-size: 50px;
+	text-align: center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	padding-top: 0px;
+	border-bottom-right-radius: 5px;
+}
+
+#SignUp {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -45px;
+    background-color:rgba(255,255,255,0.65);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-top: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#SignUpHover {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -45px;
+    background-color:rgba(255,255,255,0.50);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-top: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: #dedede;
+}
+
+td {
+	font-size: 20px;
+	font-family: sans-serif;
+	padding-right: 30px;
+	color: #dedede;
+}
+
+table {
+	position: absolute;
+	height: 44px;
+	right: 10;
+	top: 50%;
+	margin-top: -22px;
+}
+
+select {
+    width: 150px;
+}

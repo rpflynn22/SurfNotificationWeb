@@ -1,0 +1,3919 @@
+<html>
+	<head>
+		<title>SurfNotification</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		</script>
+        <script src="/javascripts/formInteractive.js"></script>
+        	
+        <link href="/stylesheets/homepage.css" rel="stylesheet" type="text/css">
+	</head>
+<body>
+<div id="SignUp">Sign Up</div>
+<div id="ChoiceContainer">
+<div id="ChoiceContainer1">
+
+<input id="PhoneNumber" onClick="this.select();" type="text" value="Phone Number">
+<select id="Carrier">
+	<option value="null">Select Carrier</option>
+	<option value="ATT">AT&amp;T</option>
+	<option value="Verizon">Verizon</option>
+	<option value="T-Mobile">T-Mobile</option>
+	<option value="Sprint">Sprint</option>
+	<option value="MetroPCS">MetroPCS</option>
+</select>
+<select id="BigSelect">
+	<option value="null">Select Region</option>
+	<optgroup label="Pacific Ocean">
+		<option value="Cook-Islands">Cook Islands</option>
+		<option value="Fiji-Samoa--Tonga">Fiji, Samoa + Tonga</option>
+		<option value="French-Polynesia">French Polynesia</option>
+		<option value="Hawaii">Hawaii</option>
+		<option value="Micronesia-Carolines">Micronesia (Carolines)</option>
+	</optgroup>
+	<optgroup label="Caribbean">
+		<option value="Bermuda">Bermuda</option>
+		<option value="Central-Caribbean">Central Caribbean</option>
+		<option value="Leeward-Islands">Leeward Islands</option>
+		<option value="Venezuela-Trindad--Tobago">Venezuela, Trindad + Tobago</option>
+		<option value="Windward-Islands">Windward Islands</option>
+	</optgroup>
+	<optgroup label="Indonesia">
+		<option value="Bali--Lombok">Bali + Lombok</option>
+		<option value="Java">Java</option>
+		<option value="Maluku-Islands">Maluku Islands</option>
+		<option value="Nusa-Tenggara">Nusa Tenggara</option>
+		<option value="Sumatra--Mentawais">Sumatra + Mentawais</option>
+	</optgroup>
+	<optgroup label="Asia">
+		<option value="China">China</option>
+		<option value="Japan">Japan</option>
+		<option value="Philippines">Philippines</option>
+		<option value="Russia">Russia</option>
+		<option value="South-East-Asia">South East Asia</option>
+		<option value="Taiwan">Taiwan</option>
+	</optgroup>
+	<optgroup label="North America">
+		<option value="Alaska">Alaska</option>
+		<option value="Atlantic-States">Atlantic States</option>
+		<option value="California-Central">California, Central</option>
+		<option value="California-North">California, North</option>
+		<option value="California-South">California, South</option>
+		<option value="Florida">Florida</option>
+		<option value="Great-Lakes">Great Lakes</option>
+		<option value="Gulf-Coast">Gulf Coast</option>
+		<option value="New-England">New England</option>
+		<option value="New-Jersey--New-York">New Jersey + New York</option>
+		<option value="North-Carolina">North Carolina</option>
+		<option value="Nova-Scotia">Nova Scotia</option>
+		<option value="Oregon">Oregon</option>
+		<option value="South-Carolina--Georgia">South Carolina + Georgia</option>
+		<option value="Vancouver-Island">Vancouver Island</option>
+		<option value="Washington">Washington</option>
+	</optgroup>
+	<optgroup label="Australasia">
+		<option value="New-South-Wales">New South Wales</option>
+		<option value="New-Zealand">New Zealand</option>
+		<option value="North-West-Australia">North West Australia</option>
+		<option value="Queensland">Queensland</option>
+		<option value="South-Australia">South Australia</option>
+		<option value="South-West-Australia">South West Australia</option>
+		<option value="Tasmania">Tasmania</option>
+		<option value="Victoria">Victoria</option>
+	</optgroup>
+	<optgroup label="Middle East">
+		<option value="Israel">Israel</option>
+		<option value="Lebanon">Lebanon</option>
+		<option value="Oman">Oman</option>
+		<option value="Persian-Gulf">Persian Gulf</option>
+	</optgroup>
+	<optgroup label="Europe">
+		<option value="Azores">Azores</option>
+		<option value="Black-Sea">Black Sea</option>
+		<option value="Canary-Islands">Canary Islands</option>
+		<option value="France">France</option>
+		<option value="Germany--Denmark">Germany + Denmark</option>
+		<option value="Greece">Greece</option>
+		<option value="Iceland">Iceland</option>
+		<option value="Italy">Italy</option>
+		<option value="Netherlands--Belgium">Netherlands + Belgium</option>
+		<option value="Norway">Norway</option>
+		<option value="Spain--Portugal">Spain + Portugal</option>
+		<option value="UK--Ireland">UK + Ireland</option>
+	</optgroup>
+	<optgroup label="Central America">
+		<option value="Central-America-North">Central America North</option>
+		<option value="Central-America-South">Central America South</option>
+		<option value="Mexico-Baja">Mexico, Baja</option>
+		<option value="Mexico-Pacific">Mexico, Pacific</option>
+	</optgroup>
+	<optgroup label="Africa">
+		<option value="Central-Africa">Central Africa</option>
+		<option value="Equatorial-Guinea">Equatorial Guinea</option>
+		<option value="Ghana--The-Ivory-Coast">Ghana + The Ivory Coast</option>
+		<option value="Morocco">Morocco</option>
+		<option value="Mozambique--Madagascar">Mozambique + Madagascar</option>
+		<option value="South-Africa">South Africa</option>
+		<option value="West-Africa">West Africa</option>
+		<option value="Western-Sahara-">Western Sahara </option>
+	</optgroup>
+	<optgroup label="Indian Ocean">
+		<option value="Bangladesh">Bangladesh</option>
+		<option value="India">India</option>
+		<option value="Maldives">Maldives</option>
+		<option value="Seychelles">Seychelles</option>
+		<option value="Sri-Lanka">Sri Lanka</option>
+	</optgroup>
+	<optgroup label="South America">
+		<option value="Antarctic-Peninsula">Antarctic Peninsula</option>
+		<option value="Argentina">Argentina</option>
+		<option value="Brazil--East">Brazil - East</option>
+		<option value="Brazil--Northeast">Brazil - Northeast</option>
+		<option value="Brazil--South">Brazil - South</option>
+		<option value="Chile--North">Chile - North</option>
+		<option value="Chile--South">Chile - South</option>
+		<option value="Colombia">Colombia</option>
+		<option value="Ecuador">Ecuador</option>
+		<option value="Peru--North">Peru - North</option>
+		<option value="Peru--South">Peru - South</option>
+		<option value="Uruguay">Uruguay</option>
+	</optgroup>
+</select>
+<select class="spots" id="Cook-Islands">
+<option value="null">Select Spot</option>
+	<optgroup label="Cook Islands">
+		<option value="Avaavaroa Passage">Avaavaroa Passage</option>
+		<option value="Avana">Avana</option>
+		<option value="Club Raro">Club Raro</option>
+		<option value="Golf Course (Socials)">Golf Course (Socials)</option>
+		<option value="Matai Wreck">Matai Wreck</option>
+		<option value="Norrie Park">Norrie Park</option>
+		<option value="Rutaki Passage">Rutaki Passage</option>
+	</optgroup>
+</select>
+<select class="spots" id="Fiji-Samoa--Tonga">
+<option value="null">Select Spot</option>
+	<optgroup label="Fiji">
+		<option value="Daku">Daku</option>
+		<option value="Frigates">Frigates</option>
+		<option value="Hideaway">Hideaway</option>
+		<option value="King Kong Left">King Kong Left</option>
+		<option value="King Kong Right">King Kong Right</option>
+		<option value="Lighthouse">Lighthouse</option>
+		<option value="Lulu's Bend">Lulu's Bend</option>
+		<option value="Momi Bay">Momi Bay</option>
+		<option value="Namotu Left">Namotu Left</option>
+		<option value="Natadola">Natadola</option>
+		<option value="Pipes">Pipes</option>
+		<option value="Serua Rights">Serua Rights</option>
+		<option value="Sigatoka">Sigatoka</option>
+		<option value="Tavarua - Cloudbreak">Tavarua - Cloudbreak</option>
+		<option value="Typhoon Valley">Typhoon Valley</option>
+		<option value="Uatotoka">Uatotoka</option>
+		<option value="Vesi Passage">Vesi Passage</option>
+		<option value="Vunaniu">Vunaniu</option>
+		<option value="Waidroka Lefts">Waidroka Lefts</option>
+		<option value="Wilkes Passage">Wilkes Passage</option>
+	</optgroup>
+	<optgroup label="Tonga">
+		<option value="Corners">Corners</option>
+		<option value="Fishtraps">Fishtraps</option>
+		<option value="Lighthouse (Tongatapu)">Lighthouse (Tongatapu)</option>
+		<option value="Motels">Motels</option>
+		<option value="The Bowl (Tongatapu)">The Bowl (Tongatapu)</option>
+		<option value="The Pass">The Pass</option>
+		<option value="The Peak (tongatapu)">The Peak (tongatapu)</option>
+	</optgroup>
+	<optgroup label="Samoa">
+		<option value="Aganoa">Aganoa</option>
+		<option value="Aganoa Beach">Aganoa Beach</option>
+		<option value="Boulders">Boulders</option>
+		<option value="Coconuts">Coconuts</option>
+		<option value="Nu'usafee Island">Nu'usafee Island</option>
+		<option value="Pebbles">Pebbles</option>
+		<option value="Salailua">Salailua</option>
+		<option value="Salani">Salani</option>
+		<option value="SoloSolos">SoloSolos</option>
+		<option value="Special K">Special K</option>
+		<option value="Tafatafa">Tafatafa</option>
+		<option value="The Leap">The Leap</option>
+		<option value="Tiavea Rivermouth">Tiavea Rivermouth</option>
+		<option value="Waterfalls">Waterfalls</option>
+	</optgroup>
+	<optgroup label="American Samoa">
+		<option value="Alao">Alao</option>
+		<option value="Amanave Bay">Amanave Bay</option>
+		<option value="Amouli">Amouli</option>
+		<option value="Asili Point">Asili Point</option>
+		<option value="Aunu'u">Aunu'u</option>
+		<option value="Coral Heads">Coral Heads</option>
+		<option value="Faganeanea">Faganeanea</option>
+		<option value="Fatuuli Rock">Fatuuli Rock</option>
+		<option value="Lauli'ituai">Lauli'ituai</option>
+		<option value="Liea Point">Liea Point</option>
+		<option value="Nu'uuli">Nu'uuli</option>
+		<option value="Nua">Nua</option>
+		<option value="Poloa Bay">Poloa Bay</option>
+		<option value="Sliding Rock">Sliding Rock</option>
+		<option value="Tula">Tula</option>
+	</optgroup>
+</select>
+<select class="spots" id="French-Polynesia">
+<option value="null">Select Spot</option>
+	<optgroup label="Tuamotu">
+		<option value="Rangiroa Atoll">Rangiroa Atoll</option>
+	</optgroup>
+	<optgroup label="Tahiti">
+		<option value=" Papenoo "> Papenoo </option>
+		<option value="Haapiti">Haapiti</option>
+		<option value="Hauru">Hauru</option>
+		<option value="Maharepa">Maharepa</option>
+		<option value="Papara">Papara</option>
+		<option value="Papeari">Papeari</option>
+		<option value="Passe de Maraa">Passe de Maraa</option>
+		<option value="Taapuna">Taapuna</option>
+		<option value="Teahupoo">Teahupoo</option>
+		<option value="Temae">Temae</option>
+	</optgroup>
+</select>
+<select class="spots" id="Hawaii">
+<option value="null">Select Spot</option>
+	<optgroup label="Maui">
+		<option value="Aluhi Bay">Aluhi Bay</option>
+		<option value="Honokohau">Honokohau</option>
+		<option value="Honolua">Honolua</option>
+		<option value="Hookipa">Hookipa</option>
+		<option value="Lahaina Harbor / Breakwall">Lahaina Harbor / Breakwall</option>
+		<option value="Little Makaha">Little Makaha</option>
+		<option value="Ma'alaea Bay">Ma'alaea Bay</option>
+		<option value="Pauwela Maui Offshore (51205)">Pauwela Maui Offshore (51205)</option>
+		<option value="Pavilions">Pavilions</option>
+		<option value="Peahi - Jaws">Peahi - Jaws</option>
+		<option value="Windmills">Windmills</option>
+		<option value="Windmills - Maui">Windmills - Maui</option>
+	</optgroup>
+	<optgroup label="Oahu">
+		<option value="Ala Moana">Ala Moana</option>
+		<option value="Backyards">Backyards</option>
+		<option value="Barbers Point">Barbers Point</option>
+		<option value="Hale'iwa">Hale'iwa</option>
+		<option value="Kailua">Kailua</option>
+		<option value="Laniakea">Laniakea</option>
+		<option value="Log Cabins">Log Cabins</option>
+		<option value="Maili Point">Maili Point</option>
+		<option value="Makaha Point">Makaha Point</option>
+		<option value="Makapuu Point ">Makapuu Point </option>
+		<option value="Off-The-Wall">Off-The-Wall</option>
+		<option value="Pipeline & Backdoor">Pipeline & Backdoor</option>
+		<option value="Queens/Canoes (Waikiki)">Queens/Canoes (Waikiki)</option>
+		<option value="Rockpile/Heisler Park">Rockpile/Heisler Park</option>
+		<option value="Rocky Point">Rocky Point</option>
+		<option value="Sandy Beach">Sandy Beach</option>
+		<option value="Sunset">Sunset</option>
+		<option value="Tracks">Tracks</option>
+		<option value="Velzyland">Velzyland</option>
+		<option value="Waimea Bay">Waimea Bay</option>
+		<option value="Waimea Offshore (51201)">Waimea Offshore (51201)</option>
+	</optgroup>
+	<optgroup label="Kauai">
+		<option value="Hanalei Bay">Hanalei Bay</option>
+		<option value="Polihale">Polihale</option>
+	</optgroup>
+	<optgroup label="Big Island">
+		<option value="Banyans">Banyans</option>
+		<option value="Hapuna Pt">Hapuna Pt</option>
+		<option value="Honoli'i">Honoli'i</option>
+		<option value="Kahaluu">Kahaluu</option>
+		<option value="Kawaihae Breakwater">Kawaihae Breakwater</option>
+		<option value="Magics ">Magics </option>
+		<option value="Pine Trees">Pine Trees</option>
+		<option value="Pohoiki">Pohoiki</option>
+	</optgroup>
+</select>
+<select class="spots" id="Micronesia-Carolines">
+<option value="null">Select Spot</option>
+	<optgroup label="Guam">
+		<option value="Talafofo Bay">Talafofo Bay</option>
+	</optgroup>
+	<optgroup label="Pohnpei">
+		<option value="Nahlap">Nahlap</option>
+		<option value="Nahpali">Nahpali</option>
+		<option value="Nan Madol">Nan Madol</option>
+		<option value="Pohnpei (Palikir-Pass)">Pohnpei (Palikir-Pass)</option>
+	</optgroup>
+</select>
+<select class="spots" id="Bermuda">
+<option value="null">Select Spot</option>
+	<optgroup label="Bermuda">
+		<option value="Grape bay">Grape bay</option>
+		<option value="Hamilton">Hamilton</option>
+		<option value="Hungry bay">Hungry bay</option>
+		<option value="Southlands">Southlands</option>
+		<option value="Tucks">Tucks</option>
+	</optgroup>
+</select>
+<select class="spots" id="Central-Caribbean">
+<option value="null">Select Spot</option>
+	<optgroup label="Bahamas">
+		<option value="Egg Island">Egg Island</option>
+		<option value="Four Rocks">Four Rocks</option>
+		<option value="Garbanzo">Garbanzo</option>
+		<option value="Hidden Beach">Hidden Beach</option>
+		<option value="Holiday Beach">Holiday Beach</option>
+		<option value="Indicas">Indicas</option>
+		<option value="James Point">James Point</option>
+		<option value="Ledges">Ledges</option>
+		<option value="North Palmetto Point">North Palmetto Point</option>
+		<option value="Paradise Island ">Paradise Island </option>
+		<option value="Rock Sound">Rock Sound</option>
+		<option value="Rose Island">Rose Island</option>
+		<option value="Rush Reef">Rush Reef</option>
+		<option value="Surfers Beach">Surfers Beach</option>
+		<option value="Tilloo Cut">Tilloo Cut</option>
+		<option value="Whale Point Cut">Whale Point Cut</option>
+		<option value="Willawahs (Guana Cay)">Willawahs (Guana Cay)</option>
+	</optgroup>
+	<optgroup label="Jamaica">
+		<option value="Boston Bay">Boston Bay</option>
+		<option value="Bull Bay">Bull Bay</option>
+		<option value="Peeny Wally's">Peeny Wally's</option>
+		<option value="Rozelle Beach">Rozelle Beach</option>
+		<option value="Runaways">Runaways</option>
+	</optgroup>
+	<optgroup label="Dominican Republic">
+		<option value="Encuentro">Encuentro</option>
+		<option value="La Bahia">La Bahia</option>
+		<option value="La Preciosa">La Preciosa</option>
+		<option value="Puerto Plata">Puerto Plata</option>
+	</optgroup>
+	<optgroup label="Haiti">
+		<option value="Caracol">Caracol</option>
+		<option value="Ginsu">Ginsu</option>
+		<option value="Le Borgne">Le Borgne</option>
+		<option value="Pistons">Pistons</option>
+		<option value="Tiburon Reefs">Tiburon Reefs</option>
+	</optgroup>
+	<optgroup label="Cuba">
+		<option value="Cabo de San Antonio">Cabo de San Antonio</option>
+		<option value="Cayo Coco">Cayo Coco</option>
+		<option value="El Bajo (Malecon)">El Bajo (Malecon)</option>
+		<option value="El Cayo">El Cayo</option>
+		<option value="Florida Keys Reef">Florida Keys Reef</option>
+		<option value="Gibara">Gibara</option>
+		<option value="La Habana">La Habana</option>
+		<option value="La Setenta (Playa 70)">La Setenta (Playa 70)</option>
+		<option value="Playa mar Verde">Playa mar Verde</option>
+		<option value="Playas del Este">Playas del Este</option>
+		<option value="Puerto Rico (Cuba)">Puerto Rico (Cuba)</option>
+		<option value="Sun Beach">Sun Beach</option>
+		<option value="Viejo y el Mar">Viejo y el Mar</option>
+		<option value="Windmills - Guantanamo">Windmills - Guantanamo</option>
+		<option value="Yumuri">Yumuri</option>
+	</optgroup>
+</select>
+<select class="spots" id="Leeward-Islands">
+<option value="null">Select Spot</option>
+	<optgroup label="Antigua and Barbuda">
+	</optgroup>
+	<optgroup label="Anguilla">
+		<option value="Cupecoy">Cupecoy</option>
+		<option value="The Ledge">The Ledge</option>
+		<option value="Wilderness">Wilderness</option>
+	</optgroup>
+	<optgroup label="British Virgin Islands">
+		<option value="Brewers Bay">Brewers Bay</option>
+		<option value="Cane Garden Bay">Cane Garden Bay</option>
+		<option value="Capoon's Bay">Capoon's Bay</option>
+		<option value="Cinnamon Bay">Cinnamon Bay</option>
+		<option value="Hull Bay">Hull Bay</option>
+		<option value="Josiah's Bay">Josiah's Bay</option>
+		<option value="Loblolly Bay">Loblolly Bay</option>
+		<option value="West End">West End</option>
+		<option value="Yacht Harbour">Yacht Harbour</option>
+	</optgroup>
+	<optgroup label="Puerto Rico">
+		<option value="BCs">BCs</option>
+		<option value="Crash Boat">Crash Boat</option>
+		<option value="Dunes (Puerto Rico)">Dunes (Puerto Rico)</option>
+		<option value="Little Malibu (Rincon)">Little Malibu (Rincon)</option>
+		<option value="Motones">Motones</option>
+		<option value="Sandy Beach - Puerto Rico">Sandy Beach - Puerto Rico</option>
+		<option value="Surfers Beach (Puerto Rico)">Surfers Beach (Puerto Rico)</option>
+		<option value="Wilderness (Puerto Rico)">Wilderness (Puerto Rico)</option>
+	</optgroup>
+</select>
+<select class="spots" id="Venezuela-Trindad--Tobago">
+<option value="null">Select Spot</option>
+	<optgroup label="Venezuela">
+		<option value="Anare">Anare</option>
+		<option value="Carmen D'Uria">Carmen D'Uria</option>
+		<option value="Cazon (Buchuaco)">Cazon (Buchuaco)</option>
+		<option value="Chacopata">Chacopata</option>
+		<option value="Chaguarama">Chaguarama</option>
+		<option value="Chirimena">Chirimena</option>
+		<option value="Cuyagua">Cuyagua</option>
+		<option value="El Malecon">El Malecon</option>
+		<option value="El Palito">El Palito</option>
+		<option value="El Peaje">El Peaje</option>
+		<option value="Fido Point">Fido Point</option>
+		<option value="Funeral Point">Funeral Point</option>
+		<option value="Guacuco">Guacuco</option>
+		<option value="La Bocaina">La Bocaina</option>
+		<option value="La Esmeralda">La Esmeralda</option>
+		<option value="La Playita">La Playita</option>
+		<option value="La Sabana">La Sabana</option>
+		<option value="Las Salinas ">Las Salinas </option>
+		<option value="Los Caracas">Los Caracas</option>
+		<option value="Los Cocos">Los Cocos</option>
+		<option value="Macuro">Macuro</option>
+		<option value="Mamo">Mamo</option>
+		<option value="Otro Pais">Otro Pais</option>
+		<option value="Palma sola beach">Palma sola beach</option>
+		<option value="Playa Caribe">Playa Caribe</option>
+		<option value="Playa Copey">Playa Copey</option>
+		<option value="Playa El Agua">Playa El Agua</option>
+		<option value="Playa Los Cuatro">Playa Los Cuatro</option>
+		<option value="Playa Pantaleta">Playa Pantaleta</option>
+		<option value="Playa Parguito">Playa Parguito</option>
+		<option value="Playita">Playita</option>
+		<option value="Puerto Azul">Puerto Azul</option>
+		<option value="Puerto Cruz">Puerto Cruz</option>
+		<option value="Pui Puy">Pui Puy</option>
+		<option value="Punta Arena ">Punta Arena </option>
+		<option value="Punta ballena ">Punta ballena </option>
+		<option value="Punta Care">Punta Care</option>
+		<option value="Punta de Guiria">Punta de Guiria</option>
+		<option value="Rocky Point (Margarita)">Rocky Point (Margarita)</option>
+		<option value="Taguantar ">Taguantar </option>
+		<option value="Tanaguarena">Tanaguarena</option>
+	</optgroup>
+	<optgroup label="Tobago">
+		<option value="Crazy's">Crazy's</option>
+		<option value="South Coast">South Coast</option>
+	</optgroup>
+	<optgroup label="Aruba">
+		<option value="Andicuri">Andicuri</option>
+		<option value="Dos Playas">Dos Playas</option>
+		<option value="Druif">Druif</option>
+		<option value="Dunes/Dooms">Dunes/Dooms</option>
+		<option value="Urirama">Urirama</option>
+		<option value="Wariruri">Wariruri</option>
+	</optgroup>
+	<optgroup label="Trinidad">
+		<option value="Airports - Tobago">Airports - Tobago</option>
+		<option value="Balandra">Balandra</option>
+		<option value="Blanchisseuse">Blanchisseuse</option>
+		<option value="Grande Riviere">Grande Riviere</option>
+		<option value="Las Cuevas, Trinidad">Las Cuevas, Trinidad</option>
+		<option value="Mount Irvine">Mount Irvine</option>
+		<option value="Salibya">Salibya</option>
+		<option value="Sans Souci">Sans Souci</option>
+		<option value="Sunset Left">Sunset Left</option>
+		<option value="Sunset Rights">Sunset Rights</option>
+		<option value="Toco">Toco</option>
+	</optgroup>
+</select>
+<select class="spots" id="Windward-Islands">
+<option value="null">Select Spot</option>
+	<optgroup label="Guadeloupe">
+		<option value="Alize">Alize</option>
+		<option value="Anse Betrand">Anse Betrand</option>
+		<option value="Anse Salabouelle">Anse Salabouelle</option>
+		<option value="Hotel Novotel">Hotel Novotel</option>
+		<option value="La Caravelle">La Caravelle</option>
+		<option value="La Station">La Station</option>
+		<option value="Le Moule">Le Moule</option>
+		<option value="Petit Havre">Petit Havre</option>
+		<option value="Port Louis (Grande Terre)">Port Louis (Grande Terre)</option>
+		<option value="Port St-Francois">Port St-Francois</option>
+	</optgroup>
+	<optgroup label="Barbados">
+		<option value="Batts Rock">Batts Rock</option>
+		<option value="Brandons">Brandons</option>
+		<option value="Conset Point">Conset Point</option>
+		<option value="Crane Bay">Crane Bay</option>
+		<option value="Duppies">Duppies</option>
+		<option value="Freights">Freights</option>
+		<option value="Long Beach">Long Beach</option>
+		<option value="Maycocks">Maycocks</option>
+		<option value="Parlors">Parlors</option>
+		<option value="Ragged Point">Ragged Point</option>
+		<option value="Sand Bank">Sand Bank</option>
+		<option value="Sandy Lane">Sandy Lane</option>
+		<option value="Silver Sands">Silver Sands</option>
+		<option value="Soup Bowl">Soup Bowl</option>
+		<option value="South Point - Barbados">South Point - Barbados</option>
+		<option value="Surfer's Point - Barbados">Surfer's Point - Barbados</option>
+		<option value="Tent Bay">Tent Bay</option>
+		<option value="Tropicana">Tropicana</option>
+	</optgroup>
+	<optgroup label="Martinique">
+		<option value="Anse Couleuvre">Anse Couleuvre</option>
+		<option value="Bagasse">Bagasse</option>
+		<option value="Charlot">Charlot</option>
+		<option value="Charpencaye">Charpencaye</option>
+		<option value="Cocoa">Cocoa</option>
+		<option value="Grand Riviere">Grand Riviere</option>
+		<option value="Le Lorrain">Le Lorrain</option>
+		<option value="Plage des Surfeurs">Plage des Surfeurs</option>
+		<option value="Tomate">Tomate</option>
+	</optgroup>
+</select>
+<select class="spots" id="Bali--Lombok">
+<option value="null">Select Spot</option>
+	<optgroup label="Lombok">
+		<option value="Are Guling">Are Guling</option>
+		<option value="Belongas">Belongas</option>
+		<option value="Desert Point">Desert Point</option>
+		<option value="Don-Don">Don-Don</option>
+		<option value="Gili Air">Gili Air</option>
+		<option value="Gili Trawangan">Gili Trawangan</option>
+		<option value="Inside Ekas">Inside Ekas</option>
+		<option value="Inside Grupuk">Inside Grupuk</option>
+		<option value="Kuta">Kuta</option>
+		<option value="Mawi">Mawi</option>
+		<option value="Outside Ekas">Outside Ekas</option>
+		<option value="Outside Grupuk">Outside Grupuk</option>
+		<option value="Segar">Segar</option>
+		<option value="Sengigi">Sengigi</option>
+		<option value="Sereweh">Sereweh</option>
+	</optgroup>
+	<optgroup label="Bali">
+		<option value="Airport Reef">Airport Reef</option>
+		<option value="Balangan">Balangan</option>
+		<option value="Balian">Balian</option>
+		<option value="Bingin">Bingin</option>
+		<option value="Brawa Beach">Brawa Beach</option>
+		<option value="Canggu">Canggu</option>
+		<option value="Ceningan">Ceningan</option>
+		<option value="Dreamland">Dreamland</option>
+		<option value="Green Ball">Green Ball</option>
+		<option value="Impossibles">Impossibles</option>
+		<option value="Keramas">Keramas</option>
+		<option value="Ketewel">Ketewel</option>
+		<option value="Kuta Beach">Kuta Beach</option>
+		<option value="Lacerations">Lacerations</option>
+		<option value="Medewi">Medewi</option>
+		<option value="Nusa Dua">Nusa Dua</option>
+		<option value="Nyang Nyang">Nyang Nyang</option>
+		<option value="Old Mans - Batu-Bolong">Old Mans - Batu-Bolong</option>
+		<option value="Padang Padang">Padang Padang</option>
+		<option value="Padangbai">Padangbai</option>
+		<option value="Padma">Padma</option>
+		<option value="Playgrounds">Playgrounds</option>
+		<option value="Sanur">Sanur</option>
+		<option value="Seminyak">Seminyak</option>
+		<option value="Serangan">Serangan</option>
+		<option value="Shipwrecks - Lembongan">Shipwrecks - Lembongan</option>
+		<option value="Sri Lanka">Sri Lanka</option>
+		<option value="Tanjung Sari">Tanjung Sari</option>
+		<option value="Uluwatu">Uluwatu</option>
+	</optgroup>
+</select>
+<select class="spots" id="Java">
+<option value="null">Select Spot</option>
+	<optgroup label="East Java">
+		<option value="20/20's">20/20's</option>
+		<option value="G-Land">G-Land</option>
+		<option value="Pacitan">Pacitan</option>
+		<option value="Parangtritis">Parangtritis</option>
+		<option value="Tanjung Kucur">Tanjung Kucur</option>
+		<option value="Tiger Tracks Left">Tiger Tracks Left</option>
+		<option value="Tiger Tracks Rights">Tiger Tracks Rights</option>
+	</optgroup>
+	<optgroup label="West Java">
+		<option value="Batu Karas">Batu Karas</option>
+		<option value="Cimaja">Cimaja</option>
+		<option value="Ombak Tujuh">Ombak Tujuh</option>
+		<option value="One Palm Point">One Palm Point</option>
+		<option value="Pangandaran">Pangandaran</option>
+		<option value="Sawarna">Sawarna</option>
+		<option value="Turtles">Turtles</option>
+	</optgroup>
+</select>
+<select class="spots" id="Maluku-Islands">
+<option value="null">Select Spot</option>
+	<optgroup label="Ternate">
+		<option value="Atoll Reefs">Atoll Reefs</option>
+		<option value="Coconut Swing">Coconut Swing</option>
+		<option value="Double Dome">Double Dome</option>
+		<option value="Heavy's">Heavy's</option>
+		<option value="Indo Jiwa">Indo Jiwa</option>
+		<option value="Pulau Kecil">Pulau Kecil</option>
+		<option value="Racing Lefts">Racing Lefts</option>
+		<option value="Serenade">Serenade</option>
+		<option value="Short Ledge">Short Ledge</option>
+		<option value="Sidewalk">Sidewalk</option>
+		<option value="Village Reform">Village Reform</option>
+	</optgroup>
+</select>
+<select class="spots" id="Nusa-Tenggara">
+<option value="null">Select Spot</option>
+	<optgroup label="West Timor">
+		<option value="Boa">Boa</option>
+		<option value="Do'o">Do'o</option>
+		<option value="N'Dana">N'Dana</option>
+		<option value="Ndao">Ndao</option>
+		<option value="Palau Rote">Palau Rote</option>
+		<option value="Peanuts">Peanuts</option>
+		<option value="Pulau Dana">Pulau Dana</option>
+		<option value="Raijua">Raijua</option>
+		<option value="Savu Left">Savu Left</option>
+		<option value="Savu Right">Savu Right</option>
+		<option value="T-Land">T-Land</option>
+	</optgroup>
+	<optgroup label="Sumbawa">
+		<option value="Cobblestones">Cobblestones</option>
+		<option value="Dedjoeng Wane">Dedjoeng Wane</option>
+		<option value="Lakey Peak">Lakey Peak</option>
+		<option value="Lakey Pipe">Lakey Pipe</option>
+		<option value="Nangadoro">Nangadoro</option>
+		<option value="No Man's">No Man's</option>
+		<option value="Northern Rights">Northern Rights</option>
+		<option value="Nungas">Nungas</option>
+		<option value="Periscopes">Periscopes</option>
+		<option value="Scar Reef">Scar Reef</option>
+		<option value="Sejorong">Sejorong</option>
+		<option value="Super Suck">Super Suck</option>
+		<option value="Tropical">Tropical</option>
+		<option value="Wara Point">Wara Point</option>
+		<option value="Yo-yo's - The Hook">Yo-yo's - The Hook</option>
+		<option value="Yo-yo's - The Wedge">Yo-yo's - The Wedge</option>
+	</optgroup>
+	<optgroup label="Sumba">
+		<option value="Five-O">Five-O</option>
+		<option value="Mangkudu Lefts">Mangkudu Lefts</option>
+		<option value="Miller's Rights">Miller's Rights</option>
+		<option value="Nihiwatu">Nihiwatu</option>
+		<option value="Pantai Marosi">Pantai Marosi</option>
+		<option value="Pero Lefts">Pero Lefts</option>
+		<option value="Pero Rights">Pero Rights</option>
+		<option value="Racetrack - Sumba">Racetrack - Sumba</option>
+		<option value="The Office">The Office</option>
+		<option value="Wainjapu">Wainjapu</option>
+		<option value="Wainjapu">Wainjapu</option>
+		<option value="Wainukaka">Wainukaka</option>
+		<option value="Watu Libung">Watu Libung</option>
+	</optgroup>
+</select>
+<select class="spots" id="Sumatra--Mentawais">
+<option value="null">Select Spot</option>
+	<optgroup label="Mentawai">
+		<option value="7 Palms">7 Palms</option>
+		<option value="A-Frames">A-Frames</option>
+		<option value="Ariks">Ariks</option>
+		<option value="Bank Vaults">Bank Vaults</option>
+		<option value="Beng Bengs">Beng Bengs</option>
+		<option value="Bintangs">Bintangs</option>
+		<option value="Burgerworld">Burgerworld</option>
+		<option value="Chubbies">Chubbies</option>
+		<option value="E-Bay">E-Bay</option>
+		<option value="Four Bobs">Four Bobs</option>
+		<option value="Greenbush">Greenbush</option>
+		<option value="Hideaways - Mentawai">Hideaways - Mentawai</option>
+		<option value="Iceland">Iceland</option>
+		<option value="Kandui">Kandui</option>
+		<option value="Karamba">Karamba</option>
+		<option value="Lances Left">Lances Left</option>
+		<option value="Lances Right">Lances Right</option>
+		<option value="Lighthouse / Pagai Selatan">Lighthouse / Pagai Selatan</option>
+		<option value="Macaronis">Macaronis</option>
+		<option value="Macaronis Right">Macaronis Right</option>
+		<option value="Nipussi">Nipussi</option>
+		<option value="Ombak Tidur">Ombak Tidur</option>
+		<option value="Pit Stops">Pit Stops</option>
+		<option value="Promises">Promises</option>
+		<option value="Rag's Left">Rag's Left</option>
+		<option value="Rag's Right">Rag's Right</option>
+		<option value="Rifles">Rifles</option>
+		<option value="Sanding">Sanding</option>
+		<option value="Sibigau Rights">Sibigau Rights</option>
+		<option value="Silabok Island">Silabok Island</option>
+		<option value="Silabu">Silabu</option>
+		<option value="Solawi">Solawi</option>
+		<option value="Suicides - Central Mentawai">Suicides - Central Mentawai</option>
+		<option value="Taileleo">Taileleo</option>
+		<option value="Telescopes">Telescopes</option>
+		<option value="The Hole">The Hole</option>
+		<option value="Thunders">Thunders</option>
+	</optgroup>
+	<optgroup label="Nias">
+		<option value="Afulu">Afulu</option>
+		<option value="Asu">Asu</option>
+		<option value="Bawa">Bawa</option>
+		<option value="Hiliduha">Hiliduha</option>
+		<option value="Hiliduha / Dipi">Hiliduha / Dipi</option>
+		<option value="Hilisataro">Hilisataro</option>
+		<option value="Lagundri Bay - Indicators">Lagundri Bay - Indicators</option>
+		<option value="Lagundri Bay - The Point">Lagundri Bay - The Point</option>
+		<option value="Secret (Nias)">Secret (Nias)</option>
+		<option value="The Machine">The Machine</option>
+		<option value="Walohiu">Walohiu</option>
+	</optgroup>
+	<optgroup label="Sumatra">
+		<option value="A-Frame">A-Frame</option>
+		<option value="Babah Nipah">Babah Nipah</option>
+		<option value="Bali Village">Bali Village</option>
+		<option value="Balimbing">Balimbing</option>
+		<option value="Bengkulu">Bengkulu</option>
+		<option value="Benkunqut">Benkunqut</option>
+		<option value="Blangujung Rights">Blangujung Rights</option>
+		<option value="Calang Reefs">Calang Reefs</option>
+		<option value="Cement Factory">Cement Factory</option>
+		<option value="Enggano">Enggano</option>
+		<option value="Jennys Right">Jennys Right</option>
+		<option value="Jimmys Point">Jimmys Point</option>
+		<option value="Krui Left">Krui Left</option>
+		<option value="Krui Right">Krui Right</option>
+		<option value="Kuala Bubon Lefts">Kuala Bubon Lefts</option>
+		<option value="Lam Tadoh Lefts">Lam Tadoh Lefts</option>
+		<option value="Lambaro Rights">Lambaro Rights</option>
+		<option value="Lamno">Lamno</option>
+		<option value="Lampuuk">Lampuuk</option>
+		<option value="Left Point">Left Point</option>
+		<option value="Losmen Right">Losmen Right</option>
+		<option value="Mandiri">Mandiri</option>
+		<option value="Pantai Air Manis">Pantai Air Manis</option>
+		<option value="Pantai Camara">Pantai Camara</option>
+		<option value="Pariaman">Pariaman</option>
+		<option value="Pulau Pisang">Pulau Pisang</option>
+		<option value="Sabang">Sabang</option>
+		<option value="The Peak - Krui">The Peak - Krui</option>
+		<option value="Ujong Karang">Ujong Karang</option>
+		<option value="Ujung Bocur">Ujung Bocur</option>
+		<option value="Ujung Siging">Ujung Siging</option>
+		<option value="Ujung Walur">Ujung Walur</option>
+		<option value="Way Jambu">Way Jambu</option>
+	</optgroup>
+	<optgroup label="Simeulue and Banyak">
+		<option value="Cobras">Cobras</option>
+		<option value="Dindos">Dindos</option>
+		<option value="Gunturs">Gunturs</option>
+		<option value="Lizards Nest">Lizards Nest</option>
+		<option value="Lolok Point">Lolok Point</option>
+		<option value="Pulau Babi">Pulau Babi</option>
+		<option value="Tea Bags">Tea Bags</option>
+		<option value="Thailand - Simeulue">Thailand - Simeulue</option>
+		<option value="Treasure Island">Treasure Island</option>
+		<option value="Turtles">Turtles</option>
+	</optgroup>
+</select>
+<select class="spots" id="China">
+<option value="null">Select Spot</option>
+	<optgroup label="China">
+		<option value="Abalone Farm">Abalone Farm</option>
+		<option value="Buddha Beach">Buddha Beach</option>
+		<option value="Da He Beach">Da He Beach</option>
+		<option value="Da Hua Jiao">Da Hua Jiao</option>
+		<option value="Dadonghai Bay">Dadonghai Bay</option>
+		<option value="Dalian Dashan Island">Dalian Dashan Island</option>
+		<option value="Dalian Golden Pebble Beach">Dalian Golden Pebble Beach</option>
+		<option value="Dao Ao Bay">Dao Ao Bay</option>
+		<option value="Dapingpo">Dapingpo</option>
+		<option value="Fangchenggang">Fangchenggang</option>
+		<option value="Golden Sand Beach - Huangdao">Golden Sand Beach - Huangdao</option>
+		<option value="Golf 14">Golf 14</option>
+		<option value="Guangdong Maoming Dongbianbo Beach">Guangdong Maoming Dongbianbo Beach</option>
+		<option value="Hai Ling Dao">Hai Ling Dao</option>
+		<option value="Hainan">Hainan</option>
+		<option value="Houhai Bay">Houhai Bay</option>
+		<option value="Huaniao Island ">Huaniao Island </option>
+		<option value="Jimo Ocean Springs">Jimo Ocean Springs</option>
+		<option value="Jinqimen - Nongcuncun">Jinqimen - Nongcuncun</option>
+		<option value="Kame Rock">Kame Rock</option>
+		<option value="Kani Rock">Kani Rock</option>
+		<option value="Laoshan Village">Laoshan Village</option>
+		<option value="Lingshui - Xincun Beach ">Lingshui - Xincun Beach </option>
+		<option value="Linshui - Windmill Bay">Linshui - Windmill Bay</option>
+		<option value="Moon Bay">Moon Bay</option>
+		<option value="Niuling">Niuling</option>
+		<option value="Putuoshan Island Qianpu Beach">Putuoshan Island Qianpu Beach</option>
+		<option value="Rivermouth Bridge">Rivermouth Bridge</option>
+		<option value="Riyue Wan - Main Left">Riyue Wan - Main Left</option>
+		<option value="Rizhao Gold Beach">Rizhao Gold Beach</option>
+		<option value="Sandalwood">Sandalwood</option>
+		<option value="Shengsi Huichen">Shengsi Huichen</option>
+		<option value="Shengsi Jinsha Beach">Shengsi Jinsha Beach</option>
+		<option value="Shilaoren Beach">Shilaoren Beach</option>
+		<option value="Shimei Bay">Shimei Bay</option>
+		<option value="Silver Sand Beach - Huangdao">Silver Sand Beach - Huangdao</option>
+		<option value="Tangshan  Qianshui Bay ">Tangshan  Qianshui Bay </option>
+		<option value="Tangshan-yuetuo Island">Tangshan-yuetuo Island</option>
+		<option value="Tantoushan Island">Tantoushan Island</option>
+		<option value="Wan Ping Kou">Wan Ping Kou</option>
+		<option value="West Beach">West Beach</option>
+		<option value="Xiang Bi Ao">Xiang Bi Ao</option>
+		<option value="Xing Tan Wan">Xing Tan Wan</option>
+		<option value="Yab-J Rihue Bay">Yab-J Rihue Bay</option>
+		<option value="Yalong Bay">Yalong Bay</option>
+		<option value="Yarakawa">Yarakawa</option>
+		<option value="Zhujia East Beach">Zhujia East Beach</option>
+		<option value="Zhujia Island Nansha">Zhujia Island Nansha</option>
+		<option value="Zhujiajian">Zhujiajian</option>
+	</optgroup>
+	<optgroup label="Hong Kong">
+		<option value="88">88</option>
+		<option value="Big Wave Bay HK">Big Wave Bay HK</option>
+		<option value="Cherry Point">Cherry Point</option>
+		<option value="Cheung Sha">Cheung Sha</option>
+		<option value="Pinghai Point">Pinghai Point</option>
+		<option value="Pui O">Pui O</option>
+		<option value="Repulse Bay - HK">Repulse Bay - HK</option>
+		<option value="Shek O">Shek O</option>
+		<option value="Tai Long Wan SK">Tai Long Wan SK</option>
+		<option value="Xi-Chong - Dongshong">Xi-Chong - Dongshong</option>
+	</optgroup>
+</select>
+<select class="spots" id="Japan">
+<option value="null">Select Spot</option>
+	<optgroup label="Kochi Prefecture">
+		<option value="Hirano beach">Hirano beach</option>
+		<option value="Ikumihama">Ikumihama</option>
+		<option value="Kaifu River">Kaifu River</option>
+		<option value="Monabe">Monabe</option>
+		<option value="Niyodo">Niyodo</option>
+		<option value="Osaki">Osaki</option>
+		<option value="Shishikui">Shishikui</option>
+		<option value="Teba">Teba</option>
+		<option value="Uchizuma">Uchizuma</option>
+		<option value="Yasuda">Yasuda</option>
+	</optgroup>
+	<optgroup label="Kagoshima Prefecture">
+		<option value="Azakou">Azakou</option>
+		<option value="Eguchi-hama ">Eguchi-hama </option>
+		<option value="Hotel-mae">Hotel-mae</option>
+		<option value="Hungry">Hungry</option>
+		<option value="Injou">Injou</option>
+		<option value="Kanehama (Kana-hama)">Kanehama (Kana-hama)</option>
+		<option value="Kazamoto ">Kazamoto </option>
+		<option value="Nagahama">Nagahama</option>
+		<option value="Nakayama">Nakayama</option>
+		<option value="Rock">Rock</option>
+		<option value="Sumiyoshi">Sumiyoshi</option>
+		<option value="Takezaki">Takezaki</option>
+		<option value="Toudai-shita">Toudai-shita</option>
+		<option value="Yakutsu">Yakutsu</option>
+		<option value="Yokino">Yokino</option>
+	</optgroup>
+	<optgroup label="Shizouka Prefecture">
+		<option value="Hamamatsu">Hamamatsu</option>
+		<option value="Omaezaki">Omaezaki</option>
+		<option value="Shirahama">Shirahama</option>
+	</optgroup>
+	<optgroup label="Kanagawa Prefecture">
+		<option value="Kugenuma Kaigan ">Kugenuma Kaigan </option>
+		<option value="Shonan">Shonan</option>
+	</optgroup>
+	<optgroup label="Fukuoka Prefecture">
+	</optgroup>
+	<optgroup label="Chiba Prefecture">
+		<option value="Choshi">Choshi</option>
+		<option value="Hebara">Hebara</option>
+		<option value="Kamogawa (Big Ben)">Kamogawa (Big Ben)</option>
+		<option value="Kashima, Ibaraki">Kashima, Ibaraki</option>
+		<option value="Katagai">Katagai</option>
+		<option value="Malibu">Malibu</option>
+		<option value="Matsube">Matsube</option>
+		<option value="Niijima">Niijima</option>
+		<option value="Onjuku">Onjuku</option>
+		<option value="Oshima">Oshima</option>
+		<option value="Shida">Shida</option>
+		<option value="Torami">Torami</option>
+		<option value="Wada Rivermouth">Wada Rivermouth</option>
+	</optgroup>
+	<optgroup label="Okinawa Prefecture">
+		<option value="Aha Point">Aha Point</option>
+		<option value="Aja">Aja</option>
+		<option value="Bowls">Bowls</option>
+		<option value="Buma">Buma</option>
+		<option value="Castles">Castles</option>
+		<option value="Ikei">Ikei</option>
+		<option value="Ko Chan">Ko Chan</option>
+		<option value="Kudaka">Kudaka</option>
+		<option value="Maeda">Maeda</option>
+		<option value="Mainside">Mainside</option>
+		<option value="Suicide Cliffs">Suicide Cliffs</option>
+		<option value="Sunabe II">Sunabe II</option>
+		<option value="Sunabe Seawall">Sunabe Seawall</option>
+		<option value="Turtles">Turtles</option>
+	</optgroup>
+	<optgroup label="Aichi Prefecture">
+		<option value="Irago">Irago</option>
+		<option value="Mutsure">Mutsure</option>
+	</optgroup>
+	<optgroup label="Miyazaki Prefecture">
+		<option value="Cape Toi">Cape Toi</option>
+		<option value="Ishinamigawa">Ishinamigawa</option>
+		<option value="Kisakihama">Kisakihama</option>
+		<option value="Nagata">Nagata</option>
+		<option value="Okuragahama">Okuragahama</option>
+		<option value="Oura">Oura</option>
+	</optgroup>
+</select>
+<select class="spots" id="Philippines">
+<option value="null">Select Spot</option>
+	<optgroup label="Luzon">
+		<option value="Badoc Island Lefts">Badoc Island Lefts</option>
+		<option value="Badoc Point">Badoc Point</option>
+		<option value="Bagasbas Beach">Bagasbas Beach</option>
+		<option value="Baler, Luzon">Baler, Luzon</option>
+		<option value="Bauang">Bauang</option>
+		<option value="Car-rille">Car-rille</option>
+		<option value="Mananget">Mananget</option>
+		<option value="Nalvo">Nalvo</option>
+		<option value="Parada Santa">Parada Santa</option>
+		<option value="Puro Pinget">Puro Pinget</option>
+		<option value="San Juan, La Union">San Juan, La Union</option>
+		<option value="Star Tubes">Star Tubes</option>
+		<option value="Turtle Head">Turtle Head</option>
+	</optgroup>
+	<optgroup label="Mindanao">
+		<option value="Auqui Left">Auqui Left</option>
+		<option value="Badjang">Badjang</option>
+		<option value="Cauit Point">Cauit Point</option>
+		<option value="Marami">Marami</option>
+		<option value="Moshi Moshi">Moshi Moshi</option>
+		<option value="Punta Left">Punta Left</option>
+	</optgroup>
+	<optgroup label="Samar">
+	</optgroup>
+	<optgroup label="Catanduanes">
+		<option value="Gubat Sorsogon ">Gubat Sorsogon </option>
+		<option value="Puraran Majestic">Puraran Majestic</option>
+		<option value="Virac Harbour">Virac Harbour</option>
+	</optgroup>
+	<optgroup label="Siargao">
+		<option value="Barrio">Barrio</option>
+		<option value="Caridad">Caridad</option>
+		<option value="Cloud 9">Cloud 9</option>
+		<option value="Horseshoe">Horseshoe</option>
+		<option value="Mabuntok">Mabuntok</option>
+		<option value="Pacifico">Pacifico</option>
+		<option value="Pansukian">Pansukian</option>
+		<option value="Pilar">Pilar</option>
+		<option value="Rock Island (Pencit Reef)">Rock Island (Pencit Reef)</option>
+		<option value="Stimpy's">Stimpy's</option>
+		<option value="Tuason Point">Tuason Point</option>
+	</optgroup>
+</select>
+<select class="spots" id="Russia">
+<option value="null">Select Spot</option>
+	<optgroup label="Russia">
+		<option value="Ahlestisheva">Ahlestisheva</option>
+		<option value="Chernishova">Chernishova</option>
+		<option value="Halaktirskiy Beach">Halaktirskiy Beach</option>
+		<option value="Hosta Rica">Hosta Rica</option>
+		<option value="Red Stones">Red Stones</option>
+	</optgroup>
+</select>
+<select class="spots" id="South-East-Asia">
+<option value="null">Select Spot</option>
+	<optgroup label="Burma">
+		<option value="Central Burma">Central Burma</option>
+		<option value="Chaungtha">Chaungtha</option>
+		<option value="Gottaung Beach">Gottaung Beach</option>
+		<option value="Gwa">Gwa</option>
+		<option value="Kanthaya">Kanthaya</option>
+		<option value="Ngwe Saung">Ngwe Saung</option>
+		<option value="Northern Burma">Northern Burma</option>
+		<option value="Peninsula Left">Peninsula Left</option>
+		<option value="South Myanmar">South Myanmar</option>
+		<option value="Southern Burma">Southern Burma</option>
+		<option value="The Rock - Myanmar">The Rock - Myanmar</option>
+	</optgroup>
+	<optgroup label="Malaysia">
+		<option value="Baluk Beach">Baluk Beach</option>
+		<option value="Batu Buruk, KT">Batu Buruk, KT</option>
+		<option value="Chempedak Bay">Chempedak Bay</option>
+		<option value="Chendor Beach">Chendor Beach</option>
+		<option value="Club Med - Malaysia">Club Med - Malaysia</option>
+		<option value="Kertih Resort">Kertih Resort</option>
+		<option value="Kijal">Kijal</option>
+		<option value="Kota Belud">Kota Belud</option>
+		<option value="Kuala Rompin">Kuala Rompin</option>
+		<option value="Marang">Marang</option>
+		<option value="Nexus Beach">Nexus Beach</option>
+		<option value="Northern Kudat">Northern Kudat</option>
+		<option value="Pakar">Pakar</option>
+		<option value="Pantai Juara">Pantai Juara</option>
+		<option value="Pantai Kemasik">Pantai Kemasik</option>
+		<option value="Shabandar Beach">Shabandar Beach</option>
+		<option value="Star Jetty Cruise">Star Jetty Cruise</option>
+		<option value="Strawberry Resort">Strawberry Resort</option>
+		<option value="Tanjong Jara">Tanjong Jara</option>
+		<option value="Tanjung Aru Beach">Tanjung Aru Beach</option>
+		<option value="Tanjung Cherating">Tanjung Cherating</option>
+		<option value="Teluk Cempedak">Teluk Cempedak</option>
+		<option value="Teluk Mengkuang">Teluk Mengkuang</option>
+		<option value="The Quarry">The Quarry</option>
+		<option value="Tungku Beach">Tungku Beach</option>
+	</optgroup>
+	<optgroup label="Vietnam">
+		<option value="Binh An">Binh An</option>
+		<option value="China Beach">China Beach</option>
+		<option value="Cue Dai Beach">Cue Dai Beach</option>
+		<option value="Hotels">Hotels</option>
+		<option value="Lang Co">Lang Co</option>
+		<option value="My Khe">My Khe</option>
+		<option value="Nam O Point">Nam O Point</option>
+		<option value="Non Nuoc">Non Nuoc</option>
+	</optgroup>
+	<optgroup label="Thailand">
+		<option value="Bang Tao">Bang Tao</option>
+		<option value="Kalim">Kalim</option>
+		<option value="Kamala Beach">Kamala Beach</option>
+		<option value="Karon Beach">Karon Beach</option>
+		<option value="Kata Beach">Kata Beach</option>
+		<option value="Kata Noi Beach">Kata Noi Beach</option>
+		<option value="Khao Lak">Khao Lak</option>
+		<option value="Ko Samui">Ko Samui</option>
+		<option value="Koh Phayam">Koh Phayam</option>
+		<option value="Nai Harn Beach">Nai Harn Beach</option>
+		<option value="Nai Thon">Nai Thon</option>
+		<option value="Pansea Beach">Pansea Beach</option>
+		<option value="Patong">Patong</option>
+		<option value="Phuket">Phuket</option>
+		<option value="Rayong Mae Ramphung">Rayong Mae Ramphung</option>
+		<option value="Relax Beach">Relax Beach</option>
+		<option value="Similan Islands">Similan Islands</option>
+		<option value="Surin Beach">Surin Beach</option>
+	</optgroup>
+</select>
+<select class="spots" id="Taiwan">
+<option value="null">Select Spot</option>
+	<optgroup label="Taiwan">
+		<option value="Baishawan">Baishawan</option>
+		<option value="Bashien Dong">Bashien Dong</option>
+		<option value="Cheng Gong">Cheng Gong</option>
+		<option value="Chu Nan">Chu Nan</option>
+		<option value="Dashi">Dashi</option>
+		<option value="Fongbin">Fongbin</option>
+		<option value="Fulong Beach">Fulong Beach</option>
+		<option value="Gongs">Gongs</option>
+		<option value="Hualien">Hualien</option>
+		<option value="Jialeshuei">Jialeshuei</option>
+		<option value="Jici Beach">Jici Beach</option>
+		<option value="Jin Shan">Jin Shan</option>
+		<option value="Nanwan">Nanwan</option>
+		<option value="Paishawan">Paishawan</option>
+		<option value="PD SPOT(Windmill)">PD SPOT(Windmill)</option>
+		<option value="Sanshuei">Sanshuei</option>
+		<option value="Sunyatsen Beach">Sunyatsen Beach</option>
+		<option value="Taitung">Taitung</option>
+		<option value="Wushi">Wushi</option>
+	</optgroup>
+</select>
+<select class="spots" id="Alaska">
+<option value="null">Select Spot</option>
+	<optgroup label="Alaska">
+		<option value="Good Rats">Good Rats</option>
+		<option value="Kai's Place">Kai's Place</option>
+		<option value="Kodiak (Fossil Beach)">Kodiak (Fossil Beach)</option>
+		<option value="Low Island">Low Island</option>
+		<option value="Neva Bay">Neva Bay</option>
+		<option value="Port Mary">Port Mary</option>
+		<option value="Red Tree Reef">Red Tree Reef</option>
+		<option value="Sandy Beach - Sitka, Alaska">Sandy Beach - Sitka, Alaska</option>
+		<option value="Sealion Cove">Sealion Cove</option>
+		<option value="Shoals Point">Shoals Point</option>
+		<option value="Shoals Reef/Wall">Shoals Reef/Wall</option>
+		<option value="Sitka (The Wall)">Sitka (The Wall)</option>
+		<option value="Yakutat (Cannon Beach)">Yakutat (Cannon Beach)</option>
+	</optgroup>
+</select>
+<select class="spots" id="Atlantic-States">
+<option value="null">Select Spot</option>
+	<optgroup label="Maryland">
+		<option value="Ocean City, MD">Ocean City, MD</option>
+	</optgroup>
+	<optgroup label="Delaware">
+		<option value="Fenwick">Fenwick</option>
+		<option value="Indian River">Indian River</option>
+	</optgroup>
+	<optgroup label="Virginia">
+		<option value="Chincoteague">Chincoteague</option>
+		<option value="Virginia Beach">Virginia Beach</option>
+	</optgroup>
+</select>
+<select class="spots" id="California-Central">
+<option value="null">Select Spot</option>
+	<optgroup label="Central California">
+		<option value="Andrew Molera State Park">Andrew Molera State Park</option>
+		<option value="Cambria">Cambria</option>
+		<option value="Carmel Beach">Carmel Beach</option>
+		<option value="Cayucos">Cayucos</option>
+		<option value="Davenport Landing">Davenport Landing</option>
+		<option value="Four Mile">Four Mile</option>
+		<option value="Ghost Trees">Ghost Trees</option>
+		<option value="Manresa Beach">Manresa Beach</option>
+		<option value="Mavericks (Half Moon Bay)">Mavericks (Half Moon Bay)</option>
+		<option value="Monterey Bay Offshore">Monterey Bay Offshore</option>
+		<option value="Morro Bay">Morro Bay</option>
+		<option value="Moss Landing">Moss Landing</option>
+		<option value="Oceano/Pismo">Oceano/Pismo</option>
+		<option value="Pleasure Point">Pleasure Point</option>
+		<option value="Princeton Jetty">Princeton Jetty</option>
+		<option value="Saint Annes">Saint Annes</option>
+		<option value="Steamer Lane">Steamer Lane</option>
+		<option value="Waddell Creek">Waddell Creek</option>
+	</optgroup>
+</select>
+<select class="spots" id="California-North">
+<option value="null">Select Spot</option>
+	<optgroup label="Northern California">
+		<option value="Bolinas">Bolinas</option>
+		<option value="Bolinas Jetty">Bolinas Jetty</option>
+		<option value="Eureka">Eureka</option>
+		<option value="Klamath River">Klamath River</option>
+		<option value="Linda Mar / Pacifica">Linda Mar / Pacifica</option>
+		<option value="Marin County">Marin County</option>
+		<option value="Moonstone beach">Moonstone beach</option>
+		<option value="Ocean Beach">Ocean Beach</option>
+		<option value="Patricks Point">Patricks Point</option>
+		<option value="Point Arena">Point Arena</option>
+		<option value="Salmon Creek">Salmon Creek</option>
+		<option value="Secrets">Secrets</option>
+		<option value="Shelter Cove">Shelter Cove</option>
+		<option value="South Beach">South Beach</option>
+		<option value="Stinson Beach">Stinson Beach</option>
+		<option value="Virgin Creek">Virgin Creek</option>
+	</optgroup>
+</select>
+<select class="spots" id="California-South">
+<option value="null">Select Spot</option>
+	<optgroup label="San Diego County">
+		<option value="Birdrock">Birdrock</option>
+		<option value="Carlsbad">Carlsbad</option>
+		<option value="Del Mar">Del Mar</option>
+		<option value="Horseshoe">Horseshoe</option>
+		<option value="Imperial Beach">Imperial Beach</option>
+		<option value="Mission Beach (San Diego)">Mission Beach (San Diego)</option>
+		<option value="Ocean beach">Ocean beach</option>
+		<option value="Oceanside">Oceanside</option>
+		<option value="Pacific Beach">Pacific Beach</option>
+		<option value="Point Loma">Point Loma</option>
+		<option value="Ponto">Ponto</option>
+		<option value="San Onofre">San Onofre</option>
+		<option value="Scripps Pier/La Jolla">Scripps Pier/La Jolla</option>
+		<option value="Solana Beach">Solana Beach</option>
+		<option value="Sunset Cliffs">Sunset Cliffs</option>
+		<option value="Swamis">Swamis</option>
+		<option value="Torrey Pines/Blacks Beach">Torrey Pines/Blacks Beach</option>
+		<option value="Trestles">Trestles</option>
+		<option value="Windansea Beach">Windansea Beach</option>
+	</optgroup>
+	<optgroup label="Orange County">
+		<option value="13th Street">13th Street</option>
+		<option value="204s">204s</option>
+		<option value="64th Place">64th Place</option>
+		<option value="72nd Place">72nd Place</option>
+		<option value="7th Street">7th Street</option>
+		<option value="Agate/Pearl Street">Agate/Pearl Street</option>
+		<option value="Blackies">Blackies</option>
+		<option value="Bolsa Chica">Bolsa Chica</option>
+		<option value="Corona Del Mar Jetty">Corona Del Mar Jetty</option>
+		<option value="Doheny State Beach">Doheny State Beach</option>
+		<option value="Dolphin Street">Dolphin Street</option>
+		<option value="Goldenwest">Goldenwest</option>
+		<option value="Huntington Pier">Huntington Pier</option>
+		<option value="Laguna Beach (Rockpile)">Laguna Beach (Rockpile)</option>
+		<option value="Morro Beach">Morro Beach</option>
+		<option value="Newport Beach">Newport Beach</option>
+		<option value="Poche Beach">Poche Beach</option>
+		<option value="Rockpile/Heisler Park">Rockpile/Heisler Park</option>
+		<option value="Salt Creek">Salt Creek</option>
+		<option value="San Clemente Pier">San Clemente Pier</option>
+		<option value="Santa Ana River Jetties">Santa Ana River Jetties</option>
+		<option value="Seal Beach Pier">Seal Beach Pier</option>
+		<option value="Strands Point">Strands Point</option>
+		<option value="Surfside Jetty">Surfside Jetty</option>
+		<option value="T Street (Trafalgar Street)">T Street (Trafalgar Street)</option>
+		<option value="The Wedge">The Wedge</option>
+		<option value="Trails">Trails</option>
+	</optgroup>
+	<optgroup label="Santa Barbara County">
+		<option value="Beavers/Hazards">Beavers/Hazards</option>
+		<option value="Campus Point">Campus Point</option>
+		<option value="Hammonds Reef">Hammonds Reef</option>
+		<option value="Haskels Beach">Haskels Beach</option>
+		<option value="Jalama Beach County Park">Jalama Beach County Park</option>
+		<option value="La Conchita Beach">La Conchita Beach</option>
+		<option value="Leadbetter Beach">Leadbetter Beach</option>
+		<option value="Miramar">Miramar</option>
+		<option value="Refugio State Beach">Refugio State Beach</option>
+		<option value="Rincon Point">Rincon Point</option>
+		<option value="Sands Beach">Sands Beach</option>
+		<option value="Skunk Point">Skunk Point</option>
+		<option value="Surf Beach">Surf Beach</option>
+		<option value="Tajiguas">Tajiguas</option>
+		<option value="Tarpits/Carpinteria State Beach">Tarpits/Carpinteria State Beach</option>
+		<option value="Wave Buoy 41025">Wave Buoy 41025</option>
+		<option value="Wave Buoy 46047">Wave Buoy 46047</option>
+	</optgroup>
+	<optgroup label="Ventura County">
+		<option value="California Street (C Street)">California Street (C Street)</option>
+		<option value="County Line/Yerba Buena Beach">County Line/Yerba Buena Beach</option>
+		<option value="Devereux">Devereux</option>
+		<option value="Emma Wood">Emma Wood</option>
+		<option value="Faria Beach">Faria Beach</option>
+		<option value="Hobson County Park">Hobson County Park</option>
+		<option value="Leo Carrillo">Leo Carrillo</option>
+		<option value="Little Rincon/Mussel Shoals">Little Rincon/Mussel Shoals</option>
+		<option value="New Jetty/South Jetty">New Jetty/South Jetty</option>
+		<option value="Ormond Beach">Ormond Beach</option>
+		<option value="Pitas Point/Faria County Park">Pitas Point/Faria County Park</option>
+		<option value="Port Hueneme Beach Park">Port Hueneme Beach Park</option>
+		<option value="Silver Strand">Silver Strand</option>
+		<option value="Solimar Reef and Beach">Solimar Reef and Beach</option>
+		<option value="Staircase Beach">Staircase Beach</option>
+		<option value="The Ranch - Cojo Reef">The Ranch - Cojo Reef</option>
+		<option value="Zero/Nicholas Canyon County Beach">Zero/Nicholas Canyon County Beach</option>
+	</optgroup>
+	<optgroup label="Los Angeles County">
+		<option value=" Manhattan Beach "> Manhattan Beach </option>
+		<option value="Bay Street">Bay Street</option>
+		<option value="Cabrillo Point">Cabrillo Point</option>
+		<option value="Chart House Rights">Chart House Rights</option>
+		<option value="El Porto Beach">El Porto Beach</option>
+		<option value="Haggertys">Haggertys</option>
+		<option value="Hermosa Beach">Hermosa Beach</option>
+		<option value="Latigo Canyon">Latigo Canyon</option>
+		<option value="Lower Haggertys">Lower Haggertys</option>
+		<option value="Lunada Bay">Lunada Bay</option>
+		<option value="Malibu - First Point">Malibu - First Point</option>
+		<option value="Palos Verdes Cove">Palos Verdes Cove</option>
+		<option value="Point Dume">Point Dume</option>
+		<option value="Point Dume">Point Dume</option>
+		<option value="Redondo Beach Breakwater">Redondo Beach Breakwater</option>
+		<option value="Santa Monica Municipal Pier">Santa Monica Municipal Pier</option>
+		<option value="Secos">Secos</option>
+		<option value="Sunset Blvd">Sunset Blvd</option>
+		<option value="Topanga State Beach">Topanga State Beach</option>
+		<option value="Torrance Beach/Haggertys">Torrance Beach/Haggertys</option>
+		<option value="Venice Beach">Venice Beach</option>
+		<option value="Zuma Beach County Park">Zuma Beach County Park</option>
+	</optgroup>
+</select>
+<select class="spots" id="Florida">
+<option value="null">Select Spot</option>
+	<optgroup label="Florida - East Coast">
+		<option value="Amelia Pier">Amelia Pier</option>
+		<option value="Bethune">Bethune</option>
+		<option value="Boynton Inlet">Boynton Inlet</option>
+		<option value="Canova Beach">Canova Beach</option>
+		<option value="Central Florida Hurricane">Central Florida Hurricane</option>
+		<option value="Cocoa Beach">Cocoa Beach</option>
+		<option value="Coral Cove Park">Coral Cove Park</option>
+		<option value="Dania Beach Pier">Dania Beach Pier</option>
+		<option value="Daytona Beach">Daytona Beach</option>
+		<option value="Deerfield Beach">Deerfield Beach</option>
+		<option value="Delray Beach">Delray Beach</option>
+		<option value="Flagler Pier">Flagler Pier</option>
+		<option value="Fort Lauderdale">Fort Lauderdale</option>
+		<option value="Fort Pierce">Fort Pierce</option>
+		<option value="Fort Pierce North Jetty">Fort Pierce North Jetty</option>
+		<option value="Haulover">Haulover</option>
+		<option value="Hobe Sound">Hobe Sound</option>
+		<option value="Jacksonville Beach">Jacksonville Beach</option>
+		<option value="Jensen Beach">Jensen Beach</option>
+		<option value="Jetty Park">Jetty Park</option>
+		<option value="Juno Beach">Juno Beach</option>
+		<option value="Juno Pier">Juno Pier</option>
+		<option value="Jupiter Inlet">Jupiter Inlet</option>
+		<option value="Lake Worth Pier">Lake Worth Pier</option>
+		<option value="Lantana">Lantana</option>
+		<option value="Little Talbot Island">Little Talbot Island</option>
+		<option value="Main Beach">Main Beach</option>
+		<option value="Mayport Poles">Mayport Poles</option>
+		<option value="Melbourne Beach">Melbourne Beach</option>
+		<option value="North Jetty (Florida)">North Jetty (Florida)</option>
+		<option value="Ormond Beach">Ormond Beach</option>
+		<option value="Palm Beach">Palm Beach</option>
+		<option value="Palm Beach Jetties">Palm Beach Jetties</option>
+		<option value="Playa Linda">Playa Linda</option>
+		<option value="Ponce Inlet (New Smyrna)">Ponce Inlet (New Smyrna)</option>
+		<option value="Ponte Vedra">Ponte Vedra</option>
+		<option value="Reef Road">Reef Road</option>
+		<option value="Satellite Beach">Satellite Beach</option>
+		<option value="Sebastian Inlet">Sebastian Inlet</option>
+		<option value="South Beach">South Beach</option>
+		<option value="Spanish House">Spanish House</option>
+		<option value="St. Augustine">St. Augustine</option>
+		<option value="Stuart Beach">Stuart Beach</option>
+		<option value="Stuart Public Beach">Stuart Public Beach</option>
+		<option value="Vero Beach">Vero Beach</option>
+		<option value="Vilano">Vilano</option>
+		<option value="Walton Rocks">Walton Rocks</option>
+	</optgroup>
+</select>
+<select class="spots" id="Great-Lakes">
+<option value="null">Select Spot</option>
+	<optgroup label="Lake Michigan">
+		<option value="Chicago (North Avenue Beach)">Chicago (North Avenue Beach)</option>
+		<option value="Elbow (Sheboygan)">Elbow (Sheboygan)</option>
+		<option value="Empire Public Beach">Empire Public Beach</option>
+		<option value="Milwaukee">Milwaukee</option>
+		<option value="Muskegon">Muskegon</option>
+		<option value="New Buffalo">New Buffalo</option>
+		<option value="North Chicago">North Chicago</option>
+		<option value="North Point - Lake Michigan ">North Point - Lake Michigan </option>
+		<option value="Racine">Racine</option>
+		<option value="South Pier - Grand Haven">South Pier - Grand Haven</option>
+		<option value="Wind Point ">Wind Point </option>
+	</optgroup>
+	<optgroup label="Lake Huron">
+		<option value="Bay City">Bay City</option>
+		<option value="Forester/Sanilac">Forester/Sanilac</option>
+		<option value="Lakeport">Lakeport</option>
+		<option value="Lexington">Lexington</option>
+		<option value="Port Austin">Port Austin</option>
+		<option value="Port Huron">Port Huron</option>
+	</optgroup>
+	<optgroup label="Lake Superior">
+		<option value="The Zoo">The Zoo</option>
+	</optgroup>
+	<optgroup label="Lake Erie">
+		<option value="Luna Pier">Luna Pier</option>
+	</optgroup>
+	<optgroup label="Lake Ontario">
+	</optgroup>
+</select>
+<select class="spots" id="Gulf-Coast">
+<option value="null">Select Spot</option>
+	<optgroup label="Florida - West Coast">
+		<option value="Alabama Point">Alabama Point</option>
+		<option value="Clearwater">Clearwater</option>
+		<option value="Dauphin Island">Dauphin Island</option>
+		<option value="Destin">Destin</option>
+		<option value="Indian Rocks ">Indian Rocks </option>
+		<option value="Maderia Beach ">Maderia Beach </option>
+		<option value="Naples">Naples</option>
+		<option value="Navarre Beach">Navarre Beach</option>
+		<option value="Okaloosa Pier">Okaloosa Pier</option>
+		<option value="Panama City Beach">Panama City Beach</option>
+		<option value="Pass-A-Grille Jetty">Pass-A-Grille Jetty</option>
+		<option value="Redington Rocks">Redington Rocks</option>
+		<option value="St Pete Beach">St Pete Beach</option>
+		<option value="Sunset Beach">Sunset Beach</option>
+		<option value="The Cross">The Cross</option>
+		<option value="Treasure Island">Treasure Island</option>
+		<option value="Venice Beach">Venice Beach</option>
+	</optgroup>
+	<optgroup label="Texas">
+		<option value="37th Street">37th Street</option>
+		<option value="61st Street">61st Street</option>
+		<option value="Bob Hall Pier">Bob Hall Pier</option>
+		<option value="Boca Chica">Boca Chica</option>
+		<option value="Fish Pass Jetties">Fish Pass Jetties</option>
+		<option value="Flagship">Flagship</option>
+		<option value="Horace Caldwell Pier">Horace Caldwell Pier</option>
+		<option value="Isla Blanca State Park">Isla Blanca State Park</option>
+		<option value="JP Luby Surf Park">JP Luby Surf Park</option>
+		<option value="Matagorda">Matagorda</option>
+		<option value="Meacoms Pier">Meacoms Pier</option>
+		<option value="Octagon">Octagon</option>
+		<option value="Port Mansfield Jetties">Port Mansfield Jetties</option>
+		<option value="Quintana">Quintana</option>
+		<option value="South Padre Island">South Padre Island</option>
+		<option value="Surfside">Surfside</option>
+	</optgroup>
+	<optgroup label="Mexico - Gulf Coast">
+		<option value="Cancun">Cancun</option>
+		<option value="Cozumel">Cozumel</option>
+		<option value="Puerto Morelos">Puerto Morelos</option>
+	</optgroup>
+</select>
+<select class="spots" id="New-England">
+<option value="null">Select Spot</option>
+	<optgroup label="Massachusetts">
+		<option value="Abels Hill">Abels Hill</option>
+		<option value="Cape Ann">Cape Ann</option>
+		<option value="Cape Cod">Cape Cod</option>
+		<option value="Long Point">Long Point</option>
+		<option value="Lucy Vincent">Lucy Vincent</option>
+		<option value="Nahant">Nahant</option>
+		<option value="Nantasket Beach">Nantasket Beach</option>
+		<option value="New England Hurricane">New England Hurricane</option>
+		<option value="Plymouth Beach">Plymouth Beach</option>
+		<option value="Salisbury">Salisbury</option>
+		<option value="Scituate">Scituate</option>
+		<option value="South Beach">South Beach</option>
+		<option value="Squibnocket">Squibnocket</option>
+	</optgroup>
+	<optgroup label="New Hampshire">
+		<option value="Costellos">Costellos</option>
+		<option value="Hampton Beach">Hampton Beach</option>
+		<option value="Jenness Beach">Jenness Beach</option>
+		<option value="Linkys">Linkys</option>
+		<option value="Rye Rocks">Rye Rocks</option>
+		<option value="Seabrook Beach">Seabrook Beach</option>
+		<option value="The Wall">The Wall</option>
+	</optgroup>
+	<optgroup label="Maine">
+		<option value="Fortunes Rocks">Fortunes Rocks</option>
+		<option value="Higgins Beach">Higgins Beach</option>
+		<option value="Kennebunk Beach">Kennebunk Beach</option>
+		<option value="Long Sands">Long Sands</option>
+		<option value="Ogunquit River">Ogunquit River</option>
+		<option value="Old Orchard Beach">Old Orchard Beach</option>
+		<option value="Popham Beach">Popham Beach</option>
+		<option value="Scarborough Beach">Scarborough Beach</option>
+		<option value="Short Sands">Short Sands</option>
+		<option value="Wells Beach">Wells Beach</option>
+	</optgroup>
+	<optgroup label="Rhode Island">
+		<option value="1st Beach (Eastons Beach)">1st Beach (Eastons Beach)</option>
+		<option value="2nd Beach (Sachuest Beach)">2nd Beach (Sachuest Beach)</option>
+		<option value="Bailey's Beach">Bailey's Beach</option>
+		<option value="Block Island">Block Island</option>
+		<option value="Breachway">Breachway</option>
+		<option value="East Beach">East Beach</option>
+		<option value="Elbow Ledge">Elbow Ledge</option>
+		<option value="K38/39">K38/39</option>
+		<option value="Lighthouse (Point Judith)">Lighthouse (Point Judith)</option>
+		<option value="Matunuck">Matunuck</option>
+		<option value="Misquamicut">Misquamicut</option>
+		<option value="Monahan's Dock">Monahan's Dock</option>
+		<option value="Narragansett Beach">Narragansett Beach</option>
+		<option value="Ruggles">Ruggles</option>
+		<option value="South Shore Beach">South Shore Beach</option>
+		<option value="Weekapaug">Weekapaug</option>
+	</optgroup>
+</select>
+<select class="spots" id="New-Jersey--New-York">
+<option value="null">Select Spot</option>
+	<optgroup label="New Jersey">
+		<option value="Asbury Park">Asbury Park</option>
+		<option value="Avalon">Avalon</option>
+		<option value="Avon">Avon</option>
+		<option value="Belmar">Belmar</option>
+		<option value="Casino Pier">Casino Pier</option>
+		<option value="Deal">Deal</option>
+		<option value="Holyoke">Holyoke</option>
+		<option value="Island Beach State Park">Island Beach State Park</option>
+		<option value="Jenkinsons">Jenkinsons</option>
+		<option value="Longport, 32nd St.">Longport, 32nd St.</option>
+		<option value="Manasquan">Manasquan</option>
+		<option value="Margate Pier">Margate Pier</option>
+		<option value="Monmouth Beach">Monmouth Beach</option>
+		<option value="New Jersey Hurricane">New Jersey Hurricane</option>
+		<option value="Ocean City, NJ">Ocean City, NJ</option>
+		<option value="Poverty Beach">Poverty Beach</option>
+		<option value="Sea Isle City ">Sea Isle City </option>
+		<option value="States Avenue">States Avenue</option>
+		<option value="Stockton">Stockton</option>
+		<option value="Surf City">Surf City</option>
+		<option value="The Cove">The Cove</option>
+		<option value="Wildwood">Wildwood</option>
+	</optgroup>
+	<optgroup label="New York">
+		<option value="Atlantic Terrace">Atlantic Terrace</option>
+		<option value="Cupsogue">Cupsogue</option>
+		<option value="Ditch Plains">Ditch Plains</option>
+		<option value="Fire Island">Fire Island</option>
+		<option value="Flies">Flies</option>
+		<option value="Fortress">Fortress</option>
+		<option value="Georgia (East Hampton)">Georgia (East Hampton)</option>
+		<option value="Jones Beach State Park">Jones Beach State Park</option>
+		<option value="Lido Beach">Lido Beach</option>
+		<option value="Long Beach">Long Beach</option>
+		<option value="Mastic Beach">Mastic Beach</option>
+		<option value="North Bar">North Bar</option>
+		<option value="Robert Moses State Park">Robert Moses State Park</option>
+		<option value="Rockaway">Rockaway</option>
+		<option value="Tobay Beach">Tobay Beach</option>
+		<option value="Turtle Cove">Turtle Cove</option>
+	</optgroup>
+</select>
+<select class="spots" id="North-Carolina">
+<option value="null">Select Spot</option>
+	<optgroup label="North Carolina">
+		<option value="Atlantic Beach">Atlantic Beach</option>
+		<option value="Bogue Pier">Bogue Pier</option>
+		<option value="Camp Lejeune">Camp Lejeune</option>
+		<option value="Cape Hatteras">Cape Hatteras</option>
+		<option value="Carolina Beach">Carolina Beach</option>
+		<option value="Crystal Pier">Crystal Pier</option>
+		<option value="Frisco">Frisco</option>
+		<option value="Holden Beach">Holden Beach</option>
+		<option value="Jennettes Pier">Jennettes Pier</option>
+		<option value="Kill Devil Hills">Kill Devil Hills</option>
+		<option value="Kitty Hawk">Kitty Hawk</option>
+		<option value="Ocean Isle Beach">Ocean Isle Beach</option>
+		<option value="Outer Banks Hurricane">Outer Banks Hurricane</option>
+		<option value="Pelican Watch">Pelican Watch</option>
+		<option value="S Turns">S Turns</option>
+		<option value="Topsail Island">Topsail Island</option>
+	</optgroup>
+</select>
+<select class="spots" id="Nova-Scotia">
+<option value="null">Select Spot</option>
+	<optgroup label="Nova Scotia">
+		<option value="Cow Bay">Cow Bay</option>
+		<option value="Lawrencetown">Lawrencetown</option>
+		<option value="Martinique Beach">Martinique Beach</option>
+		<option value="Nova Scotia Hurricane">Nova Scotia Hurricane</option>
+		<option value="Point Michaud">Point Michaud</option>
+		<option value="Summerville">Summerville</option>
+		<option value="Western Head">Western Head</option>
+	</optgroup>
+</select>
+<select class="spots" id="Oregon">
+<option value="null">Select Spot</option>
+	<optgroup label="Oregon">
+		<option value="Brookings">Brookings</option>
+		<option value="Cannon Beach">Cannon Beach</option>
+		<option value="Cape Kiwanda">Cape Kiwanda</option>
+		<option value="Cape Lookout">Cape Lookout</option>
+		<option value="Coos Bay">Coos Bay</option>
+		<option value="Florence">Florence</option>
+		<option value="Gold Beach">Gold Beach</option>
+		<option value="Lincoln City">Lincoln City</option>
+		<option value="Newport">Newport</option>
+		<option value="Otter Rock">Otter Rock</option>
+		<option value="Smugglers Cove">Smugglers Cove</option>
+		<option value="Winchester Bay">Winchester Bay</option>
+	</optgroup>
+</select>
+<select class="spots" id="South-Carolina--Georgia">
+<option value="null">Select Spot</option>
+	<optgroup label="South Carolina">
+		<option value="27th Ave/North Myrtle">27th Ave/North Myrtle</option>
+		<option value="Burkes Beach">Burkes Beach</option>
+		<option value="Cherry Grove Pier">Cherry Grove Pier</option>
+		<option value="Dunes Cove">Dunes Cove</option>
+		<option value="Folly Beach Pier">Folly Beach Pier</option>
+		<option value="Fripp Island">Fripp Island</option>
+		<option value="Garden City Pier">Garden City Pier</option>
+		<option value="Hunting Island">Hunting Island</option>
+		<option value="Isle of Palms Pier">Isle of Palms Pier</option>
+		<option value="Springmaid Beach">Springmaid Beach</option>
+		<option value="The Pier (Pawleys Island)">The Pier (Pawleys Island)</option>
+		<option value="The Washout">The Washout</option>
+	</optgroup>
+	<optgroup label="Georgia">
+		<option value="17th Street Boardwalk">17th Street Boardwalk</option>
+		<option value="2nd Street (Tybee Island)">2nd Street (Tybee Island)</option>
+		<option value="Comfort Inn/Jekyll Island">Comfort Inn/Jekyll Island</option>
+		<option value="North Jetty">North Jetty</option>
+		<option value="Sea Island Jetty">Sea Island Jetty</option>
+	</optgroup>
+</select>
+<select class="spots" id="Vancouver-Island">
+<option value="null">Select Spot</option>
+	<optgroup label="British Columbia">
+		<option value="Tofino (Chesterman Beach)">Tofino (Chesterman Beach)</option>
+		<option value="Tofino (Cox Bay)">Tofino (Cox Bay)</option>
+		<option value="Vancouver Island North (Long Beach)">Vancouver Island North (Long Beach)</option>
+		<option value="Vancouver Island South (Jordan River)">Vancouver Island South (Jordan River)</option>
+	</optgroup>
+</select>
+<select class="spots" id="Washington">
+<option value="null">Select Spot</option>
+	<optgroup label="Washington">
+		<option value="Cape Flattery">Cape Flattery</option>
+		<option value="La Push">La Push</option>
+		<option value="Long Beach">Long Beach</option>
+		<option value="Ocean Shores">Ocean Shores</option>
+		<option value="Westport">Westport</option>
+	</optgroup>
+</select>
+<select class="spots" id="New-South-Wales">
+<option value="null">Select Spot</option>
+	<optgroup label="New South Wales">
+		<option value="Angourie Point ">Angourie Point </option>
+		<option value="Anna Bay">Anna Bay</option>
+		<option value="Arrawarra">Arrawarra</option>
+		<option value="Austinmer Beach">Austinmer Beach</option>
+		<option value="Avalon">Avalon</option>
+		<option value="Avoca Beach">Avoca Beach</option>
+		<option value="Ballina">Ballina</option>
+		<option value="Bar Beach (Dixon Park)">Bar Beach (Dixon Park)</option>
+		<option value="Bendalong Beach">Bendalong Beach</option>
+		<option value="Bermagui">Bermagui</option>
+		<option value="Bilgola Beach">Bilgola Beach</option>
+		<option value="Black Point">Black Point</option>
+		<option value="Black Rock / Aussie Pipe">Black Rock / Aussie Pipe</option>
+		<option value="Blinky Beach">Blinky Beach</option>
+		<option value="Bombo">Bombo</option>
+		<option value="Boomerang Beach">Boomerang Beach</option>
+		<option value="Box Head">Box Head</option>
+		<option value="Broken Head">Broken Head</option>
+		<option value="Brooms Head ">Brooms Head </option>
+		<option value="Broulee">Broulee</option>
+		<option value="Brunswick Heads">Brunswick Heads</option>
+		<option value="Bungan">Bungan</option>
+		<option value="Byron Bay">Byron Bay</option>
+		<option value="Cabarita">Cabarita</option>
+		<option value="Clarence River">Clarence River</option>
+		<option value="Coalcliff Reef">Coalcliff Reef</option>
+		<option value="Coffs Harbour">Coffs Harbour</option>
+		<option value="Coneeley's Reef">Coneeley's Reef</option>
+		<option value="Copacabana">Copacabana</option>
+		<option value="Crackneck">Crackneck</option>
+		<option value="Crescent Head">Crescent Head</option>
+		<option value="Curl Curl">Curl Curl</option>
+		<option value="Dee Why Point">Dee Why Point</option>
+		<option value="Diamond Head">Diamond Head</option>
+		<option value="Dolphin Point">Dolphin Point</option>
+		<option value="Dum Dums">Dum Dums</option>
+		<option value="Duranbah (D-Bah)">Duranbah (D-Bah)</option>
+		<option value="Emerald Beach">Emerald Beach</option>
+		<option value="Evans Head">Evans Head</option>
+		<option value="Forster">Forster</option>
+		<option value="Green Island">Green Island</option>
+		<option value="Harry's">Harry's</option>
+		<option value="Kingscliff">Kingscliff</option>
+		<option value="Lennox Head">Lennox Head</option>
+		<option value="Little Avalon">Little Avalon</option>
+		<option value="Merimbula">Merimbula</option>
+		<option value="Mollymook Beach">Mollymook Beach</option>
+		<option value="Moonee Creek">Moonee Creek</option>
+		<option value="Newcastle">Newcastle</option>
+		<option value="North Haven">North Haven</option>
+		<option value="North Narrabeen">North Narrabeen</option>
+		<option value="North/ South Steyne">North/ South Steyne</option>
+		<option value="Old Bar">Old Bar</option>
+		<option value="Pippi Beach ">Pippi Beach </option>
+		<option value="Port Macquarie">Port Macquarie</option>
+		<option value="Pottsville Beach">Pottsville Beach</option>
+		<option value="Queenscliff">Queenscliff</option>
+		<option value="Redhead">Redhead</option>
+		<option value="Sawtell">Sawtell</option>
+		<option value="Scotts Head">Scotts Head</option>
+		<option value="Seal Rocks">Seal Rocks</option>
+		<option value="Seven Mile Beach">Seven Mile Beach</option>
+		<option value="Shelly Beach">Shelly Beach</option>
+		<option value="Shoal Bay">Shoal Bay</option>
+		<option value="South Narrabeen">South Narrabeen</option>
+		<option value="Sussex Inlet">Sussex Inlet</option>
+		<option value="Swansea ">Swansea </option>
+		<option value="Sydney (Bondi)">Sydney (Bondi)</option>
+		<option value="Sydney (Cronulla)">Sydney (Cronulla)</option>
+		<option value="Sydney (Manly)">Sydney (Manly)</option>
+		<option value="Sydney (Maroubra)">Sydney (Maroubra)</option>
+		<option value="Sydney - Shark Island">Sydney - Shark Island</option>
+		<option value="Tallow Beach">Tallow Beach</option>
+		<option value="The Farm">The Farm</option>
+		<option value="The Peak (Newport Beach)">The Peak (Newport Beach)</option>
+		<option value="Turners Beach ">Turners Beach </option>
+		<option value="Turners Wall ">Turners Wall </option>
+		<option value="Umina Beach">Umina Beach</option>
+		<option value="Valla">Valla</option>
+		<option value="Wamberal">Wamberal</option>
+		<option value="Warriewood">Warriewood</option>
+		<option value="Winki Pop / Fairy Bower">Winki Pop / Fairy Bower</option>
+		<option value="Wollongong">Wollongong</option>
+		<option value="Wombarra">Wombarra</option>
+	</optgroup>
+</select>
+<select class="spots" id="New-Zealand">
+<option value="null">Select Spot</option>
+	<optgroup label="New Zealand">
+		<option value="90 Mile Beach">90 Mile Beach</option>
+		<option value="Ahu Ahu">Ahu Ahu</option>
+		<option value="Aramoana Spit">Aramoana Spit</option>
+		<option value="Back Beach (Taranaki)">Back Beach (Taranaki)</option>
+		<option value="Black's Beach">Black's Beach</option>
+		<option value="Blue Duck Stream">Blue Duck Stream</option>
+		<option value="Castlepoint">Castlepoint</option>
+		<option value="Clarence River">Clarence River</option>
+		<option value="Diners Beach">Diners Beach</option>
+		<option value="Elliot Bay">Elliot Bay</option>
+		<option value="Fitzroy Beach ">Fitzroy Beach </option>
+		<option value="Forestry">Forestry</option>
+		<option value="Frentzes Reef">Frentzes Reef</option>
+		<option value="Gizzy Pipe (Gisborne)">Gizzy Pipe (Gisborne)</option>
+		<option value="Gore Bay">Gore Bay</option>
+		<option value="Green Meadows">Green Meadows</option>
+		<option value="Greymouth">Greymouth</option>
+		<option value="Henderson Bay">Henderson Bay</option>
+		<option value="Hickory Bay">Hickory Bay</option>
+		<option value="Horseshoe Bay">Horseshoe Bay</option>
+		<option value="Kahutara">Kahutara</option>
+		<option value="Karitane">Karitane</option>
+		<option value="Komerne Road">Komerne Road</option>
+		<option value="Last Chance">Last Chance</option>
+		<option value="Loisells">Loisells</option>
+		<option value="Long Point">Long Point</option>
+		<option value="Lyall Bay">Lyall Bay</option>
+		<option value="Magnet Bay">Magnet Bay</option>
+		<option value="Mahia Reef">Mahia Reef</option>
+		<option value="Makarori Point">Makarori Point</option>
+		<option value="Mangamaunu">Mangamaunu</option>
+		<option value="Martins Bay">Martins Bay</option>
+		<option value="Mason Bay - Stewart Island">Mason Bay - Stewart Island</option>
+		<option value="Motunau Beach">Motunau Beach</option>
+		<option value="Mount Maunganui">Mount Maunganui</option>
+		<option value="Murderers">Murderers</option>
+		<option value="Muriwai Beach">Muriwai Beach</option>
+		<option value="Napier">Napier</option>
+		<option value="New Brighton Beach">New Brighton Beach</option>
+		<option value="New Plymouth">New Plymouth</option>
+		<option value="North Makarori">North Makarori</option>
+		<option value="Oakura">Oakura</option>
+		<option value="Ohope Beach">Ohope Beach</option>
+		<option value="Opoutama">Opoutama</option>
+		<option value="Opunake">Opunake</option>
+		<option value="Orewa Beach">Orewa Beach</option>
+		<option value="Owaka Area">Owaka Area</option>
+		<option value="Papamoa Beach">Papamoa Beach</option>
+		<option value="Papatowai">Papatowai</option>
+		<option value="Pataua Bar">Pataua Bar</option>
+		<option value="Piha">Piha</option>
+		<option value="Porpoise Bay">Porpoise Bay</option>
+		<option value="Punihos">Punihos</option>
+		<option value="Raglan">Raglan</option>
+		<option value="Railways">Railways</option>
+		<option value="Riverton Rocks">Riverton Rocks</option>
+		<option value="Rolling Stones (Mahia Peninsula)">Rolling Stones (Mahia Peninsula)</option>
+		<option value="Sandfly Bay">Sandfly Bay</option>
+		<option value="Scott Point ">Scott Point </option>
+		<option value="Smails Beach">Smails Beach</option>
+		<option value="Sponge Bay">Sponge Bay</option>
+		<option value="St Clair (Dunedin)">St Clair (Dunedin)</option>
+		<option value="Stent Road">Stent Road</option>
+		<option value="Stock Route">Stock Route</option>
+		<option value="Sumner Bar (Christchurch)">Sumner Bar (Christchurch)</option>
+		<option value="Waitara Bar">Waitara Bar</option>
+		<option value="Waiwakaiho">Waiwakaiho</option>
+		<option value="Westport">Westport</option>
+		<option value="Whangamata">Whangamata</option>
+	</optgroup>
+</select>
+<select class="spots" id="North-West-Australia">
+<option value="null">Select Spot</option>
+	<optgroup label="North West Australia">
+		<option value="Blow Holes">Blow Holes</option>
+		<option value="Dunes/Surfer's Beach">Dunes/Surfer's Beach</option>
+		<option value="Red Bluff">Red Bluff</option>
+	</optgroup>
+</select>
+<select class="spots" id="Queensland">
+<option value="null">Select Spot</option>
+	<optgroup label="Queensland">
+		<option value="Agnes Water">Agnes Water</option>
+		<option value="Alexandria Bay (Noosa)">Alexandria Bay (Noosa)</option>
+		<option value="Boiling Pot">Boiling Pot</option>
+		<option value="Broadbeach">Broadbeach</option>
+		<option value="Burleigh Heads">Burleigh Heads</option>
+		<option value="Coolum Beach">Coolum Beach</option>
+		<option value="Currumbin Point">Currumbin Point</option>
+		<option value="Double Island Point">Double Island Point</option>
+		<option value="Fingal Head">Fingal Head</option>
+		<option value="Fraser Island">Fraser Island</option>
+		<option value="Greenmount">Greenmount</option>
+		<option value="Happys (Caloundra)">Happys (Caloundra)</option>
+		<option value="Kawana">Kawana</option>
+		<option value="Kirra">Kirra</option>
+		<option value="Long Track">Long Track</option>
+		<option value="Miami">Miami</option>
+		<option value="Moffats">Moffats</option>
+		<option value="Mudjimba Island">Mudjimba Island</option>
+		<option value="Narrowneck">Narrowneck</option>
+		<option value="North Stradbroke Island">North Stradbroke Island</option>
+		<option value="Peregian Creek">Peregian Creek</option>
+		<option value="Pin Cushion (Maroochydore)">Pin Cushion (Maroochydore)</option>
+		<option value="Point Cartwright">Point Cartwright</option>
+		<option value="Snapper Rocks">Snapper Rocks</option>
+		<option value="South Stradbroke Island">South Stradbroke Island</option>
+		<option value="Sunshine Beach">Sunshine Beach</option>
+		<option value="Surfers Paradise (Gold Coast)">Surfers Paradise (Gold Coast)</option>
+		<option value="Tea Tree (Noosa)">Tea Tree (Noosa)</option>
+		<option value="The Bluff">The Bluff</option>
+		<option value="The Spit">The Spit</option>
+	</optgroup>
+</select>
+<select class="spots" id="South-Australia">
+<option value="null">Select Spot</option>
+	<optgroup label="South Australia">
+		<option value="Bullies">Bullies</option>
+		<option value="Cactus">Cactus</option>
+		<option value="Cape Kersaint">Cape Kersaint</option>
+		<option value="Caves">Caves</option>
+		<option value="Chinamans">Chinamans</option>
+		<option value="Crushers">Crushers</option>
+		<option value="Cunns">Cunns</option>
+		<option value="Elliston">Elliston</option>
+		<option value="Ethel Wreck">Ethel Wreck</option>
+		<option value="Fisheries Bay">Fisheries Bay</option>
+		<option value="Matches">Matches</option>
+		<option value="Middleton Point">Middleton Point</option>
+		<option value="Myponga Beach">Myponga Beach</option>
+		<option value="Parsons Beach">Parsons Beach</option>
+		<option value="Pennington Bay">Pennington Bay</option>
+		<option value="Pondie">Pondie</option>
+		<option value="Port Macdonnell">Port Macdonnell</option>
+		<option value="Salmon Hole">Salmon Hole</option>
+		<option value="Seaford">Seaford</option>
+		<option value="Spits">Spits</option>
+		<option value="Stony Rise">Stony Rise</option>
+		<option value="Supertubes (Cactus)">Supertubes (Cactus)</option>
+		<option value="The Dump">The Dump</option>
+		<option value="The Trough">The Trough</option>
+		<option value="Trespassers">Trespassers</option>
+		<option value="Trigs Beach">Trigs Beach</option>
+		<option value="Waitpinga">Waitpinga</option>
+		<option value="Waitpinga Beach ">Waitpinga Beach </option>
+		<option value="Westcape Beach">Westcape Beach</option>
+		<option value="Witzig's (Point Sinclair)">Witzig's (Point Sinclair)</option>
+		<option value="Y-Steps">Y-Steps</option>
+	</optgroup>
+</select>
+<select class="spots" id="South-West-Australia">
+<option value="null">Select Spot</option>
+	<optgroup label="South West Australia">
+		<option value="Avalon Point">Avalon Point</option>
+		<option value="Blue Holes">Blue Holes</option>
+		<option value="Bowes River">Bowes River</option>
+		<option value="Coronation">Coronation</option>
+		<option value="Ders">Ders</option>
+		<option value="Drummonds">Drummonds</option>
+		<option value="Geraldton">Geraldton</option>
+		<option value="Injidup">Injidup</option>
+		<option value="Jakes">Jakes</option>
+		<option value="Margaret River">Margaret River</option>
+		<option value="Observation City">Observation City</option>
+		<option value="Pea Break">Pea Break</option>
+		<option value="Redgate Peaks">Redgate Peaks</option>
+		<option value="Salmon Point">Salmon Point</option>
+		<option value="Stark Bay">Stark Bay</option>
+		<option value="Strickland Bay">Strickland Bay</option>
+		<option value="Tarcoola">Tarcoola</option>
+		<option value="The Box">The Box</option>
+		<option value="The Spot">The Spot</option>
+		<option value="Three Bears">Three Bears</option>
+		<option value="Trigg Point">Trigg Point</option>
+		<option value="Windmills">Windmills</option>
+		<option value="Yallingup">Yallingup</option>
+	</optgroup>
+</select>
+<select class="spots" id="Tasmania">
+<option value="null">Select Spot</option>
+	<optgroup label="Tasmania">
+		<option value="Bicheno">Bicheno</option>
+		<option value="Boat Harbour Beach">Boat Harbour Beach</option>
+		<option value="Cape Sorell">Cape Sorell</option>
+		<option value="Clifton Beach">Clifton Beach</option>
+		<option value="Cloudy Bay">Cloudy Bay</option>
+		<option value="Coal Point">Coal Point</option>
+		<option value="Eaglehawk Neck">Eaglehawk Neck</option>
+		<option value="Greens Beach">Greens Beach</option>
+		<option value="Lagoons">Lagoons</option>
+		<option value="Park Beach">Park Beach</option>
+		<option value="Roaring Beach">Roaring Beach</option>
+		<option value="Robbos Point">Robbos Point</option>
+		<option value="Scamander">Scamander</option>
+		<option value="Shipstern Bluff">Shipstern Bluff</option>
+		<option value="Tam O'Shanter">Tam O'Shanter</option>
+		<option value="Tessos">Tessos</option>
+		<option value="The Neck">The Neck</option>
+	</optgroup>
+</select>
+<select class="spots" id="Victoria">
+<option value="null">Select Spot</option>
+	<optgroup label="Victoria">
+		<option value="Anglesea">Anglesea</option>
+		<option value="Apollo Bay">Apollo Bay</option>
+		<option value="Bells Beach">Bells Beach</option>
+		<option value="Cape Conran">Cape Conran</option>
+		<option value="Castle Cove">Castle Cove</option>
+		<option value="Discovery Bay">Discovery Bay</option>
+		<option value="Fairhaven">Fairhaven</option>
+		<option value="Flinders Beach">Flinders Beach</option>
+		<option value="Gunnamatta">Gunnamatta</option>
+		<option value="Hut Gulley (Guvvos)">Hut Gulley (Guvvos)</option>
+		<option value="Jan Juc">Jan Juc</option>
+		<option value="Johanna">Johanna</option>
+		<option value="Lake Tyers">Lake Tyers</option>
+		<option value="Lorne">Lorne</option>
+		<option value="Mallacoota">Mallacoota</option>
+		<option value="Ocean Grove">Ocean Grove</option>
+		<option value="Phillip Island">Phillip Island</option>
+		<option value="Point Addis">Point Addis</option>
+		<option value="Point Leo">Point Leo</option>
+		<option value="Point Lonsdale">Point Lonsdale</option>
+		<option value="Point Roadknight">Point Roadknight</option>
+		<option value="Port Fairy">Port Fairy</option>
+		<option value="Portsea">Portsea</option>
+		<option value="Princetown">Princetown</option>
+		<option value="St Andrews">St Andrews</option>
+		<option value="Thirteenth Beach ">Thirteenth Beach </option>
+		<option value="Torquay">Torquay</option>
+		<option value="Warrnambool">Warrnambool</option>
+		<option value="Wilsons Promontory">Wilsons Promontory</option>
+		<option value="Winkipop">Winkipop</option>
+		<option value="Wonthaggi">Wonthaggi</option>
+		<option value="Wye River">Wye River</option>
+	</optgroup>
+</select>
+<select class="spots" id="Israel">
+<option value="null">Select Spot</option>
+	<optgroup label="Israel">
+		<option value="Ashdod">Ashdod</option>
+		<option value="Ashqelon">Ashqelon</option>
+		<option value="Backdoor Haifa">Backdoor Haifa</option>
+		<option value="Bat Yam">Bat Yam</option>
+		<option value="Beit Yanai">Beit Yanai</option>
+		<option value="Caesarea">Caesarea</option>
+		<option value="Dolphinarium">Dolphinarium</option>
+		<option value="Gazebbo Beach Club">Gazebbo Beach Club</option>
+		<option value="Haifa - The Peak ">Haifa - The Peak </option>
+		<option value="Hazuk Beach">Hazuk Beach</option>
+		<option value="Hilton">Hilton</option>
+		<option value="Hof Maravi">Hof Maravi</option>
+		<option value="Maagan Michael">Maagan Michael</option>
+		<option value="Marina - Herzelia ">Marina - Herzelia </option>
+		<option value="Palmahim">Palmahim</option>
+		<option value="Rishon Lezion">Rishon Lezion</option>
+		<option value="Sdot Yam">Sdot Yam</option>
+		<option value="Sidna Ali">Sidna Ali</option>
+		<option value="Tel Baruch North">Tel Baruch North</option>
+		<option value="Topsy">Topsy</option>
+		<option value="Zikim">Zikim</option>
+		<option value="Zvulun Herzelia ">Zvulun Herzelia </option>
+	</optgroup>
+</select>
+<select class="spots" id="Lebanon">
+<option value="null">Select Spot</option>
+	<optgroup label="Lebanon">
+		<option value="Chekka">Chekka</option>
+		<option value="Colonel">Colonel</option>
+		<option value="Edde Sands (Tum Tum Beach)">Edde Sands (Tum Tum Beach)</option>
+		<option value="Mustafas A frame">Mustafas A frame</option>
+		<option value="Pier and Friends">Pier and Friends</option>
+		<option value="Ramlet al Bayhda">Ramlet al Bayhda</option>
+		<option value="Yours">Yours</option>
+	</optgroup>
+</select>
+<select class="spots" id="Oman">
+<option value="null">Select Spot</option>
+	<optgroup label="Oman">
+		<option value="Al Ashkharah">Al Ashkharah</option>
+		<option value="Masirah Island">Masirah Island</option>
+		<option value="Salalah">Salalah</option>
+	</optgroup>
+	<optgroup label="UAE">
+	</optgroup>
+</select>
+<select class="spots" id="Persian-Gulf">
+<option value="null">Select Spot</option>
+	<optgroup label="United Arab Emirates">
+		<option value="Sunset Beach">Sunset Beach</option>
+	</optgroup>
+</select>
+<select class="spots" id="Azores">
+<option value="null">Select Spot</option>
+	<optgroup label="Flores">
+		<option value="Agua de Alto">Agua de Alto</option>
+		<option value="Contendas">Contendas</option>
+		<option value="Direita do Passe">Direita do Passe</option>
+		<option value="Esquerda da Igreja">Esquerda da Igreja</option>
+		<option value="Faja do Belo">Faja do Belo</option>
+		<option value="Faja dos Cubres">Faja dos Cubres</option>
+		<option value="Faja Dos Vimes">Faja Dos Vimes</option>
+		<option value="Fajazinha">Fajazinha</option>
+		<option value="Feiticeiras">Feiticeiras</option>
+		<option value="Lago do Linho">Lago do Linho</option>
+		<option value="Monte Verte">Monte Verte</option>
+		<option value="Mosteiros Left">Mosteiros Left</option>
+		<option value="Mosteiros Right">Mosteiros Right</option>
+		<option value="Pescadore">Pescadore</option>
+		<option value="Ponta do Queimado">Ponta do Queimado</option>
+		<option value="Ponta Garca">Ponta Garca</option>
+		<option value="Populo">Populo</option>
+		<option value="Porto Martins- Ponta Negra">Porto Martins- Ponta Negra</option>
+		<option value="Praia da Vitoria">Praia da Vitoria</option>
+		<option value="Praia dos Mosteiros">Praia dos Mosteiros</option>
+		<option value="Quatro Ribeiras">Quatro Ribeiras</option>
+		<option value="Rabo de Peixe">Rabo de Peixe</option>
+		<option value="Ribeira Quente Left">Ribeira Quente Left</option>
+		<option value="Ribeira Quente Right">Ribeira Quente Right</option>
+		<option value="Salga">Salga</option>
+		<option value="Santa Barbara">Santa Barbara</option>
+		<option value="Santa Catarina">Santa Catarina</option>
+		<option value="Santa Clara">Santa Clara</option>
+		<option value="Santa Cruz/Lagoa">Santa Cruz/Lagoa</option>
+		<option value="Santa Iria">Santa Iria</option>
+		<option value="Sao Fernando">Sao Fernando</option>
+		<option value="Terreiro">Terreiro</option>
+		<option value="Vila Franca">Vila Franca</option>
+		<option value="Vila Nova">Vila Nova</option>
+	</optgroup>
+</select>
+<select class="spots" id="Black-Sea">
+<option value="null">Select Spot</option>
+	<optgroup label="Bulgaria">
+		<option value="Kabakum Beach">Kabakum Beach</option>
+		<option value="Obzor">Obzor</option>
+		<option value="Sunny Day">Sunny Day</option>
+	</optgroup>
+</select>
+<select class="spots" id="Canary-Islands">
+<option value="null">Select Spot</option>
+	<optgroup label="Fuerteventura">
+		<option value="Bajo del Medio">Bajo del Medio</option>
+		<option value="Bristol">Bristol</option>
+		<option value="Cotillo">Cotillo</option>
+		<option value="Cruz Roja">Cruz Roja</option>
+		<option value="East Coast">East Coast</option>
+		<option value="El Burro (Glasbeach)">El Burro (Glasbeach)</option>
+		<option value="El Hierro">El Hierro</option>
+		<option value="Generoso">Generoso</option>
+		<option value="Las Salinas">Las Salinas</option>
+		<option value="Los Lobos">Los Lobos</option>
+		<option value="Majanicho">Majanicho</option>
+		<option value="Playa de la Pared">Playa de la Pared</option>
+		<option value="Shipwreck">Shipwreck</option>
+	</optgroup>
+	<optgroup label="Lanzarote">
+		<option value="Ghost Town">Ghost Town</option>
+		<option value="Jameos del Agua">Jameos del Agua</option>
+		<option value="La Santa">La Santa</option>
+		<option value="Morro Negro">Morro Negro</option>
+		<option value="Playa de Famara">Playa de Famara</option>
+		<option value="Playa de Janubio">Playa de Janubio</option>
+		<option value="Playa de La Canteria">Playa de La Canteria</option>
+		<option value="Playa de Orzola">Playa de Orzola</option>
+	</optgroup>
+	<optgroup label="Tenerife">
+		<option value="Derecha del Cartel">Derecha del Cartel</option>
+		<option value="El Callado">El Callado</option>
+		<option value="El Charco ">El Charco </option>
+		<option value="El Confital - Tenerife">El Confital - Tenerife</option>
+		<option value="El Conquistador">El Conquistador</option>
+		<option value="Fuera de la Bajeta">Fuera de la Bajeta</option>
+		<option value="La Caleta">La Caleta</option>
+		<option value="La Fitenia">La Fitenia</option>
+		<option value="La Izquierda / Spanish Left">La Izquierda / Spanish Left</option>
+		<option value="Las Galletas">Las Galletas</option>
+		<option value="Los dos Hermanos">Los dos Hermanos</option>
+		<option value="Los Patos">Los Patos</option>
+		<option value="Playa del Socorro">Playa del Socorro</option>
+		<option value="Punta Blanca - K16">Punta Blanca - K16</option>
+	</optgroup>
+	<optgroup label="Gran Canaria">
+		<option value="Arguineguin">Arguineguin</option>
+		<option value="Bocabarranco - Gran Canaria">Bocabarranco - Gran Canaria</option>
+		<option value="Boquines">Boquines</option>
+		<option value="Derecha del Faro">Derecha del Faro</option>
+		<option value="El Comedor">El Comedor</option>
+		<option value="El Confital">El Confital</option>
+		<option value="El Lloret">El Lloret</option>
+		<option value="El Paso">El Paso</option>
+		<option value="La Barra - Las Canteras">La Barra - Las Canteras</option>
+		<option value="La Cicer">La Cicer</option>
+		<option value="La Izquierda del Muelle">La Izquierda del Muelle</option>
+		<option value="Los Enanos">Los Enanos</option>
+		<option value="Molokai">Molokai</option>
+		<option value="Mosca Point">Mosca Point</option>
+		<option value="Playa de las Mujeres">Playa de las Mujeres</option>
+		<option value="Quintanilla - Gran Canaria">Quintanilla - Gran Canaria</option>
+		<option value="Tauro">Tauro</option>
+		<option value="Vagabundo">Vagabundo</option>
+	</optgroup>
+</select>
+<select class="spots" id="France">
+<option value="null">Select Spot</option>
+	<optgroup label="France">
+		<option value="Algajola">Algajola</option>
+		<option value="Anse de Pen-hat">Anse de Pen-hat</option>
+		<option value="Bandol">Bandol</option>
+		<option value="Beauvallon">Beauvallon</option>
+		<option value="Belharra Perdun   ">Belharra Perdun   </option>
+		<option value="Biarritz Grande Plage">Biarritz Grande Plage</option>
+		<option value="Bidart">Bidart</option>
+		<option value="Biscarrosse-Plage">Biscarrosse-Plage</option>
+		<option value="Blancs-Sablons">Blancs-Sablons</option>
+		<option value="Boutrouilles">Boutrouilles</option>
+		<option value="Calais">Calais</option>
+		<option value="Canet Plage">Canet Plage</option>
+		<option value="Cannes">Cannes</option>
+		<option value="Cap de L'Homy">Cap de L'Homy</option>
+		<option value="Cap Gris-Nez">Cap Gris-Nez</option>
+		<option value="Cap Saint-Louis">Cap Saint-Louis</option>
+		<option value="Capbreton (La Piste/VVF)">Capbreton (La Piste/VVF)</option>
+		<option value="Capo di Feno">Capo di Feno</option>
+		<option value="Carcans">Carcans</option>
+		<option value="Carnon">Carnon</option>
+		<option value="Casernes ">Casernes </option>
+		<option value="Cassis">Cassis</option>
+		<option value="Chassiron">Chassiron</option>
+		<option value="Ciboure Socoa">Ciboure Socoa</option>
+		<option value="Collignon">Collignon</option>
+		<option value="Contis-Plage">Contis-Plage</option>
+		<option value="Cote des Basques">Cote des Basques</option>
+		<option value="Dalbosc ">Dalbosc </option>
+		<option value="Dielette">Dielette</option>
+		<option value="Erretegia">Erretegia</option>
+		<option value="Erromardie">Erromardie</option>
+		<option value="Etel">Etel</option>
+		<option value="Etretat">Etretat</option>
+		<option value="Eze">Eze</option>
+		<option value="Farinole">Farinole</option>
+		<option value="Figari">Figari</option>
+		<option value="Fouesnou">Fouesnou</option>
+		<option value="Galiote">Galiote</option>
+		<option value="Gavres">Gavres</option>
+		<option value="Gigaro">Gigaro</option>
+		<option value="Gruissan">Gruissan</option>
+		<option value="Guethary">Guethary</option>
+		<option value="Guethary (Avalanche) ">Guethary (Avalanche) </option>
+		<option value="Guidel (Les Kaolins)">Guidel (Les Kaolins)</option>
+		<option value="Gwendrez ">Gwendrez </option>
+		<option value="Hatainville ">Hatainville </option>
+		<option value="Hendaye Plage">Hendaye Plage</option>
+		<option value="Hossegor (La Graviere)">Hossegor (La Graviere)</option>
+		<option value="Hossegor (La Nord)">Hossegor (La Nord)</option>
+		<option value="Hossegor (La Sud)">Hossegor (La Sud)</option>
+		<option value="Hourtin">Hourtin</option>
+		<option value="Ilbarritz">Ilbarritz</option>
+		<option value="Kerloch">Kerloch</option>
+		<option value="L'Amelie">L'Amelie</option>
+		<option value="L'Anse du Brick">L'Anse du Brick</option>
+		<option value="L'Aubraie">L'Aubraie</option>
+		<option value="L'Estacade">L'Estacade</option>
+		<option value="L'Horizon">L'Horizon</option>
+		<option value="La Barre">La Barre</option>
+		<option value="La Ciotat">La Ciotat</option>
+		<option value="La Corniche">La Corniche</option>
+		<option value="La Couronne">La Couronne</option>
+		<option value="La Gamelle  ">La Gamelle  </option>
+		<option value="La Jenny">La Jenny</option>
+		<option value="La Madrague">La Madrague</option>
+		<option value="La Palue ">La Palue </option>
+		<option value="La Pointe">La Pointe</option>
+		<option value="La Sauzaie ">La Sauzaie </option>
+		<option value="La Torche ">La Torche </option>
+		<option value="La Tour">La Tour</option>
+		<option value="Lacanau">Lacanau</option>
+		<option value="Lafitenia">Lafitenia</option>
+		<option value="Lampaul Ploudalmezeau">Lampaul Ploudalmezeau</option>
+		<option value="Le Club ">Le Club </option>
+		<option value="Le Crohot des Cavales">Le Crohot des Cavales</option>
+		<option value="Le Dossen ">Le Dossen </option>
+		<option value="Le Gouerou  ">Le Gouerou  </option>
+		<option value="Le Grand Crohot">Le Grand Crohot</option>
+		<option value="Le Gurp">Le Gurp</option>
+		<option value="Le Penon">Le Penon</option>
+		<option value="Le Petit Minou ">Le Petit Minou </option>
+		<option value="Le Pin Sec">Le Pin Sec</option>
+		<option value="Le Porge">Le Porge</option>
+		<option value="Le Prado">Le Prado</option>
+		<option value="Le Prevent">Le Prevent</option>
+		<option value="Le Rouet">Le Rouet</option>
+		<option value="Le Rozel">Le Rozel</option>
+		<option value="Le Ruppione">Le Ruppione</option>
+		<option value="Le Santocha">Le Santocha</option>
+		<option value="Le Truc Vert">Le Truc Vert</option>
+		<option value="Le Verdon">Le Verdon</option>
+		<option value="Les Alcyons">Les Alcyons</option>
+		<option value="Les Boulassiers ">Les Boulassiers </option>
+		<option value="Les Bourdaines">Les Bourdaines</option>
+		<option value="Les Cavaliers">Les Cavaliers</option>
+		<option value="Les Conches/Bud Bud">Les Conches/Bud Bud</option>
+		<option value="Les Corsaires  ">Les Corsaires  </option>
+		<option value="Les Culs Nus">Les Culs Nus</option>
+		<option value="Les Donnants">Les Donnants</option>
+		<option value="Les Dunes ">Les Dunes </option>
+		<option value="Les Estagnots">Les Estagnots</option>
+		<option value="Les Huttes ">Les Huttes </option>
+		<option value="Les Longchamps">Les Longchamps</option>
+		<option value="Les Sablettes">Les Sablettes</option>
+		<option value="Lesconil     ">Lesconil     </option>
+		<option value="Lespecier">Lespecier</option>
+		<option value="Lumio">Lumio</option>
+		<option value="Marinella ">Marinella </option>
+		<option value="Messanges">Messanges</option>
+		<option value="Mimizan-Plage">Mimizan-Plage</option>
+		<option value="Moliets Plage">Moliets Plage</option>
+		<option value="Montalivet">Montalivet</option>
+		<option value="Ondres Plage">Ondres Plage</option>
+		<option value="Ostriconi">Ostriconi</option>
+		<option value="Palavas-les-Flots">Palavas-les-Flots</option>
+		<option value="Parlementia">Parlementia</option>
+		<option value="Penfoul ">Penfoul </option>
+		<option value="Petites Dalles">Petites Dalles</option>
+		<option value="Pin Rolland">Pin Rolland</option>
+		<option value="Pinarellu">Pinarellu</option>
+		<option value="Plage du Loch ">Plage du Loch </option>
+		<option value="Plage du Sillon (St Malo)">Plage du Sillon (St Malo)</option>
+		<option value="Pointe de Dinan ">Pointe de Dinan </option>
+		<option value="Pointe de Lervily">Pointe de Lervily</option>
+		<option value="Pontaillac ">Pontaillac </option>
+		<option value="Pors Ar Villec (Locquirec)">Pors Ar Villec (Locquirec)</option>
+		<option value="Pors-ar-Vag">Pors-ar-Vag</option>
+		<option value="Porsmilin ">Porsmilin </option>
+		<option value="Porzcarn">Porzcarn</option>
+		<option value="Route des Sanguinaires">Route des Sanguinaires</option>
+		<option value="Sables d'Or">Sables d'Or</option>
+		<option value="Sagone">Sagone</option>
+		<option value="Saint Gilles Croix de Vie">Saint Gilles Croix de Vie</option>
+		<option value="Saint Tugen">Saint Tugen</option>
+		<option value="Saint-Nicolas">Saint-Nicolas</option>
+		<option value="Sainte Adresse">Sainte Adresse</option>
+		<option value="Sainte-Barbe">Sainte-Barbe</option>
+		<option value="Saintes-Maries">Saintes-Maries</option>
+		<option value="Sauveterre ">Sauveterre </option>
+		<option value="Siouville">Siouville</option>
+		<option value="Soulac">Soulac</option>
+		<option value="St Pabu ">St Pabu </option>
+		<option value="St-Denis ">St-Denis </option>
+		<option value="St-Girons Plage">St-Girons Plage</option>
+		<option value="St-Laurent du Var">St-Laurent du Var</option>
+		<option value="St-Trojan">St-Trojan</option>
+		<option value="Surtainville">Surtainville</option>
+		<option value="Tarnos">Tarnos</option>
+		<option value="Toulhars ">Toulhars </option>
+		<option value="Trestaou  ">Trestaou  </option>
+		<option value="Trouville">Trouville</option>
+		<option value="Vaucottes">Vaucottes</option>
+		<option value="Vieux Boucau">Vieux Boucau</option>
+		<option value="Villefranche Sur Mer">Villefranche Sur Mer</option>
+		<option value="Wimereux">Wimereux</option>
+		<option value="Yport">Yport</option>
+	</optgroup>
+</select>
+<select class="spots" id="Germany--Denmark">
+<option value="null">Select Spot</option>
+	<optgroup label="Denmark">
+		<option value="Agger">Agger</option>
+		<option value="Bunkers">Bunkers</option>
+		<option value="Hanstholm">Hanstholm</option>
+		<option value="Hvide Sande">Hvide Sande</option>
+		<option value="Thorsminde">Thorsminde</option>
+	</optgroup>
+	<optgroup label="Germany">
+		<option value="Baltrum">Baltrum</option>
+		<option value="Borkum">Borkum</option>
+		<option value="Juist">Juist</option>
+		<option value="Langeoog">Langeoog</option>
+		<option value="Norderney">Norderney</option>
+		<option value="Spiekeroog">Spiekeroog</option>
+		<option value="St Peter Ording">St Peter Ording</option>
+		<option value="Sylt">Sylt</option>
+		<option value="Wangerooge">Wangerooge</option>
+	</optgroup>
+</select>
+<select class="spots" id="Greece">
+<option value="null">Select Spot</option>
+	<optgroup label="Greece">
+		<option value="Vouliagmeni">Vouliagmeni</option>
+	</optgroup>
+</select>
+<select class="spots" id="Iceland">
+<option value="null">Select Spot</option>
+	<optgroup label="Iceland">
+		<option value="Breidavik">Breidavik</option>
+		<option value="Faroe Islands">Faroe Islands</option>
+		<option value="Gardur">Gardur</option>
+		<option value="Grindavik">Grindavik</option>
+		<option value="Ollie's Shipwreck">Ollie's Shipwreck</option>
+		<option value="Rolling Stones">Rolling Stones</option>
+		<option value="Sandvik">Sandvik</option>
+		<option value="The Rock">The Rock</option>
+		<option value="Thorli Beach">Thorli Beach</option>
+	</optgroup>
+</select>
+<select class="spots" id="Italy">
+<option value="null">Select Spot</option>
+	<optgroup label="Sardinia">
+		<option value="Buggerru - Il Molo">Buggerru - Il Molo</option>
+		<option value="Capo Mannu">Capo Mannu</option>
+		<option value="Chia - Il Pontile">Chia - Il Pontile</option>
+		<option value="Goroneddu">Goroneddu</option>
+		<option value="La Speranza">La Speranza</option>
+		<option value="Maresciallo">Maresciallo</option>
+		<option value="Marinedda">Marinedda</option>
+		<option value="Mini Capo">Mini Capo</option>
+		<option value="Pipeline">Pipeline</option>
+		<option value="Piscinas">Piscinas</option>
+		<option value="Poetto">Poetto</option>
+		<option value="Porto Ferro">Porto Ferro</option>
+		<option value="Porto Guinco">Porto Guinco</option>
+		<option value="Racca Point">Racca Point</option>
+		<option value="Rena Majore">Rena Majore</option>
+		<option value="S' Archittu">S' Archittu</option>
+		<option value="Sa Mesa Longa">Sa Mesa Longa</option>
+		<option value="Silver Rock">Silver Rock</option>
+		<option value="Su Conventeddu">Su Conventeddu</option>
+	</optgroup>
+	<optgroup label="Mainland Italy">
+		<option value="Acquabella">Acquabella</option>
+		<option value="Adria">Adria</option>
+		<option value="Alimini - La Nave">Alimini - La Nave</option>
+		<option value="Ansedonia - La Sinistra">Ansedonia - La Sinistra</option>
+		<option value="Arenzano">Arenzano</option>
+		<option value="Artiglieria">Artiglieria</option>
+		<option value="Banzai">Banzai</option>
+		<option value="Baratti - Il Dado">Baratti - Il Dado</option>
+		<option value="Bistrot">Bistrot</option>
+		<option value="Capo Marina">Capo Marina</option>
+		<option value="Capo Torre Cavallo">Capo Torre Cavallo</option>
+		<option value="Capolinea">Capolinea</option>
+		<option value="Elba Island - Laconella">Elba Island - Laconella</option>
+		<option value="Elba Island - Margidore">Elba Island - Margidore</option>
+		<option value="Entella">Entella</option>
+		<option value="Fiorenzuola">Fiorenzuola</option>
+		<option value="Forte Dei Marmi - Pontile">Forte Dei Marmi - Pontile</option>
+		<option value="Garagolo">Garagolo</option>
+		<option value="Il Bunker">Il Bunker</option>
+		<option value="Il Castello">Il Castello</option>
+		<option value="Il Molo">Il Molo</option>
+		<option value="Il Parcheggio">Il Parcheggio</option>
+		<option value="Il Pescatore">Il Pescatore</option>
+		<option value="Il Porto">Il Porto</option>
+		<option value="Il Sasso">Il Sasso</option>
+		<option value="Il Trabucco">Il Trabucco</option>
+		<option value="Irno">Irno</option>
+		<option value="L'Ideale">L'Ideale</option>
+		<option value="La Chiesa">La Chiesa</option>
+		<option value="La Nave">La Nave</option>
+		<option value="La Roccetta">La Roccetta</option>
+		<option value="Lamone">Lamone</option>
+		<option value="Le Dune">Le Dune</option>
+		<option value="Lerici - La Venere">Lerici - La Venere</option>
+		<option value="Levanto">Levanto</option>
+		<option value="Lido di Ostia">Lido di Ostia</option>
+		<option value="Lido Garda">Lido Garda</option>
+		<option value="Lillatro">Lillatro</option>
+		<option value="Livorno - Bagni Fiume">Livorno - Bagni Fiume</option>
+		<option value="Livorno - Il Sale">Livorno - Il Sale</option>
+		<option value="Marina Di Ravenna - La Diga">Marina Di Ravenna - La Diga</option>
+		<option value="Marinaretti">Marinaretti</option>
+		<option value="Melma">Melma</option>
+		<option value="Molo">Molo</option>
+		<option value="Pontile">Pontile</option>
+		<option value="Punta Sabbioni">Punta Sabbioni</option>
+		<option value="Ristorante">Ristorante</option>
+		<option value="San Remo - Tre Ponti">San Remo - Tre Ponti</option>
+		<option value="Santa Agostino">Santa Agostino</option>
+		<option value="Serapo">Serapo</option>
+		<option value="Tito Del Molo">Tito Del Molo</option>
+		<option value="Tombino">Tombino</option>
+		<option value="Torre Dell'Orso">Torre Dell'Orso</option>
+		<option value="Trabucco">Trabucco</option>
+		<option value="Varazze">Varazze</option>
+		<option value="Vasto">Vasto</option>
+	</optgroup>
+	<optgroup label="Sicily">
+		<option value="Bova">Bova</option>
+		<option value="Catania - La Playa">Catania - La Playa</option>
+		<option value="Ciammarita">Ciammarita</option>
+		<option value="Condojanni">Condojanni</option>
+		<option value="Faro">Faro</option>
+		<option value="Giardini Naxos">Giardini Naxos</option>
+		<option value="Il Moletto">Il Moletto</option>
+		<option value="Il Reef">Il Reef</option>
+		<option value="Isola delle Femmine">Isola delle Femmine</option>
+		<option value="La Spiaggia">La Spiaggia</option>
+		<option value="Le Serre">Le Serre</option>
+		<option value="Lungomare">Lungomare</option>
+		<option value="Magaggiari">Magaggiari</option>
+		<option value="Marina di Modica">Marina di Modica</option>
+		<option value="Ponte Di Ferro">Ponte Di Ferro</option>
+		<option value="San Marco, Ciminiera">San Marco, Ciminiera</option>
+		<option value="Santa Lucia">Santa Lucia</option>
+		<option value="Siracusa South">Siracusa South</option>
+		<option value="Spartivento">Spartivento</option>
+		<option value="Torre Archirafi">Torre Archirafi</option>
+	</optgroup>
+</select>
+<select class="spots" id="Netherlands--Belgium">
+<option value="null">Select Spot</option>
+	<optgroup label="Belgium">
+		<option value="Blankenberge">Blankenberge</option>
+		<option value="Bredene">Bredene</option>
+		<option value="De Panne">De Panne</option>
+		<option value="Mariakerke">Mariakerke</option>
+		<option value="Middelkerke">Middelkerke</option>
+		<option value="Oostduinkerke">Oostduinkerke</option>
+		<option value="Oostende">Oostende</option>
+		<option value="Surfers Paradise">Surfers Paradise</option>
+		<option value="T'ooster">T'ooster</option>
+		<option value="Westende">Westende</option>
+	</optgroup>
+	<optgroup label="Netherlands">
+		<option value="Ameland">Ameland</option>
+		<option value="Bergen Aan Zee">Bergen Aan Zee</option>
+		<option value="Blokken">Blokken</option>
+		<option value="Callantsoog">Callantsoog</option>
+		<option value="Camperduin">Camperduin</option>
+		<option value="Domburg">Domburg</option>
+		<option value="Egmond Aan Zee">Egmond Aan Zee</option>
+		<option value="Hoek Van Holland">Hoek Van Holland</option>
+		<option value="Julianadorp">Julianadorp</option>
+		<option value="Katwijk">Katwijk</option>
+		<option value="Kijkduin">Kijkduin</option>
+		<option value="Noordwijk aan Zee">Noordwijk aan Zee</option>
+		<option value="Ouddorp">Ouddorp</option>
+		<option value="Paal 17 - Texel">Paal 17 - Texel</option>
+		<option value="Petten">Petten</option>
+		<option value="Renesse">Renesse</option>
+		<option value="Scheveningen Nord">Scheveningen Nord</option>
+		<option value="Schiermonnikoog">Schiermonnikoog</option>
+		<option value="Schouwen Duiveland">Schouwen Duiveland</option>
+		<option value="Slufter">Slufter</option>
+		<option value="Ter Heijde">Ter Heijde</option>
+		<option value="Terschelling">Terschelling</option>
+		<option value="Vlieland">Vlieland</option>
+		<option value="Vlissingen">Vlissingen</option>
+		<option value="Waddeneilanden">Waddeneilanden</option>
+		<option value="Wijk Aan Zee/Noordpier">Wijk Aan Zee/Noordpier</option>
+		<option value="Zandvoort to Katwijk">Zandvoort to Katwijk</option>
+	</optgroup>
+</select>
+<select class="spots" id="Norway">
+<option value="null">Select Spot</option>
+	<optgroup label="Norway">
+		<option value="Bore">Bore</option>
+		<option value="Brusand">Brusand</option>
+		<option value="Byberg">Byberg</option>
+		<option value="Ervik">Ervik</option>
+		<option value="Hoddevika">Hoddevika</option>
+		<option value="Hovden">Hovden</option>
+		<option value="Hustadvika">Hustadvika</option>
+		<option value="Kraakevika">Kraakevika</option>
+		<option value="Kvassheim">Kvassheim</option>
+		<option value="Lista">Lista</option>
+		<option value="Lop camping">Lop camping</option>
+		<option value="Pigsty/Piggy">Pigsty/Piggy</option>
+		<option value="Point Perfect (Orre)">Point Perfect (Orre)</option>
+		<option value="Refsnes">Refsnes</option>
+		<option value="Reve Havn">Reve Havn</option>
+		<option value="Saltstein">Saltstein</option>
+		<option value="Seines">Seines</option>
+		<option value="Sele">Sele</option>
+		<option value="Skallelv">Skallelv</option>
+		<option value="Storvika">Storvika</option>
+		<option value="Unstad Beach">Unstad Beach</option>
+	</optgroup>
+</select>
+<select class="spots" id="Spain--Portugal">
+<option value="null">Select Spot</option>
+	<optgroup label="Madeira">
+		<option value="Achadas da Cruz">Achadas da Cruz</option>
+		<option value="Jardim do Mar">Jardim do Mar</option>
+		<option value="Lugar de Baixo">Lugar de Baixo</option>
+		<option value="Madalena do Mar">Madalena do Mar</option>
+		<option value="Ponta Paul">Ponta Paul</option>
+		<option value="Ribeira da Janela">Ribeira da Janela</option>
+	</optgroup>
+	<optgroup label="Portugal">
+		<option value="Afife">Afife</option>
+		<option value="Arrifana">Arrifana</option>
+		<option value="Buarcos">Buarcos</option>
+		<option value="Cabedelo">Cabedelo</option>
+		<option value="Cantinho Da Baia">Cantinho Da Baia</option>
+		<option value="Carcavelos">Carcavelos</option>
+		<option value="Carrapateira">Carrapateira</option>
+		<option value="Cortegaca">Cortegaca</option>
+		<option value="Costa da Caparica">Costa da Caparica</option>
+		<option value="Ericeira">Ericeira</option>
+		<option value="Esmoriz">Esmoriz</option>
+		<option value="Espinho">Espinho</option>
+		<option value="Falesia-Vilamoura">Falesia-Vilamoura</option>
+		<option value="Foz de Lizandro">Foz de Lizandro</option>
+		<option value="Lagide">Lagide</option>
+		<option value="Lagos">Lagos</option>
+		<option value="Lisbon/Estoril">Lisbon/Estoril</option>
+		<option value="Matosinhos">Matosinhos</option>
+		<option value="Odeceixe">Odeceixe</option>
+		<option value="Praia Azul">Praia Azul</option>
+		<option value="Praia Da Areia Branca">Praia Da Areia Branca</option>
+		<option value="Praia da Barra">Praia da Barra</option>
+		<option value="Praia da Rocha">Praia da Rocha</option>
+		<option value="Praia de Mira">Praia de Mira</option>
+		<option value="Praia do Guincho">Praia do Guincho</option>
+		<option value="Praia Grande Sintra">Praia Grande Sintra</option>
+		<option value="Sagres (South)">Sagres (South)</option>
+		<option value="Sagres (Tonel)">Sagres (Tonel)</option>
+		<option value="Santa Cruz">Santa Cruz</option>
+		<option value="Santa Cruz">Santa Cruz</option>
+		<option value="Sines">Sines</option>
+		<option value="Supertubos">Supertubos</option>
+		<option value="Vale Figueiras">Vale Figueiras</option>
+		<option value="Viana do Castelo">Viana do Castelo</option>
+	</optgroup>
+	<optgroup label="Spain">
+		<option value="Aguas Blancas - Ibiza">Aguas Blancas - Ibiza</option>
+		<option value="Arenal de Moris">Arenal de Moris</option>
+		<option value="Aucanada - Mallorca">Aucanada - Mallorca</option>
+		<option value="Barbate">Barbate</option>
+		<option value="Barceloneta">Barceloneta</option>
+		<option value="Cadiz">Cadiz</option>
+		<option value="Cala Agulla">Cala Agulla</option>
+		<option value="Cala Major">Cala Major</option>
+		<option value="Cala Mesquida">Cala Mesquida</option>
+		<option value="Cala Nova - Ibiza">Cala Nova - Ibiza</option>
+		<option value="Campelo">Campelo</option>
+		<option value="Can Pujols - Ibiza">Can Pujols - Ibiza</option>
+		<option value="Canyamel">Canyamel</option>
+		<option value="Cero">Cero</option>
+		<option value="Conil">Conil</option>
+		<option value="El Brusco">El Brusco</option>
+		<option value="El Palmar">El Palmar</option>
+		<option value="Faro de Calaburra - Andalucia">Faro de Calaburra - Andalucia</option>
+		<option value="Foz">Foz</option>
+		<option value="Jucar">Jucar</option>
+		<option value="La Manga del Mar Menor">La Manga del Mar Menor</option>
+		<option value="La Mata - Valenciana">La Mata - Valenciana</option>
+		<option value="La Mojonera - Murcia">La Mojonera - Murcia</option>
+		<option value="Los Alamos - Andalucia">Los Alamos - Andalucia</option>
+		<option value="Los Locos">Los Locos</option>
+		<option value="Louro">Louro</option>
+		<option value="Masnou">Masnou</option>
+		<option value="Montgat">Montgat</option>
+		<option value="Mundaka">Mundaka</option>
+		<option value="Orrua">Orrua</option>
+		<option value="Paguera - Mallorca">Paguera - Mallorca</option>
+		<option value="Pantin">Pantin</option>
+		<option value="Patos">Patos</option>
+		<option value="Peniscola">Peniscola</option>
+		<option value="Platja de Cavalleria - Menorca">Platja de Cavalleria - Menorca</option>
+		<option value="Platja de San Juan - Valenciana">Platja de San Juan - Valenciana</option>
+		<option value="Platja Migjorn - Formentera">Platja Migjorn - Formentera</option>
+		<option value="Playa Cueva del Lobo">Playa Cueva del Lobo</option>
+		<option value="Playa de Carchuna/Calahonda">Playa de Carchuna/Calahonda</option>
+		<option value="Playa de la Carihuela - Andalucia">Playa de la Carihuela - Andalucia</option>
+		<option value="Playa de Levante - Valencia">Playa de Levante - Valencia</option>
+		<option value="Playa de los Genoveses">Playa de los Genoveses</option>
+		<option value="Playa de los Lances">Playa de los Lances</option>
+		<option value="Playa de Meron">Playa de Meron</option>
+		<option value="Playa de Somo">Playa de Somo</option>
+		<option value="Playa de Traba">Playa de Traba</option>
+		<option value="Playa del Dedo - Andalucia">Playa del Dedo - Andalucia</option>
+		<option value="Playa Jondal - Ibiza">Playa Jondal - Ibiza</option>
+		<option value="Praia de Sabon">Praia de Sabon</option>
+		<option value="Puerto de Soller">Puerto de Soller</option>
+		<option value="Punta Galea">Punta Galea</option>
+		<option value="Punta Prima - Menorca">Punta Prima - Menorca</option>
+		<option value="Rodiles">Rodiles</option>
+		<option value="Sagunto">Sagunto</option>
+		<option value="Salinas y Espartal">Salinas y Espartal</option>
+		<option value="Sant Tomas - Menorca">Sant Tomas - Menorca</option>
+		<option value="Santa Marina">Santa Marina</option>
+		<option value="Santander (El Sardinero)">Santander (El Sardinero)</option>
+		<option value="Sitges">Sitges</option>
+		<option value="Son Bou - Menorca">Son Bou - Menorca</option>
+		<option value="Sopelana">Sopelana</option>
+		<option value="Tapia de Casariego">Tapia de Casariego</option>
+		<option value="Xivares">Xivares</option>
+		<option value="Yerbabuena">Yerbabuena</option>
+		<option value="Zarautz">Zarautz</option>
+		<option value="Zurriola">Zurriola</option>
+	</optgroup>
+</select>
+<select class="spots" id="UK--Ireland">
+<option value="null">Select Spot</option>
+	<optgroup label="Isle of Man">
+		<option value="Barrel Rock">Barrel Rock</option>
+		<option value="drivers">drivers</option>
+		<option value="Isle of Man">Isle of Man</option>
+		<option value="S*** Pipe">S*** Pipe</option>
+		<option value="The edge">The edge</option>
+		<option value="The Point">The Point</option>
+	</optgroup>
+	<optgroup label="England">
+		<option value="Bacton">Bacton</option>
+		<option value="Bamburgh">Bamburgh</option>
+		<option value="Bantham">Bantham</option>
+		<option value="Beadnell Bay">Beadnell Bay</option>
+		<option value="Birling Gap">Birling Gap</option>
+		<option value="Blackpool South">Blackpool South</option>
+		<option value="Boscombe">Boscombe</option>
+		<option value="Bournemouth">Bournemouth</option>
+		<option value="Bracklesham Bay">Bracklesham Bay</option>
+		<option value="Brighton - Marina">Brighton - Marina</option>
+		<option value="Brighton - West Pier">Brighton - West Pier</option>
+		<option value="Broadstairs - Viking Bay">Broadstairs - Viking Bay</option>
+		<option value="Bude - Crooklets">Bude - Crooklets</option>
+		<option value="Camber sands">Camber sands</option>
+		<option value="Cayton Bay - Pumphouse">Cayton Bay - Pumphouse</option>
+		<option value="Challaborough">Challaborough</option>
+		<option value="Constantine">Constantine</option>
+		<option value="Corblets Bay">Corblets Bay</option>
+		<option value="Cromer">Cromer</option>
+		<option value="Croyde Beach">Croyde Beach</option>
+		<option value="East Runton">East Runton</option>
+		<option value="East Wittering">East Wittering</option>
+		<option value="Eastbourne">Eastbourne</option>
+		<option value="Exmouth">Exmouth</option>
+		<option value="Falmouth">Falmouth</option>
+		<option value="Filey">Filey</option>
+		<option value="Folkestone">Folkestone</option>
+		<option value="Godrevy">Godrevy</option>
+		<option value="Gorleston">Gorleston</option>
+		<option value="Great Yarmouth">Great Yarmouth</option>
+		<option value="Gwithian">Gwithian</option>
+		<option value="Harlyn">Harlyn</option>
+		<option value="Hayling Island">Hayling Island</option>
+		<option value="Highcliffe">Highcliffe</option>
+		<option value="Hornsea">Hornsea</option>
+		<option value="Isle of Wight - Compton ">Isle of Wight - Compton </option>
+		<option value="Isle of Wight - Freshwater">Isle of Wight - Freshwater</option>
+		<option value="Joss Bay">Joss Bay</option>
+		<option value="Kimmeridge">Kimmeridge</option>
+		<option value="Littlehampton">Littlehampton</option>
+		<option value="Lowestoft">Lowestoft</option>
+		<option value="Lusty Glaze">Lusty Glaze</option>
+		<option value="Lyme Regis">Lyme Regis</option>
+		<option value="Mawgan Porth">Mawgan Porth</option>
+		<option value="Mundesley">Mundesley</option>
+		<option value="Newquay - Fistral North">Newquay - Fistral North</option>
+		<option value="Newquay - Porth">Newquay - Porth</option>
+		<option value="Newquay - Tolcarne Wedge">Newquay - Tolcarne Wedge</option>
+		<option value="Newquay - Towan / Great Western">Newquay - Towan / Great Western</option>
+		<option value="Paignton">Paignton</option>
+		<option value="Pentewan">Pentewan</option>
+		<option value="Perranporth (Droskyn)">Perranporth (Droskyn)</option>
+		<option value="Polzeath">Polzeath</option>
+		<option value="Porthleven">Porthleven</option>
+		<option value="Porthmeor">Porthmeor</option>
+		<option value="Porthtowan">Porthtowan</option>
+		<option value="Portreath - Beach">Portreath - Beach</option>
+		<option value="Praa Sands">Praa Sands</option>
+		<option value="Putsborough">Putsborough</option>
+		<option value="Redcar">Redcar</option>
+		<option value="Saltburn Beach">Saltburn Beach</option>
+		<option value="Sandymouth">Sandymouth</option>
+		<option value="Saunton Sands">Saunton Sands</option>
+		<option value="Scarborough - North Bay">Scarborough - North Bay</option>
+		<option value="Scarborough - South Bay">Scarborough - South Bay</option>
+		<option value="Sennen">Sennen</option>
+		<option value="Shoreham">Shoreham</option>
+		<option value="Sidmouth (Lyme Bay)">Sidmouth (Lyme Bay)</option>
+		<option value="Silecroft">Silecroft</option>
+		<option value="Skegness">Skegness</option>
+		<option value="South Shields">South Shields</option>
+		<option value="Southbourne">Southbourne</option>
+		<option value="Southend on Sea">Southend on Sea</option>
+		<option value="Southwold">Southwold</option>
+		<option value="St Bees">St Bees</option>
+		<option value="Sunderland">Sunderland</option>
+		<option value="Sutton on Sea">Sutton on Sea</option>
+		<option value="Teignmouth">Teignmouth</option>
+		<option value="Tidemills">Tidemills</option>
+		<option value="Torbay">Torbay</option>
+		<option value="Trebarwith strand">Trebarwith strand</option>
+		<option value="Tynemouth - Longsands">Tynemouth - Longsands</option>
+		<option value="Walcott">Walcott</option>
+		<option value="Watergate Bay">Watergate Bay</option>
+		<option value="Wembury">Wembury</option>
+		<option value="West Wittering">West Wittering</option>
+		<option value="Westward Ho!">Westward Ho!</option>
+		<option value="Whitby">Whitby</option>
+		<option value="Whitley Bay">Whitley Bay</option>
+		<option value="Whitsand Bay">Whitsand Bay</option>
+		<option value="Widemouth Bay">Widemouth Bay</option>
+		<option value="Withernsea">Withernsea</option>
+		<option value="Woolacombe">Woolacombe</option>
+	</optgroup>
+	<optgroup label="Ireland">
+		<option value="Achill Island">Achill Island</option>
+		<option value="Annestown Bay">Annestown Bay</option>
+		<option value="Ballybunion ">Ballybunion </option>
+		<option value="Banna Beach ">Banna Beach </option>
+		<option value="Benone Strand">Benone Strand</option>
+		<option value="Bertra Beach (Murrisk)">Bertra Beach (Murrisk)</option>
+		<option value="Brandon Bay">Brandon Bay</option>
+		<option value="Bundoran - The Peak">Bundoran - The Peak</option>
+		<option value="Bunmahon">Bunmahon</option>
+		<option value="Carrowniskey">Carrowniskey</option>
+		<option value="Clogherhead">Clogherhead</option>
+		<option value="Cregg / Moy Beach">Cregg / Moy Beach</option>
+		<option value="Culdaff">Culdaff</option>
+		<option value="Dublin Area">Dublin Area</option>
+		<option value="Dunfanaghy">Dunfanaghy</option>
+		<option value="Dunmoran Strand">Dunmoran Strand</option>
+		<option value="Easkey Left">Easkey Left</option>
+		<option value="Easkey Right">Easkey Right</option>
+		<option value="Elly Bay West">Elly Bay West</option>
+		<option value="Enniscrone">Enniscrone</option>
+		<option value="Garretstown">Garretstown</option>
+		<option value="Inch Reefs">Inch Reefs</option>
+		<option value="Inch Strand">Inch Strand</option>
+		<option value="Inchydoney">Inchydoney</option>
+		<option value="Kilcummin Harbour">Kilcummin Harbour</option>
+		<option value="Kilmurren">Kilmurren</option>
+		<option value="Lackan Bay / Kilcummin">Lackan Bay / Kilcummin</option>
+		<option value="Lahinch - Beach">Lahinch - Beach</option>
+		<option value="Long Strand (Castlefreke)">Long Strand (Castlefreke)</option>
+		<option value="Mullaghmore Head">Mullaghmore Head</option>
+		<option value="Mullaghmore Strand">Mullaghmore Strand</option>
+		<option value="North Malin">North Malin</option>
+		<option value="Ownahincha">Ownahincha</option>
+		<option value="Pollan Bay">Pollan Bay</option>
+		<option value="Red Strand (Dirk Bay)">Red Strand (Dirk Bay)</option>
+		<option value="Rosapenna">Rosapenna</option>
+		<option value="Rossbeigh">Rossbeigh</option>
+		<option value="Rossnowlagh">Rossnowlagh</option>
+		<option value="Strandhill">Strandhill</option>
+		<option value="Tramore - Strand">Tramore - Strand</option>
+	</optgroup>
+	<optgroup label="Guernsey">
+		<option value="Fort Le Marchant - Guernsey">Fort Le Marchant - Guernsey</option>
+		<option value="L'Ancresse Bay - Guernsey">L'Ancresse Bay - Guernsey</option>
+		<option value="Perelle Bay - Dom Hue - Guernsey">Perelle Bay - Dom Hue - Guernsey</option>
+		<option value="Portinfer - Guernsey">Portinfer - Guernsey</option>
+		<option value="Vazon Bay - Beach - Guernsey">Vazon Bay - Beach - Guernsey</option>
+	</optgroup>
+	<optgroup label="Northern Ireland">
+		<option value="Newcastle">Newcastle</option>
+		<option value="Portrush">Portrush</option>
+	</optgroup>
+	<optgroup label="Wales">
+		<option value="Aberavon">Aberavon</option>
+		<option value="Aberdaron">Aberdaron</option>
+		<option value="Anglesey">Anglesey</option>
+		<option value="Barmouth">Barmouth</option>
+		<option value="Borth / Ynyslas ">Borth / Ynyslas </option>
+		<option value="Caswell Bay">Caswell Bay</option>
+		<option value="Freshwater West">Freshwater West</option>
+		<option value="Harlech to Barmouth">Harlech to Barmouth</option>
+		<option value="Hells Mouth">Hells Mouth</option>
+		<option value="Hunts Bay">Hunts Bay</option>
+		<option value="Langland Bay">Langland Bay</option>
+		<option value="Llangennith / Rhossili">Llangennith / Rhossili</option>
+		<option value="Manorbier">Manorbier</option>
+		<option value="Newgale">Newgale</option>
+		<option value="Poppit Sands">Poppit Sands</option>
+		<option value="Porthcawl - Coney Beach">Porthcawl - Coney Beach</option>
+		<option value="Porthcawl - Rest Bay">Porthcawl - Rest Bay</option>
+		<option value="Tenby South Beach">Tenby South Beach</option>
+		<option value="Tywyn to Aberdovey">Tywyn to Aberdovey</option>
+		<option value="Whitesands Bay">Whitesands Bay</option>
+	</optgroup>
+	<optgroup label="Scotland">
+		<option value="Aberdeen - Beach">Aberdeen - Beach</option>
+		<option value="Armadale Bay">Armadale Bay</option>
+		<option value="Balevullin">Balevullin</option>
+		<option value="Banff - Beach">Banff - Beach</option>
+		<option value="Belhaven Bay (Dunbar)">Belhaven Bay (Dunbar)</option>
+		<option value="Birsay Bay">Birsay Bay</option>
+		<option value="Brimms Ness - The Point">Brimms Ness - The Point</option>
+		<option value="Brora Beach">Brora Beach</option>
+		<option value="Bu Sands">Bu Sands</option>
+		<option value="Coldingham Bay">Coldingham Bay</option>
+		<option value="Durness (Balnakeil Bay)">Durness (Balnakeil Bay)</option>
+		<option value="Eoropie">Eoropie</option>
+		<option value="Fisk Helliar">Fisk Helliar</option>
+		<option value="Fraserburgh">Fraserburgh</option>
+		<option value="Glenbrittle">Glenbrittle</option>
+		<option value="Hosta">Hosta</option>
+		<option value="Islay (Machir Bay)">Islay (Machir Bay)</option>
+		<option value="Isle of Lewis">Isle of Lewis</option>
+		<option value="Lossiemouth">Lossiemouth</option>
+		<option value="Lunan Bay">Lunan Bay</option>
+		<option value="Machrihanish">Machrihanish</option>
+		<option value="Mangersta">Mangersta</option>
+		<option value="Marwick">Marwick</option>
+		<option value="Melvich">Melvich</option>
+		<option value="Pease Bay">Pease Bay</option>
+		<option value="Peterhead (Sandford Bay) ">Peterhead (Sandford Bay) </option>
+		<option value="Port Bharrapol (Tiree)">Port Bharrapol (Tiree)</option>
+		<option value="Sandend (Moray Firth)">Sandend (Moray Firth)</option>
+		<option value="Sandside Bay">Sandside Bay</option>
+		<option value="Sandwood Bay">Sandwood Bay</option>
+		<option value="Scarasta">Scarasta</option>
+		<option value="Sinclairs Bay - Beach">Sinclairs Bay - Beach</option>
+		<option value="Skail Bay Right">Skail Bay Right</option>
+		<option value="South Shetland">South Shetland</option>
+		<option value="St Andrews East">St Andrews East</option>
+		<option value="Staffin Bay">Staffin Bay</option>
+		<option value="Stonehaven ">Stonehaven </option>
+		<option value="Strathy">Strathy</option>
+		<option value="Talisker Bay">Talisker Bay</option>
+		<option value="Thurso East">Thurso East</option>
+		<option value="Torrisdale">Torrisdale</option>
+	</optgroup>
+	<optgroup label="Jersey">
+		<option value="Greve de Lecq - Jersey">Greve de Lecq - Jersey</option>
+		<option value="Jersey">Jersey</option>
+		<option value="La Rocco - Jersey">La Rocco - Jersey</option>
+		<option value="Les Brayes - Jersey">Les Brayes - Jersey</option>
+		<option value="Petite Port - Jersey">Petite Port - Jersey</option>
+		<option value="Plemont Bay - Jersey">Plemont Bay - Jersey</option>
+		<option value="Secrets - Jersey">Secrets - Jersey</option>
+		<option value="St Brelades - Jersey">St Brelades - Jersey</option>
+		<option value="Stinky Bay - Jersey">Stinky Bay - Jersey</option>
+	</optgroup>
+</select>
+<select class="spots" id="Central-America-North">
+<option value="null">Select Spot</option>
+	<optgroup label="El Salvador">
+		<option value="El Cuco">El Cuco</option>
+		<option value="El Espino">El Espino</option>
+		<option value="El Palmarcito">El Palmarcito</option>
+		<option value="El Sunzal">El Sunzal</option>
+		<option value="El Zonte">El Zonte</option>
+		<option value="K59 and 61">K59 and 61</option>
+		<option value="La Bocana">La Bocana</option>
+		<option value="La Paz">La Paz</option>
+		<option value="La Vaca">La Vaca</option>
+		<option value="La Ventana">La Ventana</option>
+		<option value="Las Flores">Las Flores</option>
+		<option value="Las Tunas">Las Tunas</option>
+		<option value="Los Cobanos">Los Cobanos</option>
+		<option value="Lucky Mans">Lucky Mans</option>
+		<option value="Mizata">Mizata</option>
+		<option value="Playa Conchalio">Playa Conchalio</option>
+		<option value="Punta Mango">Punta Mango</option>
+		<option value="Punta Roca">Punta Roca</option>
+		<option value="The Pier - Costa del Balsamo">The Pier - Costa del Balsamo</option>
+		<option value="Toro de Oro">Toro de Oro</option>
+	</optgroup>
+	<optgroup label="Guatemala">
+		<option value="Barra de la Gabina">Barra de la Gabina</option>
+		<option value="Champerico">Champerico</option>
+		<option value="Chulamar">Chulamar</option>
+		<option value="Iztapa">Iztapa</option>
+		<option value="La Barra - Likin">La Barra - Likin</option>
+		<option value="La Barrita">La Barrita</option>
+		<option value="Las Lisas">Las Lisas</option>
+		<option value="Monterrico">Monterrico</option>
+		<option value="Sipacate">Sipacate</option>
+		<option value="Tecojate">Tecojate</option>
+		<option value="Tilapa">Tilapa</option>
+		<option value="Tulate">Tulate</option>
+	</optgroup>
+</select>
+<select class="spots" id="Central-America-South">
+<option value="null">Select Spot</option>
+	<optgroup label="Panama">
+		<option value="Bluff">Bluff</option>
+		<option value="Careneros">Careneros</option>
+		<option value="Emily's (Morro Negrito)">Emily's (Morro Negrito)</option>
+		<option value="Esmeralda">Esmeralda</option>
+		<option value="First Beach">First Beach</option>
+		<option value="Hawaiisito">Hawaiisito</option>
+		<option value="La Barqueta">La Barqueta</option>
+		<option value="La Zurda">La Zurda</option>
+		<option value="Mojon Beach">Mojon Beach</option>
+		<option value="Nestles">Nestles</option>
+		<option value="Nuevo Loco">Nuevo Loco</option>
+		<option value="P-Land">P-Land</option>
+		<option value="Paunch">Paunch</option>
+		<option value="Playa Pedasi">Playa Pedasi</option>
+		<option value="Playa Serena">Playa Serena</option>
+		<option value="Playa Venao">Playa Venao</option>
+		<option value="Puerto Armuelles">Puerto Armuelles</option>
+		<option value="Punta Palmar (San Carlos)">Punta Palmar (San Carlos)</option>
+		<option value="Punta Teta">Punta Teta</option>
+		<option value="Rinconsito">Rinconsito</option>
+		<option value="Rio Mar">Rio Mar</option>
+		<option value="Rocky Point">Rocky Point</option>
+		<option value="San Carlos Point">San Carlos Point</option>
+		<option value="Sandbar">Sandbar</option>
+		<option value="Santa Catalina - La Punta">Santa Catalina - La Punta</option>
+		<option value="Silverbacks">Silverbacks</option>
+		<option value="The Point">The Point</option>
+	</optgroup>
+	<optgroup label="Nicaragua">
+		<option value="Casares">Casares</option>
+		<option value="El Astillero">El Astillero</option>
+		<option value="El Coco">El Coco</option>
+		<option value="El Penon">El Penon</option>
+		<option value="El Remanso">El Remanso</option>
+		<option value="El Yanke">El Yanke</option>
+		<option value="Manzanillo">Manzanillo</option>
+		<option value="Manzanillo (Rivas Province)">Manzanillo (Rivas Province)</option>
+		<option value="Masachapa">Masachapa</option>
+		<option value="Montelimar">Montelimar</option>
+		<option value="Playa Colorado">Playa Colorado</option>
+		<option value="Playa Hermosa">Playa Hermosa</option>
+		<option value="Playa Maderas">Playa Maderas</option>
+		<option value="Playa Rosada">Playa Rosada</option>
+		<option value="Playa Santana">Playa Santana</option>
+		<option value="Pochomil">Pochomil</option>
+		<option value="Popoyo">Popoyo</option>
+		<option value="Puerto Sandino">Puerto Sandino</option>
+		<option value="Punta Miramar">Punta Miramar</option>
+		<option value="Salinas Grandes">Salinas Grandes</option>
+		<option value="Sally Ann's">Sally Ann's</option>
+		<option value="Tamarind">Tamarind</option>
+	</optgroup>
+	<optgroup label="Costa Rica">
+		<option value="Avellana">Avellana</option>
+		<option value="Backwash (Golfo Dulce)">Backwash (Golfo Dulce)</option>
+		<option value="Barco Quebrado">Barco Quebrado</option>
+		<option value="Boca Barranca">Boca Barranca</option>
+		<option value="Boca Damas">Boca Damas</option>
+		<option value="Boca Tusubres">Boca Tusubres</option>
+		<option value="Carate">Carate</option>
+		<option value="Cedros">Cedros</option>
+		<option value="Dominicalito">Dominicalito</option>
+		<option value="Drake's Bay">Drake's Bay</option>
+		<option value="Eclipse">Eclipse</option>
+		<option value="Esterillos Oeste">Esterillos Oeste</option>
+		<option value="Hog Hole">Hog Hole</option>
+		<option value="Isla Uvita">Isla Uvita</option>
+		<option value="Langosta">Langosta</option>
+		<option value="Little Shoal">Little Shoal</option>
+		<option value="Nosara">Nosara</option>
+		<option value="Ollies Point (Potrero Grande)">Ollies Point (Potrero Grande)</option>
+		<option value="Ostional">Ostional</option>
+		<option value="Pan Dulce">Pan Dulce</option>
+		<option value="Pavones">Pavones</option>
+		<option value="Playa Ballena">Playa Ballena</option>
+		<option value="Playa Bonita">Playa Bonita</option>
+		<option value="Playa Caletas">Playa Caletas</option>
+		<option value="Playa Carmen">Playa Carmen</option>
+		<option value="Playa Cocles">Playa Cocles</option>
+		<option value="Playa Coyote">Playa Coyote</option>
+		<option value="Playa Dominical">Playa Dominical</option>
+		<option value="Playa El Rey">Playa El Rey</option>
+		<option value="Playa Escondida">Playa Escondida</option>
+		<option value="Playa Grande - Guanacaste">Playa Grande - Guanacaste</option>
+		<option value="Playa Guiones">Playa Guiones</option>
+		<option value="Playa Hermosa">Playa Hermosa</option>
+		<option value="Playa Hermosa - Osa Peninsula">Playa Hermosa - Osa Peninsula</option>
+		<option value="Playa Jaco">Playa Jaco</option>
+		<option value="Playa Manzanillo">Playa Manzanillo</option>
+		<option value="Playa Matapalo">Playa Matapalo</option>
+		<option value="Playa Negra - Guanacaste">Playa Negra - Guanacaste</option>
+		<option value="Playa Negra - Limon">Playa Negra - Limon</option>
+		<option value="Playa Santa Teresa">Playa Santa Teresa</option>
+		<option value="Playitas - Osa Peninsula">Playitas - Osa Peninsula</option>
+		<option value="Puerto Caldera">Puerto Caldera</option>
+		<option value="Punta Banco">Punta Banco</option>
+		<option value="Punta Barigona">Punta Barigona</option>
+		<option value="Punta Burica">Punta Burica</option>
+		<option value="Punta Dominical">Punta Dominical</option>
+		<option value="Punta Uva">Punta Uva</option>
+		<option value="Punta Uvita">Punta Uvita</option>
+		<option value="Quepos Bombie">Quepos Bombie</option>
+		<option value="Quepos Jetty">Quepos Jetty</option>
+		<option value="Rio Claro Rivermouth">Rio Claro Rivermouth</option>
+		<option value="Rio Sierpe Rivermouth">Rio Sierpe Rivermouth</option>
+		<option value="Roca Alta">Roca Alta</option>
+		<option value="Roca Loca">Roca Loca</option>
+		<option value="Salsa Brava">Salsa Brava</option>
+		<option value="Tamarindo">Tamarindo</option>
+		<option value="Tivives">Tivives</option>
+		<option value="Tortuguero Beach">Tortuguero Beach</option>
+		<option value="Westfalia">Westfalia</option>
+		<option value="Witches Rock (Playa Naranjo)">Witches Rock (Playa Naranjo)</option>
+		<option value="Zancudo">Zancudo</option>
+	</optgroup>
+</select>
+<select class="spots" id="Mexico-Baja">
+<option value="null">Select Spot</option>
+	<optgroup label="Baja California">
+		<option value="Bahia Chileno">Bahia Chileno</option>
+		<option value="Bahia Tortugas">Bahia Tortugas</option>
+		<option value="Cabo Colonet">Cabo Colonet</option>
+		<option value="Calafia">Calafia</option>
+		<option value="Cerritos">Cerritos</option>
+		<option value="Costa Azul">Costa Azul</option>
+		<option value="El Cardon">El Cardon</option>
+		<option value="Isla Todos Santos (Killers) ">Isla Todos Santos (Killers) </option>
+		<option value="K38, K38.5, K39">K38, K38.5, K39</option>
+		<option value="K55/Campo Lopez">K55/Campo Lopez</option>
+		<option value="K58/La Fonda">K58/La Fonda</option>
+		<option value="Las Frailes">Las Frailes</option>
+		<option value="Las Gaviotas - Baja">Las Gaviotas - Baja</option>
+		<option value="Migrino">Migrino</option>
+		<option value="Miller's Landing">Miller's Landing</option>
+		<option value="Monuments">Monuments</option>
+		<option value="Nine Palms">Nine Palms</option>
+		<option value="Open Doors">Open Doors</option>
+		<option value="Pescadero">Pescadero</option>
+		<option value="Playa Elefante">Playa Elefante</option>
+		<option value="Puerto San Andres">Puerto San Andres</option>
+		<option value="Punta Abreojos">Punta Abreojos</option>
+		<option value="Punta Arenas">Punta Arenas</option>
+		<option value="Punta Blanca">Punta Blanca</option>
+		<option value="Punta Canoas">Punta Canoas</option>
+		<option value="Punta Cono">Punta Cono</option>
+		<option value="Punta Maria">Punta Maria</option>
+		<option value="Punta Negra">Punta Negra</option>
+		<option value="Punta Sta Rosalillita">Punta Sta Rosalillita</option>
+		<option value="Punto Lobos">Punto Lobos</option>
+		<option value="Quatro Casas">Quatro Casas</option>
+		<option value="Salsipuedes">Salsipuedes</option>
+		<option value="San Antonio del Mar">San Antonio del Mar</option>
+		<option value="Santo Tomas">Santo Tomas</option>
+		<option value="Scorpion Bay">Scorpion Bay</option>
+		<option value="Shipwrecks">Shipwrecks</option>
+		<option value="Shipwrecks/Freighters">Shipwrecks/Freighters</option>
+		<option value="The Wall">The Wall</option>
+		<option value="Todos Santos (mainland)">Todos Santos (mainland)</option>
+	</optgroup>
+</select>
+<select class="spots" id="Mexico-Pacific">
+<option value="null">Select Spot</option>
+	<optgroup label="Pacific Coast Mexico">
+		<option value="Acapulco">Acapulco</option>
+		<option value="Aticama">Aticama</option>
+		<option value="Barra de Potosi">Barra de Potosi</option>
+		<option value="Colotepec">Colotepec</option>
+		<option value="Cuyutlan">Cuyutlan</option>
+		<option value="El Faro (Guerrero)">El Faro (Guerrero)</option>
+		<option value="El Paraiso">El Paraiso</option>
+		<option value="Escolleras">Escolleras</option>
+		<option value="Hammerhead">Hammerhead</option>
+		<option value="La Bocana">La Bocana</option>
+		<option value="La Punta - Playa Zicatela">La Punta - Playa Zicatela</option>
+		<option value="La Saladita">La Saladita</option>
+		<option value="La Ventosa">La Ventosa</option>
+		<option value="Las Gatas">Las Gatas</option>
+		<option value="Las Islitas">Las Islitas</option>
+		<option value="Manzanillo  Bay">Manzanillo  Bay</option>
+		<option value="Ostiones">Ostiones</option>
+		<option value="Pascuales">Pascuales</option>
+		<option value="Petacalco">Petacalco</option>
+		<option value="Playa Boca Chica">Playa Boca Chica</option>
+		<option value="Playa Linda">Playa Linda</option>
+		<option value="Playa Los Cerritos">Playa Los Cerritos</option>
+		<option value="Puerto Escondido">Puerto Escondido</option>
+		<option value="Punta Chivo">Punta Chivo</option>
+		<option value="Punta Conejo ">Punta Conejo </option>
+		<option value="Punta Sayulita">Punta Sayulita</option>
+		<option value="Rio Nexpa">Rio Nexpa</option>
+		<option value="San Augustin">San Augustin</option>
+		<option value="San Pancho">San Pancho</option>
+		<option value="Santa Cruz - Nayarit">Santa Cruz - Nayarit</option>
+		<option value="Stoner's Point">Stoner's Point</option>
+		<option value="The Ranch">The Ranch</option>
+		<option value="Troncones">Troncones</option>
+	</optgroup>
+</select>
+<select class="spots" id="Central-Africa">
+<option value="null">Select Spot</option>
+	<optgroup label="Angola">
+		<option value="Cabo Ledo">Cabo Ledo</option>
+		<option value="Chicala">Chicala</option>
+		<option value="Setters">Setters</option>
+		<option value="Shipwreck">Shipwreck</option>
+	</optgroup>
+	<optgroup label="Gabon">
+	</optgroup>
+	<optgroup label="Republic of the Congo">
+		<option value="Djeno Point">Djeno Point</option>
+		<option value="La Plage Sportive">La Plage Sportive</option>
+		<option value="La Pyramide">La Pyramide</option>
+		<option value="M'Vassa">M'Vassa</option>
+		<option value="Piege a Sable">Piege a Sable</option>
+	</optgroup>
+</select>
+<select class="spots" id="Equatorial-Guinea">
+<option value="null">Select Spot</option>
+	<optgroup label="Equatorial Guinea">
+		<option value="Caracas">Caracas</option>
+		<option value="Nacho">Nacho</option>
+	</optgroup>
+</select>
+<select class="spots" id="Ghana--The-Ivory-Coast">
+<option value="null">Select Spot</option>
+	<optgroup label="Ghana">
+		<option value="Accra">Accra</option>
+		<option value="Anecho">Anecho</option>
+		<option value="Bettys">Bettys</option>
+		<option value="Bouches du Roi">Bouches du Roi</option>
+		<option value="Busua Beach">Busua Beach</option>
+		<option value="Cape Three Points">Cape Three Points</option>
+		<option value="Cotonou Rivermouth">Cotonou Rivermouth</option>
+		<option value="Dixcove">Dixcove</option>
+		<option value="Elmina">Elmina</option>
+		<option value="Fete">Fete</option>
+		<option value="Fort Good Hope">Fort Good Hope</option>
+		<option value="Fort Sebastian">Fort Sebastian</option>
+		<option value="Kokrobite">Kokrobite</option>
+		<option value="Krake">Krake</option>
+		<option value="Labadi Beach">Labadi Beach</option>
+		<option value="Les Route des Peches">Les Route des Peches</option>
+		<option value="Lome-Rivage">Lome-Rivage</option>
+		<option value="LP's">LP's</option>
+		<option value="Mutrakni Point">Mutrakni Point</option>
+		<option value="Nyanyanu">Nyanyanu</option>
+		<option value="Ouidah">Ouidah</option>
+		<option value="Sheraton, Novotel">Sheraton, Novotel</option>
+		<option value="St Charles">St Charles</option>
+		<option value="Takoradi">Takoradi</option>
+		<option value="Tills">Tills</option>
+		<option value="University">University</option>
+	</optgroup>
+	<optgroup label="Ivory Coast">
+		<option value="Assini">Assini</option>
+		<option value="Assinie">Assinie</option>
+		<option value="Cassava">Cassava</option>
+		<option value="Cotton Trees">Cotton Trees</option>
+		<option value="Dagbego (Dabego)">Dagbego (Dabego)</option>
+		<option value="Dorothy's">Dorothy's</option>
+		<option value="Grand Drewin">Grand Drewin</option>
+		<option value="Grand-Lahou">Grand-Lahou</option>
+		<option value="La Passe (Ivory Coast)">La Passe (Ivory Coast)</option>
+		<option value="Mamba Beach">Mamba Beach</option>
+		<option value="San Pedro">San Pedro</option>
+		<option value="Sassandra">Sassandra</option>
+	</optgroup>
+</select>
+<select class="spots" id="Morocco">
+<option value="null">Select Spot</option>
+	<optgroup label="Morocco">
+		<option value="Agadir">Agadir</option>
+		<option value="Anchor Point">Anchor Point</option>
+		<option value="Banana Point">Banana Point</option>
+		<option value="Boats point">Boats point</option>
+		<option value="Boilers">Boilers</option>
+		<option value="Briech">Briech</option>
+		<option value="Cap Sim">Cap Sim</option>
+		<option value="Cap Spartel">Cap Spartel</option>
+		<option value="Dakhla">Dakhla</option>
+		<option value="Dar Bouazza">Dar Bouazza</option>
+		<option value="Devils Rock">Devils Rock</option>
+		<option value="El Jadida">El Jadida</option>
+		<option value="El Oualidia">El Oualidia</option>
+		<option value="Essaouira">Essaouira</option>
+		<option value="Foum el Oued">Foum el Oued</option>
+		<option value="Haouzia">Haouzia</option>
+		<option value="Imsouane (Cathedral Point)">Imsouane (Cathedral Point)</option>
+		<option value="Imsouane (The Bay)">Imsouane (The Bay)</option>
+		<option value="Jack Beach">Jack Beach</option>
+		<option value="La Gouira">La Gouira</option>
+		<option value="Larrache">Larrache</option>
+		<option value="Legzira">Legzira</option>
+		<option value="Mehdya Plage">Mehdya Plage</option>
+		<option value="Mirleft">Mirleft</option>
+		<option value="Moulay Bousselham">Moulay Bousselham</option>
+		<option value="Msdoud">Msdoud</option>
+		<option value="Oued Cherrat">Oued Cherrat</option>
+		<option value="Paloma">Paloma</option>
+		<option value="Panorama Point  ">Panorama Point  </option>
+		<option value="Plage Blanche">Plage Blanche</option>
+		<option value="Rabat">Rabat</option>
+		<option value="Safi">Safi</option>
+		<option value="Sidi Abed">Sidi Abed</option>
+		<option value="Sidi Bouzid">Sidi Bouzid</option>
+		<option value="Sidi Ifni">Sidi Ifni</option>
+		<option value="Sidi Kaouki ">Sidi Kaouki </option>
+		<option value="Sidi Moussa d'Aglou">Sidi Moussa d'Aglou</option>
+		<option value="Sidi-Rbat">Sidi-Rbat</option>
+		<option value="Spiders">Spiders</option>
+		<option value="Tafadna">Tafadna</option>
+		<option value="Taghazout">Taghazout</option>
+		<option value="Tamri">Tamri</option>
+		<option value="Tan-Tan Plage">Tan-Tan Plage</option>
+		<option value="Tarfaya">Tarfaya</option>
+		<option value="Tifnit">Tifnit</option>
+	</optgroup>
+</select>
+<select class="spots" id="Mozambique--Madagascar">
+<option value="null">Select Spot</option>
+	<optgroup label="Madagascar">
+		<option value="Ambohitralanana">Ambohitralanana</option>
+		<option value="Antsiranana">Antsiranana</option>
+		<option value="Baie de Galion">Baie de Galion</option>
+		<option value="Baie des Singes">Baie des Singes</option>
+		<option value="Chefs">Chefs</option>
+		<option value="Flame Bowls">Flame Bowls</option>
+		<option value="Jelly Babies (Anakao)">Jelly Babies (Anakao)</option>
+		<option value="Libanona">Libanona</option>
+		<option value="Monseigneur Bay">Monseigneur Bay</option>
+		<option value="Puss Puss">Puss Puss</option>
+		<option value="Resorts">Resorts</option>
+	</optgroup>
+	<optgroup label="Mozambique">
+		<option value="Barra Beach">Barra Beach</option>
+		<option value="Ponta do Ouro">Ponta do Ouro</option>
+	</optgroup>
+	<optgroup label="Union of the Comoros">
+	</optgroup>
+</select>
+<select class="spots" id="South-Africa">
+<option value="null">Select Spot</option>
+	<optgroup label="Namibia">
+	</optgroup>
+	<optgroup label="South Africa">
+		<option value="Ballito">Ballito</option>
+		<option value="Bikini Beach (Gordon's Bay)">Bikini Beach (Gordon's Bay)</option>
+		<option value="Buffels Bay">Buffels Bay</option>
+		<option value="Cape St. Francis">Cape St. Francis</option>
+		<option value="Cape Town">Cape Town</option>
+		<option value="Coffee Bay">Coffee Bay</option>
+		<option value="Dungeons">Dungeons</option>
+		<option value="Durban">Durban</option>
+		<option value="East London">East London</option>
+		<option value="Eland's bay">Eland's bay</option>
+		<option value="Hermanus">Hermanus</option>
+		<option value="Jeffreys Bay (J-Bay)">Jeffreys Bay (J-Bay)</option>
+		<option value="Kleinmond">Kleinmond</option>
+		<option value="Kommetjie">Kommetjie</option>
+		<option value="Margate">Margate</option>
+		<option value="Melkbosstrand">Melkbosstrand</option>
+		<option value="Mossel Bay">Mossel Bay</option>
+		<option value="Muizenberg">Muizenberg</option>
+		<option value="Mzimpuni">Mzimpuni</option>
+		<option value="Noordhoek">Noordhoek</option>
+		<option value="Pearly Beach">Pearly Beach</option>
+		<option value="Plettenberg Bay">Plettenberg Bay</option>
+		<option value="Port Alfred">Port Alfred</option>
+		<option value="Port Elizabeth">Port Elizabeth</option>
+		<option value="Richards Bay">Richards Bay</option>
+		<option value="Sodwana Bay">Sodwana Bay</option>
+		<option value="St Mikes">St Mikes</option>
+		<option value="Stillbay">Stillbay</option>
+		<option value="Strand">Strand</option>
+		<option value="The Wedge">The Wedge</option>
+		<option value="Umdloti ">Umdloti </option>
+		<option value="Victoria Bay">Victoria Bay</option>
+		<option value="Warner Beach">Warner Beach</option>
+		<option value="Wilderness">Wilderness</option>
+		<option value="Yzerfontein">Yzerfontein</option>
+	</optgroup>
+</select>
+<select class="spots" id="West-Africa">
+<option value="null">Select Spot</option>
+	<optgroup label="Liberia">
+	</optgroup>
+	<optgroup label="Senegal">
+		<option value="Baie des Carpes">Baie des Carpes</option>
+		<option value="Club Med">Club Med</option>
+		<option value="Corniche Ouest">Corniche Ouest</option>
+		<option value="Dakar">Dakar</option>
+		<option value="Le Virage">Le Virage</option>
+		<option value="N'gor Lefts">N'gor Lefts</option>
+		<option value="N'gor Rights">N'gor Rights</option>
+		<option value="Ouakam">Ouakam</option>
+		<option value="Popenguine">Popenguine</option>
+		<option value="Secret">Secret</option>
+		<option value="Vivier">Vivier</option>
+		<option value="Yoff Beach">Yoff Beach</option>
+	</optgroup>
+	<optgroup label="Benin">
+	</optgroup>
+	<optgroup label="Sierra Leone">
+	</optgroup>
+	<optgroup label="Cape Verde">
+		<option value="Alibaba">Alibaba</option>
+		<option value="Boa Vista Bahia">Boa Vista Bahia</option>
+		<option value="Curral Joul">Curral Joul</option>
+		<option value="Fontana">Fontana</option>
+		<option value="Fragata">Fragata</option>
+		<option value="Palmeira">Palmeira</option>
+		<option value="Ponta Brava">Ponta Brava</option>
+		<option value="Ponta do Sino">Ponta do Sino</option>
+		<option value="Ponta Preta">Ponta Preta</option>
+		<option value="Rife">Rife</option>
+		<option value="Salamansa">Salamansa</option>
+		<option value="Santa Maria">Santa Maria</option>
+		<option value="Spoutnik">Spoutnik</option>
+	</optgroup>
+</select>
+<select class="spots" id="Western-Sahara-">
+<option value="null">Select Spot</option>
+	<optgroup label="Western Sahara">
+		<option value="Al Marsa">Al Marsa</option>
+		<option value="Cap Blanc">Cap Blanc</option>
+		<option value="Casamar">Casamar</option>
+		<option value="Foum El Bouir">Foum El Bouir</option>
+		<option value="La Corniche - Sahara">La Corniche - Sahara</option>
+		<option value="Lagouira">Lagouira</option>
+		<option value="Lagtoua">Lagtoua</option>
+		<option value="Msdoud - Western Sahara">Msdoud - Western Sahara</option>
+		<option value="Pointe de l'Or">Pointe de l'Or</option>
+		<option value="Ponta Negra - Western Sahara">Ponta Negra - Western Sahara</option>
+		<option value="Skaymat">Skaymat</option>
+		<option value="Tamania (Cap 8)">Tamania (Cap 8)</option>
+		<option value="Tarf Entayreft">Tarf Entayreft</option>
+		<option value="Tarf Noa">Tarf Noa</option>
+		<option value="Untouchables">Untouchables</option>
+		<option value="Yoyo">Yoyo</option>
+		<option value="Zbarat">Zbarat</option>
+	</optgroup>
+</select>
+<select class="spots" id="Bangladesh">
+<option value="null">Select Spot</option>
+	<optgroup label="Bangladesh">
+		<option value="Inani Point">Inani Point</option>
+		<option value="Kolatoli Point">Kolatoli Point</option>
+		<option value="St. Martins">St. Martins</option>
+	</optgroup>
+</select>
+<select class="spots" id="India">
+<option value="null">Select Spot</option>
+	<optgroup label="Goa">
+		<option value="Baga and Calungute">Baga and Calungute</option>
+		<option value="Baga Beach">Baga Beach</option>
+		<option value="Bhatkal">Bhatkal</option>
+		<option value="Gokarna">Gokarna</option>
+		<option value="Kapu Beach Lighthouse">Kapu Beach Lighthouse</option>
+		<option value="Kumta">Kumta</option>
+		<option value="Mahe">Mahe</option>
+		<option value="Mangalore Port">Mangalore Port</option>
+		<option value="Maravanthe">Maravanthe</option>
+		<option value="Mulki">Mulki</option>
+		<option value="Murdeshwara">Murdeshwara</option>
+		<option value="Payyambalam Beach, Kannur">Payyambalam Beach, Kannur</option>
+	</optgroup>
+	<optgroup label="Andhra Pradesh">
+		<option value="Chintapalli">Chintapalli</option>
+		<option value="Chippada">Chippada</option>
+		<option value="Mukkam">Mukkam</option>
+		<option value="Rutukonda">Rutukonda</option>
+		<option value="Sandy Point - Visag, India">Sandy Point - Visag, India</option>
+		<option value="Yarada">Yarada</option>
+	</optgroup>
+	<optgroup label="Kerela">
+		<option value="Auroville">Auroville</option>
+		<option value="Big Rock - Fisherman's Cove">Big Rock - Fisherman's Cove</option>
+		<option value="Cheray Beach">Cheray Beach</option>
+		<option value="Harbour Jetties - Visakhapatnam">Harbour Jetties - Visakhapatnam</option>
+		<option value="Hawa's Beach">Hawa's Beach</option>
+		<option value="Jodugullapullam">Jodugullapullam</option>
+		<option value="Kovalam">Kovalam</option>
+		<option value="Kovalam / Covelong">Kovalam / Covelong</option>
+		<option value="Lawsons Bay">Lawsons Bay</option>
+		<option value="Lighthouse Beach - Kerala">Lighthouse Beach - Kerala</option>
+		<option value="Mahabalipuram Shore Temple">Mahabalipuram Shore Temple</option>
+		<option value="Manapad Point ( Kulasekharapatanam)">Manapad Point ( Kulasekharapatanam)</option>
+		<option value="Mangamari">Mangamari</option>
+		<option value="Park Hotel">Park Hotel</option>
+		<option value="Poovar">Poovar</option>
+		<option value="Rama Krishna Beach">Rama Krishna Beach</option>
+		<option value="Rameswaram">Rameswaram</option>
+		<option value="Rushikonda Beach">Rushikonda Beach</option>
+		<option value="Tenneti Park">Tenneti Park</option>
+		<option value="Thotapalli">Thotapalli</option>
+		<option value="Tiruchindur">Tiruchindur</option>
+		<option value="Varkala">Varkala</option>
+		<option value="Vattikottai">Vattikottai</option>
+	</optgroup>
+	<optgroup label="Andaman Islands">
+	</optgroup>
+	<optgroup label="Orissa">
+		<option value="Mahabalipuram Shore Temple">Mahabalipuram Shore Temple</option>
+		<option value="Pondicherry">Pondicherry</option>
+		<option value="Puri">Puri</option>
+		<option value="Puri Beach">Puri Beach</option>
+	</optgroup>
+</select>
+<select class="spots" id="Maldives">
+<option value="null">Select Spot</option>
+	<optgroup label="Maldives">
+		<option value="Adonis">Adonis</option>
+		<option value="Air Equator Lefts">Air Equator Lefts</option>
+		<option value="Airports">Airports</option>
+		<option value="Antiques">Antiques</option>
+		<option value="Approach Lights">Approach Lights</option>
+		<option value="Beacons">Beacons</option>
+		<option value="Bedhuge">Bedhuge</option>
+		<option value="Blue Bowls">Blue Bowls</option>
+		<option value="Bowling Alley">Bowling Alley</option>
+		<option value="Cafe Breaks">Cafe Breaks</option>
+		<option value="Castaways">Castaways</option>
+		<option value="Chickens">Chickens</option>
+		<option value="Coke's / Cola's">Coke's / Cola's</option>
+		<option value="Finnimas">Finnimas</option>
+		<option value="Five Islands">Five Islands</option>
+		<option value="Furana">Furana</option>
+		<option value="Gaukendi Bridge">Gaukendi Bridge</option>
+		<option value="Honky's">Honky's</option>
+		<option value="Inside Mikado">Inside Mikado</option>
+		<option value="Isdhoo Bank">Isdhoo Bank</option>
+		<option value="Jailbreaks">Jailbreaks</option>
+		<option value="Kadu">Kadu</option>
+		<option value="Kanda Muli">Kanda Muli</option>
+		<option value="Kandooma Right">Kandooma Right</option>
+		<option value="KH">KH</option>
+		<option value="Koodhoo">Koodhoo</option>
+		<option value="Kottey">Kottey</option>
+		<option value="Lips">Lips</option>
+		<option value="Lohi's">Lohi's</option>
+		<option value="Love Charms">Love Charms</option>
+		<option value="Machine">Machine</option>
+		<option value="Mada's">Mada's</option>
+		<option value="Madihera">Madihera</option>
+		<option value="Malik's">Malik's</option>
+		<option value="Ninja's">Ninja's</option>
+		<option value="Outside Mikado">Outside Mikado</option>
+		<option value="Pasta Point">Pasta Point</option>
+		<option value="Refugee's Lefts">Refugee's Lefts</option>
+		<option value="Refugee's Rights">Refugee's Rights</option>
+		<option value="Shangri-la">Shangri-la</option>
+		<option value="Sultans">Sultans</option>
+		<option value="Thundi Beach">Thundi Beach</option>
+		<option value="Tiger Stripes">Tiger Stripes</option>
+		<option value="Two Ways">Two Ways</option>
+		<option value="Viligili">Viligili</option>
+		<option value="Yin Yang">Yin Yang</option>
+		<option value="Zubair's">Zubair's</option>
+	</optgroup>
+</select>
+<select class="spots" id="Seychelles">
+<option value="null">Select Spot</option>
+	<optgroup label="Seychelles">
+		<option value="Anse aux Poules Bleues">Anse aux Poules Bleues</option>
+		<option value="Anse Bougainville">Anse Bougainville</option>
+		<option value="Anse Gaulette">Anse Gaulette</option>
+		<option value="Anse Intendance">Anse Intendance</option>
+		<option value="Barbarons">Barbarons</option>
+		<option value="Carana">Carana</option>
+		<option value="Grande Anse">Grande Anse</option>
+		<option value="Grande Anse (La Digue)">Grande Anse (La Digue)</option>
+		<option value="La Passe">La Passe</option>
+		<option value="Northeast Point">Northeast Point</option>
+		<option value="Pointe Camille">Pointe Camille</option>
+		<option value="Police Bay">Police Bay</option>
+	</optgroup>
+</select>
+<select class="spots" id="Sri-Lanka">
+<option value="null">Select Spot</option>
+	<optgroup label="Sri Lanka">
+		<option value="Arugam Bay">Arugam Bay</option>
+		<option value="Crocodile Rock">Crocodile Rock</option>
+		<option value="Matara">Matara</option>
+		<option value="Mirissa">Mirissa</option>
+		<option value="North Jetty (Hikkaduwa)">North Jetty (Hikkaduwa)</option>
+		<option value="Okanda">Okanda</option>
+		<option value="Panama Rights">Panama Rights</option>
+		<option value="Peanut Farm">Peanut Farm</option>
+		<option value="Rivermouth">Rivermouth</option>
+		<option value="Unawatuna Bay">Unawatuna Bay</option>
+		<option value="Weligama">Weligama</option>
+	</optgroup>
+</select>
+<select class="spots" id="Antarctic-Peninsula">
+<option value="null">Select Spot</option>
+	<optgroup label="Antarctic Peninsula">
+		<option value="Deception Island">Deception Island</option>
+	</optgroup>
+</select>
+<select class="spots" id="Argentina">
+<option value="null">Select Spot</option>
+	<optgroup label="Argentina">
+		<option value="Balneario Orense">Balneario Orense</option>
+		<option value="Biologia">Biologia</option>
+		<option value="Diva">Diva</option>
+		<option value="El Muelle">El Muelle</option>
+		<option value="Escollera Sur">Escollera Sur</option>
+		<option value="Horizonte del Sol">Horizonte del Sol</option>
+		<option value="La Paloma">La Paloma</option>
+		<option value="La Pepita">La Pepita</option>
+		<option value="La Popular">La Popular</option>
+		<option value="Las Cuevas (La Popular)">Las Cuevas (La Popular)</option>
+		<option value="Mariano">Mariano</option>
+		<option value="Miramar">Miramar</option>
+		<option value="Miramar (Argentina)">Miramar (Argentina)</option>
+		<option value="Monte hermoso (el espigon)">Monte hermoso (el espigon)</option>
+		<option value="Paradise">Paradise</option>
+		<option value="Pinamar">Pinamar</option>
+		<option value="Quequen">Quequen</option>
+		<option value="Serena">Serena</option>
+		<option value="Waikiki (Mar del Plata)">Waikiki (Mar del Plata)</option>
+		<option value="Yacht ">Yacht </option>
+	</optgroup>
+</select>
+<select class="spots" id="Brazil--East">
+<option value="null">Select Spot</option>
+	<optgroup label="East Brazil">
+		<option value="Baduska">Baduska</option>
+		<option value="Cupe">Cupe</option>
+		<option value="Cupe">Cupe</option>
+		<option value="Engenhoca">Engenhoca</option>
+		<option value="Gaibu">Gaibu</option>
+		<option value="Galinhas">Galinhas</option>
+		<option value="Havaizinho">Havaizinho</option>
+		<option value="Imposivel">Imposivel</option>
+		<option value="Itacarezinho">Itacarezinho</option>
+		<option value="Jardim Atlantico">Jardim Atlantico</option>
+		<option value="Mar dos Macacos">Mar dos Macacos</option>
+		<option value="Maracaipe">Maracaipe</option>
+		<option value="Norte">Norte</option>
+		<option value="Olinda to Porto de Suape">Olinda to Porto de Suape</option>
+		<option value="Pedra da Cachorra">Pedra da Cachorra</option>
+		<option value="Ponta Negra">Ponta Negra</option>
+		<option value="Pontal">Pontal</option>
+		<option value="Praia da Pipa">Praia da Pipa</option>
+		<option value="Serrambi">Serrambi</option>
+		<option value="Sul">Sul</option>
+		<option value="Tabatinga">Tabatinga</option>
+		<option value="Tiririca">Tiririca</option>
+		<option value="Xoxoline">Xoxoline</option>
+	</optgroup>
+</select>
+<select class="spots" id="Brazil--Northeast">
+<option value="null">Select Spot</option>
+	<optgroup label="Northeast Brazil">
+		<option value="Aracaji">Aracaji</option>
+		<option value="Atalaia">Atalaia</option>
+		<option value="Barra do Ceara">Barra do Ceara</option>
+		<option value="Barravento">Barravento</option>
+		<option value="Boca da Barra">Boca da Barra</option>
+		<option value="Busca Vida       ">Busca Vida       </option>
+		<option value="Cemento">Cemento</option>
+		<option value="Charlie's Point">Charlie's Point</option>
+		<option value="Chavascal">Chavascal</option>
+		<option value="Corais">Corais</option>
+		<option value="Corrente">Corrente</option>
+		<option value="Crispim">Crispim</option>
+		<option value="Curral">Curral</option>
+		<option value="Farol da Barra">Farol da Barra</option>
+		<option value="Fortaleza">Fortaleza</option>
+		<option value="Futuro">Futuro</option>
+		<option value="Hawaiizinho">Hawaiizinho</option>
+		<option value="Icarai">Icarai</option>
+		<option value="Itatinga">Itatinga</option>
+		<option value="Jaguaribe">Jaguaribe</option>
+		<option value="Jericoacoara">Jericoacoara</option>
+		<option value="Leste Oeste">Leste Oeste</option>
+		<option value="Marieta - Brazil">Marieta - Brazil</option>
+		<option value="Outside">Outside</option>
+		<option value="Pedra do Meio">Pedra do Meio</option>
+		<option value="Ponte Metalica">Ponte Metalica</option>
+		<option value="Praia Do Flamengo">Praia Do Flamengo</option>
+		<option value="Prainha">Prainha</option>
+		<option value="Rio Mearim">Rio Mearim</option>
+		<option value="Ronco do Mar">Ronco do Mar</option>
+		<option value="Sao Marcos">Sao Marcos</option>
+		<option value="Stella Maris">Stella Maris</option>
+		<option value="Tabinha">Tabinha</option>
+		<option value="Titanzinho">Titanzinho</option>
+		<option value="Vila do Algodoal">Vila do Algodoal</option>
+		<option value="Volta da Jurema">Volta da Jurema</option>
+	</optgroup>
+	<optgroup label="Fernando de Noronha">
+		<option value="Abras">Abras</option>
+		<option value="Baia da Rata">Baia da Rata</option>
+		<option value="Boboca">Boboca</option>
+		<option value="Cacimba do Padre">Cacimba do Padre</option>
+		<option value="Meio">Meio</option>
+	</optgroup>
+</select>
+<select class="spots" id="Brazil--South">
+<option value="null">Select Spot</option>
+	<optgroup label="South Brazil">
+		<option value="Arpoador">Arpoador</option>
+		<option value="Barra">Barra</option>
+		<option value="Barra da Tijuca">Barra da Tijuca</option>
+		<option value="Barra do Jucu">Barra do Jucu</option>
+		<option value="Barra do Mampituba">Barra do Mampituba</option>
+		<option value="Barra do Una ">Barra do Una </option>
+		<option value="Bonete">Bonete</option>
+		<option value="Brava">Brava</option>
+		<option value="Brava (Littoral Paulista)">Brava (Littoral Paulista)</option>
+		<option value="Bravanesia">Bravanesia</option>
+		<option value="Camburi">Camburi</option>
+		<option value="Campeche">Campeche</option>
+		<option value="Canal de Itaipu">Canal de Itaipu</option>
+		<option value="Canto Bravo">Canto Bravo</option>
+		<option value="Canto do Leblon">Canto do Leblon</option>
+		<option value="Canto do Recreio">Canto do Recreio</option>
+		<option value="Cardoso">Cardoso</option>
+		<option value="Cassino Beach">Cassino Beach</option>
+		<option value="Castelhanos">Castelhanos</option>
+		<option value="Cidreira">Cidreira</option>
+		<option value="Costa Azul">Costa Azul</option>
+		<option value="Flamingo">Flamingo</option>
+		<option value="Forte">Forte</option>
+		<option value="Galheta">Galheta</option>
+		<option value="Galhetas">Galhetas</option>
+		<option value="Garopaba">Garopaba</option>
+		<option value="Geriba ">Geriba </option>
+		<option value="Grumari">Grumari</option>
+		<option value="Grussai">Grussai</option>
+		<option value="Guaratuba">Guaratuba</option>
+		<option value="Guaratuba">Guaratuba</option>
+		<option value="Guarda de Embau">Guarda de Embau</option>
+		<option value="Guarda do Embau">Guarda do Embau</option>
+		<option value="Guarita">Guarita</option>
+		<option value="Ilha dos Lobos">Ilha dos Lobos</option>
+		<option value="Imbituba">Imbituba</option>
+		<option value="Itacoatiara">Itacoatiara</option>
+		<option value="Itajai">Itajai</option>
+		<option value="Itamambuca">Itamambuca</option>
+		<option value="Itapeva">Itapeva</option>
+		<option value="Itauna">Itauna</option>
+		<option value="Joaquina">Joaquina</option>
+		<option value="Lagoinha do Leste">Lagoinha do Leste</option>
+		<option value="Laje do Pecado">Laje do Pecado</option>
+		<option value="Laje Rasa">Laje Rasa</option>
+		<option value="Maresias">Maresias</option>
+		<option value="Matadeiro">Matadeiro</option>
+		<option value="Mole">Mole</option>
+		<option value="Molhe Leste">Molhe Leste</option>
+		<option value="Monduba">Monduba</option>
+		<option value="Morro das Pedras">Morro das Pedras</option>
+		<option value="Naufragados">Naufragados</option>
+		<option value="Navegantes">Navegantes</option>
+		<option value="Pepino">Pepino</option>
+		<option value="Pinheiro">Pinheiro</option>
+		<option value="Pitangueiras">Pitangueiras</option>
+		<option value="Ponta Negra">Ponta Negra</option>
+		<option value="Praia Branca">Praia Branca</option>
+		<option value="Praia Brava">Praia Brava</option>
+		<option value="Praia da Baleia">Praia da Baleia</option>
+		<option value="Praia da Cal">Praia da Cal</option>
+		<option value="Praia da Ferrugem">Praia da Ferrugem</option>
+		<option value="Praia Da Macumba">Praia Da Macumba</option>
+		<option value="Praia do Buraco">Praia do Buraco</option>
+		<option value="Praia do Estaleiro">Praia do Estaleiro</option>
+		<option value="Praia do Forte">Praia do Forte</option>
+		<option value="Praia do Guaeca">Praia do Guaeca</option>
+		<option value="Praia do Pecado">Praia do Pecado</option>
+		<option value="Praia do Tombo">Praia do Tombo</option>
+		<option value="Praia do Ule">Praia do Ule</option>
+		<option value="Praia dos Amores">Praia dos Amores</option>
+		<option value="Praia dos Amores">Praia dos Amores</option>
+		<option value="Praia dos Molhes">Praia dos Molhes</option>
+		<option value="Praia Grande">Praia Grande</option>
+		<option value="Praia Grande - Brazil">Praia Grande - Brazil</option>
+		<option value="Prainha">Prainha</option>
+		<option value="Prainha - Brazil">Prainha - Brazil</option>
+		<option value="Prainha do Farol de Santa Marta">Prainha do Farol de Santa Marta</option>
+		<option value="Quebramar">Quebramar</option>
+		<option value="Regencia">Regencia</option>
+		<option value="Reserva beach">Reserva beach</option>
+		<option value="Ribanceira">Ribanceira</option>
+		<option value="Rosa">Rosa</option>
+		<option value="Santinho">Santinho</option>
+		<option value="Seca">Seca</option>
+		<option value="Setiba">Setiba</option>
+		<option value="Silveira">Silveira</option>
+		<option value="Ubatuba">Ubatuba</option>
+		<option value="Vermelha do Norte">Vermelha do Norte</option>
+		<option value="Vila">Vila</option>
+	</optgroup>
+</select>
+<select class="spots" id="Chile--North">
+<option value="null">Select Spot</option>
+	<optgroup label="North Chile">
+		<option value="Arenillas Negras">Arenillas Negras</option>
+		<option value="Budeo">Budeo</option>
+		<option value="Colegio">Colegio</option>
+		<option value="El Brazo">El Brazo</option>
+		<option value="El Buey">El Buey</option>
+		<option value="El Gringo">El Gringo</option>
+		<option value="El Puerto">El Puerto</option>
+		<option value="El Tojo Viejo (Arica)">El Tojo Viejo (Arica)</option>
+		<option value="El Tubo">El Tubo</option>
+		<option value="Hornitos">Hornitos</option>
+		<option value="Intendencia">Intendencia</option>
+		<option value="Isla Santa Maria">Isla Santa Maria</option>
+		<option value="La Brava">La Brava</option>
+		<option value="La Isla">La Isla</option>
+		<option value="La Puntilla (Antofagasta)">La Puntilla (Antofagasta)</option>
+		<option value="La Urraca">La Urraca</option>
+		<option value="Las Machas">Las Machas</option>
+		<option value="Pietra del Lobo">Pietra del Lobo</option>
+		<option value="Playa Cavancha (Iquique)">Playa Cavancha (Iquique)</option>
+		<option value="Pozo Verde">Pozo Verde</option>
+		<option value="Punta Dos">Punta Dos</option>
+		<option value="Punta Gruesa">Punta Gruesa</option>
+		<option value="Punta Una">Punta Una</option>
+		<option value="Ram5">Ram5</option>
+	</optgroup>
+</select>
+<select class="spots" id="Chile--South">
+<option value="null">Select Spot</option>
+	<optgroup label="South Chile">
+		<option value="Agua Dulce">Agua Dulce</option>
+		<option value="Algarrobo">Algarrobo</option>
+		<option value="Buchupureo">Buchupureo</option>
+		<option value="Cartagena">Cartagena</option>
+		<option value="Copec ">Copec </option>
+		<option value="Cueva del Toro">Cueva del Toro</option>
+		<option value="Curanipe">Curanipe</option>
+		<option value="Derecharcha">Derecharcha</option>
+		<option value="Desembocadura">Desembocadura</option>
+		<option value="El Claron">El Claron</option>
+		<option value="El Faro - Biobio, Chile">El Faro - Biobio, Chile</option>
+		<option value="El Muro">El Muro</option>
+		<option value="Infernillo">Infernillo</option>
+		<option value="Isla Dama">Isla Dama</option>
+		<option value="La Boca Con Con">La Boca Con Con</option>
+		<option value="La Boquilla">La Boquilla</option>
+		<option value="La Rinconada">La Rinconada</option>
+		<option value="Las Salinas (Pichilemu)">Las Salinas (Pichilemu)</option>
+		<option value="Las Tacas">Las Tacas</option>
+		<option value="Maitencillo">Maitencillo</option>
+		<option value="Matanzas">Matanzas</option>
+		<option value="Papagayo">Papagayo</option>
+		<option value="Pichilemu">Pichilemu</option>
+		<option value="Pipe">Pipe</option>
+		<option value="Playa Blanca - Atacama, Chile">Playa Blanca - Atacama, Chile</option>
+		<option value="Playa Monte del Zorro">Playa Monte del Zorro</option>
+		<option value="Playa Sector El Piure">Playa Sector El Piure</option>
+		<option value="Praia Mela">Praia Mela</option>
+		<option value="Pullay">Pullay</option>
+		<option value="Punta de Lobos">Punta de Lobos</option>
+		<option value="Punta Quidico">Punta Quidico</option>
+		<option value="Punta Teatinos">Punta Teatinos</option>
+		<option value="Punta Topocalma">Punta Topocalma</option>
+		<option value="Ritoque">Ritoque</option>
+		<option value="Tirua">Tirua</option>
+		<option value="Tregualemu">Tregualemu</option>
+		<option value="Tres Playitas">Tres Playitas</option>
+	</optgroup>
+</select>
+<select class="spots" id="Colombia">
+<option value="null">Select Spot</option>
+	<optgroup label="Colombia">
+		<option value="Arrecifes">Arrecifes</option>
+		<option value="Buritaca">Buritaca</option>
+		<option value="Casa Grande">Casa Grande</option>
+		<option value="Derecha Secreta">Derecha Secreta</option>
+		<option value="El Bolsillo (Pradomar)">El Bolsillo (Pradomar)</option>
+		<option value="El Cantil">El Cantil</option>
+		<option value="El Muelle">El Muelle</option>
+		<option value="El Mystic">El Mystic</option>
+		<option value="El Valle">El Valle</option>
+		<option value="Juan Tornillo">Juan Tornillo</option>
+		<option value="Jurubida">Jurubida</option>
+		<option value="Las Gaviotas">Las Gaviotas</option>
+		<option value="Las Velas">Las Velas</option>
+		<option value="Los Naranjos">Los Naranjos</option>
+		<option value="Nuqui">Nuqui</option>
+		<option value="Pela Pela">Pela Pela</option>
+		<option value="Pico De Loro">Pico De Loro</option>
+		<option value="Pradomar">Pradomar</option>
+		<option value="Punta Roca - Colombia">Punta Roca - Colombia</option>
+		<option value="Secret Right">Secret Right</option>
+		<option value="Terco">Terco</option>
+		<option value="Termales">Termales</option>
+		<option value="Tribuga">Tribuga</option>
+		<option value="Viento Fresco">Viento Fresco</option>
+	</optgroup>
+</select>
+<select class="spots" id="Ecuador">
+<option value="null">Select Spot</option>
+	<optgroup label="Galapagos">
+		<option value="Barahona">Barahona</option>
+		<option value="Cerro Gallina">Cerro Gallina</option>
+		<option value="El Faro">El Faro</option>
+		<option value="La Loberia">La Loberia</option>
+		<option value="Puerto Baquerizo">Puerto Baquerizo</option>
+		<option value="Seymour Norte">Seymour Norte</option>
+		<option value="Tortuga Bay">Tortuga Bay</option>
+	</optgroup>
+	<optgroup label="Ecuador">
+		<option value="Atacames">Atacames</option>
+		<option value="Bocana del Cojimies">Bocana del Cojimies</option>
+		<option value="Cabo Pasado">Cabo Pasado</option>
+		<option value="Canoa">Canoa</option>
+		<option value="Chocolatera">Chocolatera</option>
+		<option value="Coito">Coito</option>
+		<option value="El Bajo - Las Palmas">El Bajo - Las Palmas</option>
+		<option value="El Barco - Salinas">El Barco - Salinas</option>
+		<option value="El Pelado">El Pelado</option>
+		<option value="Engabao">Engabao</option>
+		<option value="Estero de platano">Estero de platano</option>
+		<option value="FAE">FAE</option>
+		<option value="La Bahia (Guayas)">La Bahia (Guayas)</option>
+		<option value="La Cabuya">La Cabuya</option>
+		<option value="La Chueca">La Chueca</option>
+		<option value="La Mesita">La Mesita</option>
+		<option value="Las Tunas">Las Tunas</option>
+		<option value="Mal Paso">Mal Paso</option>
+		<option value="Mompiche">Mompiche</option>
+		<option value="Muisne">Muisne</option>
+		<option value="Murcielago (Manta)">Murcielago (Manta)</option>
+		<option value="Pedarnales">Pedarnales</option>
+		<option value="Playas (Guayaquil)">Playas (Guayaquil)</option>
+		<option value="Portete">Portete</option>
+		<option value="Puerto Cayo">Puerto Cayo</option>
+		<option value="Puerto Cayo">Puerto Cayo</option>
+		<option value="Puerto Lopez">Puerto Lopez</option>
+		<option value="Punta Ballena">Punta Ballena</option>
+		<option value="Punta Bellaca">Punta Bellaca</option>
+		<option value="Punta Carnero">Punta Carnero</option>
+		<option value="Punta Chulluype">Punta Chulluype</option>
+		<option value="Punta Galera">Punta Galera</option>
+		<option value="Punta Mala">Punta Mala</option>
+		<option value="Punta Suspiro">Punta Suspiro</option>
+		<option value="Punta Tonchigue">Punta Tonchigue</option>
+		<option value="Rio Chico">Rio Chico</option>
+		<option value="San Lorenzo">San Lorenzo</option>
+		<option value="San Mateo">San Mateo</option>
+		<option value="Santa Marianita">Santa Marianita</option>
+		<option value="Tonsupa">Tonsupa</option>
+	</optgroup>
+</select>
+<select class="spots" id="Peru--North">
+<option value="null">Select Spot</option>
+	<optgroup label="North Peru">
+		<option value="Baterias">Baterias</option>
+		<option value="Bermejo">Bermejo</option>
+		<option value="Cabo Blanco">Cabo Blanco</option>
+		<option value="Cabo Blanquillo">Cabo Blanquillo</option>
+		<option value="Cabo Verde">Cabo Verde</option>
+		<option value="Carquin">Carquin</option>
+		<option value="Centinela">Centinela</option>
+		<option value="Chicama">Chicama</option>
+		<option value="Conchitas">Conchitas</option>
+		<option value="El Hueco">El Hueco</option>
+		<option value="El Nuro">El Nuro</option>
+		<option value="La Islilla (Piura)">La Islilla (Piura)</option>
+		<option value="Lobitos">Lobitos</option>
+		<option value="Los Organos">Los Organos</option>
+		<option value="Negritos">Negritos</option>
+		<option value="Nonura">Nonura</option>
+		<option value="Pacasmayo">Pacasmayo</option>
+		<option value="Paraiso">Paraiso</option>
+		<option value="Pasamayo">Pasamayo</option>
+		<option value="Pimentel">Pimentel</option>
+		<option value="Piscina">Piscina</option>
+		<option value="Puemape">Puemape</option>
+		<option value="Puerto Eten">Puerto Eten</option>
+		<option value="Puerto Morin">Puerto Morin</option>
+		<option value="Puerto Salaverry">Puerto Salaverry</option>
+		<option value="Punta Aguja">Punta Aguja</option>
+		<option value="Punta Arena (Piura)">Punta Arena (Piura)</option>
+		<option value="Punta Ballenas">Punta Ballenas</option>
+		<option value="Punta Huanchaco">Punta Huanchaco</option>
+		<option value="Punta Lobo">Punta Lobo</option>
+		<option value="Punta Negra (Piura)">Punta Negra (Piura)</option>
+		<option value="Punta Panico">Punta Panico</option>
+		<option value="Punta Prieta">Punta Prieta</option>
+		<option value="Punta Restin">Punta Restin</option>
+		<option value="Punta Tur">Punta Tur</option>
+		<option value="Salaverry Harbour">Salaverry Harbour</option>
+		<option value="Yacila">Yacila</option>
+	</optgroup>
+</select>
+<select class="spots" id="Peru--South">
+<option value="null">Select Spot</option>
+	<optgroup label="South Peru">
+		<option value="Ala Moana">Ala Moana</option>
+		<option value="Barranquito">Barranquito</option>
+		<option value="Boca del Rio">Boca del Rio</option>
+		<option value="Caballeros">Caballeros</option>
+		<option value="Caleta Sama">Caleta Sama</option>
+		<option value="Cerro Azul">Cerro Azul</option>
+		<option value="Chincha ">Chincha </option>
+		<option value="El Cabezo">El Cabezo</option>
+		<option value="El Camotal">El Camotal</option>
+		<option value="El Colegio">El Colegio</option>
+		<option value="El Huayaco">El Huayaco</option>
+		<option value="El Olon">El Olon</option>
+		<option value="El Silencio">El Silencio</option>
+		<option value="La Herradura (Lima)">La Herradura (Lima)</option>
+		<option value="La Isla (Punta Hermosa)">La Isla (Punta Hermosa)</option>
+		<option value="Laniakea">Laniakea</option>
+		<option value="Makaha">Makaha</option>
+		<option value="Pampilla">Pampilla</option>
+		<option value="Pavos">Pavos</option>
+		<option value="Pico Alto">Pico Alto</option>
+		<option value="Piedras Negras">Piedras Negras</option>
+		<option value="Playa Mollendo">Playa Mollendo</option>
+		<option value="Playa Norte">Playa Norte</option>
+		<option value="Playa Platanales">Playa Platanales</option>
+		<option value="Pozo de Lizas">Pozo de Lizas</option>
+		<option value="Pulpos">Pulpos</option>
+		<option value="Punta Rocas">Punta Rocas</option>
+		<option value="Punta Roquitas">Punta Roquitas</option>
+		<option value="Redondo">Redondo</option>
+		<option value="San Bartolo">San Bartolo</option>
+		<option value="San Gallan">San Gallan</option>
+		<option value="Santa Rosa">Santa Rosa</option>
+		<option value="Tiro Alto">Tiro Alto</option>
+		<option value="Triangulo">Triangulo</option>
+		<option value="Villa">Villa</option>
+		<option value="Waikiki">Waikiki</option>
+	</optgroup>
+</select>
+<select class="spots" id="Uruguay">
+<option value="null">Select Spot</option>
+	<optgroup label="Uruguay">
+		<option value="Bajos Del Polonio">Bajos Del Polonio</option>
+		<option value="Barra de Balizas">Barra de Balizas</option>
+		<option value="Barra del Chuy">Barra del Chuy</option>
+		<option value="El Desplayado">El Desplayado</option>
+		<option value="El Emir">El Emir</option>
+		<option value="El Pepe">El Pepe</option>
+		<option value="Jose Ignacio">Jose Ignacio</option>
+		<option value="La Aguada">La Aguada</option>
+		<option value="La Barra de Maldonado">La Barra de Maldonado</option>
+		<option value="La Boya">La Boya</option>
+		<option value="La Moza">La Moza</option>
+		<option value="La Posta del Cangrejo">La Posta del Cangrejo</option>
+		<option value="La Viuda">La Viuda</option>
+		<option value="Los Dedos">Los Dedos</option>
+		<option value="Playa del Barco">Playa del Barco</option>
+		<option value="Punta Colorada">Punta Colorada</option>
+		<option value="Punta Negra">Punta Negra</option>
+		<option value="San Francisco - Uruguay">San Francisco - Uruguay</option>
+		<option value="Solis Grande">Solis Grande</option>
+		<option value="Zanja Honda">Zanja Honda</option>
+		<option value="Zorba">Zorba</option>
+	</optgroup>
+</select>
+
+<button id="submit" type="button" onclick="alert('Clicked!')">Submit</button>
+
+</div>
+</div>
+
+<div id="NameTag"><a href="file:///C:/Python27/msw_data.html">SurfNotification</a></div>
+<div id="BottomBar">
+	<table id="nav">
+		<tr>
+			<td id="Home"><a href="file:///C:/Python27/msw_data.html">Home</a></td>
+			<td id="About"><a href="#">About</a></td>
+			<td id="Contact"><a href="#">Contact</a></td>
+		</tr>
+	</table>	
+</div>
+
+</body>
+</html>

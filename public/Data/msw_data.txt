@@ -1,0 +1,116 @@
+<select>
+	<optgroup label="Pacific Ocean">
+		<option value="Fiji, Samoa + Tonga">Fiji, Samoa + Tonga</option>
+		<option value="Cook Islands">Cook Islands</option>
+		<option value="Micronesia (Carolines)">Micronesia (Carolines)</option>
+		<option value="French Polynesia">French Polynesia</option>
+		<option value="Hawaii">Hawaii</option>
+</optgroup
+	<optgroup label="Caribbean">
+		<option value="Venezuela, Trindad + Tobago">Venezuela, Trindad + Tobago</option>
+		<option value="Bermuda">Bermuda</option>
+		<option value="Leeward Islands">Leeward Islands</option>
+		<option value="Windward Islands">Windward Islands</option>
+		<option value="Central Caribbean">Central Caribbean</option>
+</optgroup
+	<optgroup label="Indonesia">
+		<option value="Java">Java</option>
+		<option value="Maluku Islands">Maluku Islands</option>
+		<option value="Sumatra + Mentawais">Sumatra + Mentawais</option>
+		<option value="Bali + Lombok">Bali + Lombok</option>
+		<option value="Nusa Tenggara">Nusa Tenggara</option>
+</optgroup
+	<optgroup label="Asia">
+		<option value="Philippines">Philippines</option>
+		<option value="South East Asia">South East Asia</option>
+		<option value="China">China</option>
+		<option value="Japan">Japan</option>
+		<option value="Taiwan">Taiwan</option>
+		<option value="Russia">Russia</option>
+</optgroup
+	<optgroup label="North America">
+		<option value="California, South">California, South</option>
+		<option value="Florida">Florida</option>
+		<option value="California, North">California, North</option>
+		<option value="New England">New England</option>
+		<option value="Washington">Washington</option>
+		<option value="Alaska">Alaska</option>
+		<option value="Oregon">Oregon</option>
+		<option value="Atlantic States">Atlantic States</option>
+		<option value="North Carolina">North Carolina</option>
+		<option value="Vancouver Island">Vancouver Island</option>
+		<option value="California, Central">California, Central</option>
+		<option value="New Jersey + New York">New Jersey + New York</option>
+		<option value="Nova Scotia">Nova Scotia</option>
+		<option value="Gulf Coast">Gulf Coast</option>
+		<option value="Great Lakes">Great Lakes</option>
+		<option value="South Carolina + Georgia">South Carolina + Georgia</option>
+</optgroup
+	<optgroup label="Australasia">
+		<option value="South Australia">South Australia</option>
+		<option value="Tasmania">Tasmania</option>
+		<option value="Queensland">Queensland</option>
+		<option value="South West Australia">South West Australia</option>
+		<option value="North West Australia">North West Australia</option>
+		<option value="New Zealand">New Zealand</option>
+		<option value="New South Wales">New South Wales</option>
+		<option value="Victoria">Victoria</option>
+</optgroup
+	<optgroup label="Middle East">
+		<option value="Oman">Oman</option>
+		<option value="Israel">Israel</option>
+		<option value="Lebanon">Lebanon</option>
+		<option value="Persian Gulf">Persian Gulf</option>
+</optgroup
+	<optgroup label="Europe">
+		<option value="Italy">Italy</option>
+		<option value="Spain + Portugal">Spain + Portugal</option>
+		<option value="France">France</option>
+		<option value="UK + Ireland">UK + Ireland</option>
+		<option value="Norway">Norway</option>
+		<option value="Azores">Azores</option>
+		<option value="Iceland">Iceland</option>
+		<option value="Greece">Greece</option>
+		<option value="Canary Islands">Canary Islands</option>
+		<option value="Black Sea">Black Sea</option>
+		<option value="Netherlands + Belgium">Netherlands + Belgium</option>
+		<option value="Germany + Denmark">Germany + Denmark</option>
+</optgroup
+	<optgroup label="Central America">
+		<option value="Mexico, Pacific">Mexico, Pacific</option>
+		<option value="Central America North">Central America North</option>
+		<option value="Mexico, Baja">Mexico, Baja</option>
+		<option value="Central America South">Central America South</option>
+</optgroup
+	<optgroup label="Africa">
+		<option value="Morocco">Morocco</option>
+		<option value="Western Sahara ">Western Sahara </option>
+		<option value="West Africa">West Africa</option>
+		<option value="South Africa">South Africa</option>
+		<option value="Mozambique + Madagascar">Mozambique + Madagascar</option>
+		<option value="Equatorial Guinea">Equatorial Guinea</option>
+		<option value="Ghana + The Ivory Coast">Ghana + The Ivory Coast</option>
+		<option value="Central Africa">Central Africa</option>
+</optgroup
+	<optgroup label="Indian Ocean">
+		<option value="Sri Lanka">Sri Lanka</option>
+		<option value="Maldives">Maldives</option>
+		<option value="India">India</option>
+		<option value="Bangladesh">Bangladesh</option>
+		<option value="Seychelles">Seychelles</option>
+</optgroup
+	<optgroup label="South America">
+		<option value="Chile - South">Chile - South</option>
+		<option value="Chile - North">Chile - North</option>
+		<option value="Brazil - South">Brazil - South</option>
+		<option value="Peru - South">Peru - South</option>
+		<option value="Antarctic Peninsula">Antarctic Peninsula</option>
+		<option value="Brazil - East">Brazil - East</option>
+		<option value="Argentina">Argentina</option>
+		<option value="Peru - North">Peru - North</option>
+		<option value="Uruguay">Uruguay</option>
+		<option value="Ecuador">Ecuador</option>
+		<option value="Colombia">Colombia</option>
+		<option value="Brazil - Northeast">Brazil - Northeast</option>
+</optgroup
+</select>

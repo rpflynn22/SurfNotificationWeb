@@ -1,0 +1,5 @@
+select(class=spots)
+  each place in places
+    optgroup(label=place)
+      each spot in info[place]
+        option(id=spot)= spot

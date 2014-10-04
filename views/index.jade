@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  #SignUp Sign up
+  #ChoiceContainer
+    #ChoiceContainer1
+      #input-container
+        input(id="PhoneNumber", onClick="this.select();", type="text", value="Phone Number", size="15")
+      #carrier-container
+        select(id="Carrier")
+          each carrier in car
+            option(value=carrier)= carrier
+      #big-select-container
+        select(id="BigSelect")
+          option(value="null") Select Region
+          each region in regions
+            optgroup(label=region)
+              each area in map[region]
+                option(value=region+'|'+area)=area
+      #spot-select-container
+        select(id='spot-slot')
+          option(value='null') Select Spot
+      #submit-button-container
+        button(id="submit", type="button", disabled="disabled") Submit
